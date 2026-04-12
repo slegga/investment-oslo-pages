@@ -233,7 +233,9 @@
         async function initDashboard() {
             try {
                 // Hent data
-                const BASE = 'data';
+                const BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+                    ? '../data'
+                    : 'https://raw.githubusercontent.com/slegga/investment-oslo/main/data';
 
                 const [portefoljerRes, utviklingRes, posisjonerRes] = await Promise.all([
                     fetch(`${BASE}/portefolje.json`),

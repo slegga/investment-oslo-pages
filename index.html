@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investeringsportefølje</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #1a1a1a;
+        }
+        .portefolje-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .portefolje-tittel {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+        .portefolje-beskrivelse {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        th, td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #555;
+        }
+        tr:hover {
+            background: #fafafa;
+        }
+        .ticker {
+            font-family: monospace;
+            font-weight: 600;
+            color: #0066cc;
+        }
+        .belop {
+            text-align: right;
+            font-family: monospace;
+        }
+        .andel {
+            text-align: right;
+            color: #28a745;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+        .error {
+            background: #fee;
+            color: #c00;
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .empty {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+        .oppdatert {
+            text-align: center;
+            color: #999;
+            font-size: 0.8rem;
+            margin-top: 20px;
+        }
+        .total {
+            font-weight: 600;
+            background: #f0f7ff;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        nav button {
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        nav button:hover {
+            background: #f0f0f0;
+        }
+        nav button.active {
+            background: #0066cc;
+            color: white;
+            border-color: #0066cc;
+        }
+        .portefolje-seksjon {
+            display: none;
+        }
+        .portefolje-seksjon.active {
+            display: block;
+        }
+        @media (max-width: 600px) {
+            th:nth-child(3), td:nth-child(3),
+            th:nth-child(4), td:nth-child(4) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Investeringsportefølje</h1>
+        
+        <div id="feil" class="error" style="display: none;"></div>
+        <div id="loading" class="loading">Laster data...</div>
+        
+        <nav id="faner"></nav>
+        <div id="innhold"></div>
+        
+        <p class="oppdatert">Data lastet fra investering-oslo-pages</p>
+    </div>
+
+    <script>
+        const DATA_DIR = 'data';
+        
+        async function lastPortefolje() {
+            const resp = await fetch(`${DATA_DIR}/portefolje.json`);
+            if (!resp.ok) throw new Error('Kunne ikke laste portefolje.json');
+            return resp.json();
+        }
+        
+        async function lastPosisjoner() {
+            const resp = await fetch(`${DATA_DIR}/posisjon.json`);
+            if (!resp.ok) throw new Error('Kunne ikke laste posisjon.json');
+            return resp.json();
+        }
+        
+        function formaterBelop(n) {
+            if (n == null) return '-';
+            return new Intl.NumberFormat('nb-NO', {
+                style: 'currency',
+                currency: 'NOK',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(n);
+        }
+        
+        function formaterProsent(n) {
+            if (n == null) return '-';
+            return (n * 100).toFixed(1) + '%';
+        }
+        
+        function visPortefoljer(portefoljer, posisjoner) {
+            const feil = document.getElementById('feil');
+            const loading = document.getElementById('loading');
+            const faner = document.getElementById('faner');
+            const innhold = document.getElementById('innhold');
+            
+            if (!portefoljer || portefoljer.length === 0) {
+                loading.style.display = 'none';
+                innhold.innerHTML = '<div class="empty">Ingen porteføljer funnet</div>';
+                return;
+            }
+            
+            loading.style.display = 'none';
+            faner.innerHTML = '';
+            innhold.innerHTML = '';
+            
+            // Grupper posisjoner etter porteføljenavn
+            const posisjonerPerPortefolje = {};
+            for (const p of posisjoner) {
+                const navn = p.porteføljenavn || 'Ukjent';
+                if (!posisjonerPerPortefolje[navn]) {
+                    posisjonerPerPortefolje[navn] = [];
+                }
+                posisjonerPerPortefolje[navn].push(p);
+            }
+            
+            // Lag faner og innhold for hver portefølje
+            portefoljer.forEach((port, idx) => {
+                const navn = port.porteføljenavn;
+                const erAktiv = idx === 0 ? 'active' : '';
+                const pos = posisjonerPerPortefolje[navn] || [];
+                
+                // Lag fane
+                const btn = document.createElement('button');
+                btn.textContent = navn;
+                btn.className = erAktiv;
+                btn.onclick = () => byttFane(idx);
+                faner.appendChild(btn);
+                
+                // Lag innhold
+                const seksjon = document.createElement('div');
+                seksjon.className = `portefolje-seksjon ${erAktiv}`;
+                seksjon.id = `port-${idx}`;
+                
+                let html = `
+                    <div class="portefolje-card">
+                        <div class="portefolje-tittel">${navn}</div>
+                        <div class="portefolje-beskrivelse">${port.beskrivelse || ''}</div>
+                `;
+                
+                if (pos.length === 0) {
+                    html += '<div class="empty">Ingen posisjoner</div>';
+                } else {
+                    // Beregn total
+                    const total = pos.reduce((sum, p) => sum + (p.investert || 0), 0);
+                    
+                    html += `
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Aksje</th>
+                                    <th>Navn</th>
+                                    <th>Markedsverdi</th>
+                                    <th>Investert</th>
+                                    <th>Andel</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                    `;
+                    
+                    for (const aksje of pos) {
+                        const andel = total > 0 ? (aksje.investert || 0) / total : 0;
+                        html += `
+                            <tr>
+                                <td class="ticker">${aksje.ticker || '-'}</td>
+                                <td>${aksje.navn || '-'}</td>
+                                <td class="belop">${formaterBelop(aksje.mcap)}</td>
+                                <td class="belop">${formaterBelop(aksje.investert)}</td>
+                                <td class="andel">${formaterProsent(andel)}</td>
+                            </tr>
+                        `;
+                    }
+                    
+                    html += `
+                                <tr class="total">
+                                    <td colspan="3"><strong>Total</strong></td>
+                                    <td class="belop"><strong>${formaterBelop(total)}</strong></td>
+                                    <td class="andel"><strong>100%</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    `;
+                }
+                
+                html += '</div>';
+                seksjon.innerHTML = html;
+                innhold.appendChild(seksjon);
+            });
+        }
+        
+        function byttFane(idx) {
+            // Oppdater faner
+            document.querySelectorAll('nav button').forEach((btn, i) => {
+                btn.classList.toggle('active', i === idx);
+            });
+            
+            // Oppdater innhold
+            document.querySelectorAll('.portefolje-seksjon').forEach((sek, i) => {
+                sek.classList.toggle('active', i === idx);
+            });
+        }
+        
+        async function init() {
+            const feil = document.getElementById('feil');
+            const loading = document.getElementById('loading');
+            
+            try {
+                const portefoljer = await lastPortefolje();
+                console.log('portefoljer:', portefoljer);
+                const posisjoner = await lastPosisjoner();
+                console.log('posisjoner:', posisjoner);
+                
+                visPortefoljer(portefoljer, posisjoner);
+            } catch (e) {
+                console.error('Feil:', e);
+                loading.style.display = 'none';
+                feil.textContent = 'Feil: ' + e.message;
+                feil.style.display = 'block';
+            }
+        }
+        
+        init();
+    </script>
+</body>
+</html>
