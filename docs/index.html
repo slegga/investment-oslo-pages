@@ -297,15 +297,17 @@
         
         async function init() {
             const feil = document.getElementById('feil');
+            const loading = document.getElementById('loading');
             
             try {
-                const [portefoljer, posisjoner] = await Promise.all([
-                    lastPortefolje(),
-                    lastPosisjoner()
-                ]);
+                const portefoljer = await lastPortefolje();
+                console.log('portefoljer:', portefoljer);
+                const posisjoner = await lastPosisjoner();
+                console.log('posisjoner:', posisjoner);
                 
                 visPortefoljer(portefoljer, posisjoner);
             } catch (e) {
+                console.error('Feil:', e);
                 loading.style.display = 'none';
                 feil.textContent = 'Feil: ' + e.message;
                 feil.style.display = 'block';
