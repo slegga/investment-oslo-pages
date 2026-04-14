@@ -317,14 +317,17 @@
                         return point ? point.kjopssum : null;
                     });
 
-                    // Fyll inn manglende data med forrige kjente verdi
-                    let lastValid = 100000;
+                    // Fyll inn manglende data med forrige kjente verdi,
+                    // men behold null FØR første reelle datapunkt
+                    let firstSeen = false;
+                    let lastValid = null;
                     const filledData = dataPoints.map(val => {
                         if (val !== null) {
+                            firstSeen = true;
                             lastValid = val;
                             return val;
                         }
-                        return lastValid;
+                        return firstSeen ? lastValid : null;
                     });
 
                     return {
@@ -335,7 +338,8 @@
                         borderWidth: 2,
                         pointRadius: 0,
                         pointHoverRadius: 4,
-                        tension: 0.1
+                        tension: 0.1,
+                        spanGaps: true
                     };
                 });
 
