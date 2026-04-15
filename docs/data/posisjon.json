@@ -1,302 +1,302 @@
 [
   {
-    "id": 361,
-    "portefolje_rebalansering_id": 37,
+    "id": 391,
+    "portefolje_rebalansering_id": 40,
     "navn": "Equinor",
     "ticker": "EQNR",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 2861939563571000.0,
     "porteføljenavn": "mcap",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 362,
-    "portefolje_rebalansering_id": 37,
+    "id": 392,
+    "portefolje_rebalansering_id": 40,
     "navn": "DNB Bank",
     "ticker": "DNB",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 2861939563571000.0,
     "porteføljenavn": "mcap",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 363,
-    "portefolje_rebalansering_id": 37,
+    "id": 393,
+    "portefolje_rebalansering_id": 40,
     "navn": "Kongsberg Gruppen",
     "ticker": "KOG",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 2861939563571000.0,
     "porteføljenavn": "mcap",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 364,
-    "portefolje_rebalansering_id": 37,
+    "id": 394,
+    "portefolje_rebalansering_id": 40,
     "navn": "Telenor",
     "ticker": "TEL",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 2861939563571000.0,
     "porteføljenavn": "mcap",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 365,
-    "portefolje_rebalansering_id": 37,
+    "id": 395,
+    "portefolje_rebalansering_id": 40,
     "navn": "Aker BP",
     "ticker": "AKRBP",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 2861939563571000.0,
     "porteføljenavn": "mcap",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 366,
-    "portefolje_rebalansering_id": 37,
+    "id": 396,
+    "portefolje_rebalansering_id": 40,
     "navn": "Norsk Hydro",
     "ticker": "NHY",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 2861939563571000.0,
     "porteføljenavn": "mcap",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 367,
-    "portefolje_rebalansering_id": 37,
+    "id": 397,
+    "portefolje_rebalansering_id": 40,
     "navn": "Yara International",
     "ticker": "YAR",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 2861939563571000.0,
     "porteføljenavn": "mcap",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 368,
-    "portefolje_rebalansering_id": 37,
+    "id": 398,
+    "portefolje_rebalansering_id": 40,
     "navn": "Gjensidige Forsikring",
     "ticker": "GJF",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 2861939563571000.0,
     "porteføljenavn": "mcap",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 369,
-    "portefolje_rebalansering_id": 37,
+    "id": 399,
+    "portefolje_rebalansering_id": 40,
     "navn": "Orkla",
     "ticker": "ORK",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 2861939563571000.0,
     "porteføljenavn": "mcap",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 370,
-    "portefolje_rebalansering_id": 37,
+    "id": 400,
+    "portefolje_rebalansering_id": 40,
     "navn": "Mowi",
     "ticker": "MOWI",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 2861939563571000.0,
     "porteføljenavn": "mcap",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 371,
-    "portefolje_rebalansering_id": 38,
-    "navn": "BlueNord",
-    "ticker": "BNOR",
-    "mcap": 1.0,
-    "investert": 10000.0,
-    "porteføljenavn": "overvurdert",
-    "kjopsdato": "2026-04-14"
-  },
-  {
-    "id": 372,
-    "portefolje_rebalansering_id": 38,
+    "id": 401,
+    "portefolje_rebalansering_id": 41,
     "navn": "Capital Tankers Corp",
     "ticker": "CAPT",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 638093089126000.0,
     "porteføljenavn": "overvurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 373,
-    "portefolje_rebalansering_id": 38,
+    "id": 402,
+    "portefolje_rebalansering_id": 41,
+    "navn": "BlueNord",
+    "ticker": "BNOR",
+    "mcap": 1.0,
+    "investert": 638093089126000.0,
+    "porteføljenavn": "overvurdert",
+    "kjopsdato": "2026-04-15"
+  },
+  {
+    "id": 403,
+    "portefolje_rebalansering_id": 41,
     "navn": "DNB Bank",
     "ticker": "DNB",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 638093089126000.0,
     "porteføljenavn": "overvurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 374,
-    "portefolje_rebalansering_id": 38,
+    "id": 404,
+    "portefolje_rebalansering_id": 41,
     "navn": "Pelagic Credit",
     "ticker": "PLGC",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 638093089126000.0,
     "porteføljenavn": "overvurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 375,
-    "portefolje_rebalansering_id": 38,
+    "id": 405,
+    "portefolje_rebalansering_id": 41,
+    "navn": "Aprila Bank",
+    "ticker": "APRILA",
+    "mcap": 1.0,
+    "investert": 638093089126000.0,
+    "porteføljenavn": "overvurdert",
+    "kjopsdato": "2026-04-15"
+  },
+  {
+    "id": 406,
+    "portefolje_rebalansering_id": 41,
     "navn": "SED Energy Holdings",
     "ticker": "ENH",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 638093089126000.0,
     "porteføljenavn": "overvurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 376,
-    "portefolje_rebalansering_id": 38,
+    "id": 407,
+    "portefolje_rebalansering_id": 41,
     "navn": "Akobo Minerals",
     "ticker": "AKOBO",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 638093089126000.0,
     "porteføljenavn": "overvurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 377,
-    "portefolje_rebalansering_id": 38,
+    "id": 408,
+    "portefolje_rebalansering_id": 41,
     "navn": "Gulf Keystone Petroleum",
     "ticker": "GKP",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 638093089126000.0,
     "porteføljenavn": "overvurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 378,
-    "portefolje_rebalansering_id": 38,
+    "id": 409,
+    "portefolje_rebalansering_id": 41,
     "navn": "Frontline",
     "ticker": "FRO",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 638093089126000.0,
     "porteføljenavn": "overvurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 379,
-    "portefolje_rebalansering_id": 38,
+    "id": 410,
+    "portefolje_rebalansering_id": 41,
     "navn": "Okeanis Eco Tankers",
     "ticker": "OET",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 638093089126000.0,
     "porteføljenavn": "overvurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 380,
-    "portefolje_rebalansering_id": 38,
-    "navn": "Protector Forsikring",
-    "ticker": "PROT",
-    "mcap": 1.0,
-    "investert": 10000.0,
-    "porteføljenavn": "overvurdert",
-    "kjopsdato": "2026-04-14"
-  },
-  {
-    "id": 381,
-    "portefolje_rebalansering_id": 39,
+    "id": 411,
+    "portefolje_rebalansering_id": 42,
     "navn": "Norse Atlantic",
     "ticker": "NORSE",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 21069649814000.0,
     "porteføljenavn": "undervurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 382,
-    "portefolje_rebalansering_id": 39,
+    "id": 412,
+    "portefolje_rebalansering_id": 42,
     "navn": "Hexagon Purus",
     "ticker": "HPUR",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 21069649814000.0,
     "porteføljenavn": "undervurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 383,
-    "portefolje_rebalansering_id": 39,
-    "navn": "Polaris Media",
-    "ticker": "POL",
-    "mcap": 1.0,
-    "investert": 10000.0,
-    "porteføljenavn": "undervurdert",
-    "kjopsdato": "2026-04-14"
-  },
-  {
-    "id": 384,
-    "portefolje_rebalansering_id": 39,
+    "id": 413,
+    "portefolje_rebalansering_id": 42,
     "navn": "Insr",
     "ticker": "INSR",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 21069649814000.0,
     "porteføljenavn": "undervurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 385,
-    "portefolje_rebalansering_id": 39,
+    "id": 414,
+    "portefolje_rebalansering_id": 42,
+    "navn": "Polaris Media",
+    "ticker": "POL",
+    "mcap": 1.0,
+    "investert": 21069649814000.0,
+    "porteføljenavn": "undervurdert",
+    "kjopsdato": "2026-04-15"
+  },
+  {
+    "id": 415,
+    "portefolje_rebalansering_id": 42,
     "navn": "OKEA",
     "ticker": "OKEA",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 21069649814000.0,
     "porteføljenavn": "undervurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 386,
-    "portefolje_rebalansering_id": 39,
+    "id": 416,
+    "portefolje_rebalansering_id": 42,
     "navn": "Cavendish Hydrogen",
     "ticker": "CAVEN",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 21069649814000.0,
     "porteføljenavn": "undervurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 387,
-    "portefolje_rebalansering_id": 39,
+    "id": 417,
+    "portefolje_rebalansering_id": 42,
     "navn": "Axactor",
     "ticker": "ACR",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 21069649814000.0,
     "porteføljenavn": "undervurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 388,
-    "portefolje_rebalansering_id": 39,
+    "id": 418,
+    "portefolje_rebalansering_id": 42,
     "navn": "Odfjell B",
     "ticker": "ODFB",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 21069649814000.0,
     "porteføljenavn": "undervurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 389,
-    "portefolje_rebalansering_id": 39,
+    "id": 419,
+    "portefolje_rebalansering_id": 42,
     "navn": "Norsk Titanium",
     "ticker": "NTI",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 21069649814000.0,
     "porteføljenavn": "undervurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   },
   {
-    "id": 390,
-    "portefolje_rebalansering_id": 39,
-    "navn": "Proximar Seafood",
-    "ticker": "PROXI",
+    "id": 420,
+    "portefolje_rebalansering_id": 42,
+    "navn": "Hexagon Composites",
+    "ticker": "HEX",
     "mcap": 1.0,
-    "investert": 10000.0,
+    "investert": 21069649814000.0,
     "porteføljenavn": "undervurdert",
-    "kjopsdato": "2026-04-14"
+    "kjopsdato": "2026-04-15"
   }
 ]
