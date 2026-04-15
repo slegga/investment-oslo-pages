@@ -3,7 +3,7 @@
     "id": 1,
     "porteføljenavn": "mcap",
     "beskrivelse": "10 største selskap",
-    "regler_sql": "SELECT navn, ticker, 1 AS andel,mcap FROM aksjekurs WHERE dato = (SELECT MAX(dato) FROM aksjekurs) ORDER BY 3 DESC"
+    "regler_sql": "SELECT navn, ticker, 1 AS andel,mcap FROM aksjekurs WHERE dato = (SELECT MAX(dato) FROM aksjekurs) ORDER BY mcap DESC"
   },
   {
     "id": 19,
