@@ -6,13 +6,13 @@
     "regler_sql": "SELECT navn, ticker, 1 AS andel,mcap FROM aksjekurs WHERE dato = (SELECT MAX(dato) FROM aksjekurs) ORDER BY mcap DESC"
   },
   {
-    "id": 19,
+    "id": 2,
     "porteføljenavn": "overvurdert",
     "beskrivelse": "10 mest overvurderte selskap",
     "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel,k.mcap, a.estimert_mcap, (k.mcap - a.estimert_mcap) / ((k.mcap + a.estimert_mcap) / 2.0) AS overvurdering FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker WHERE k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap IS NOT NULL AND k.mcap IS NOT NULL AND k.mcap > 100000000 AND a.estimert_mcap > 0 AND NOT a.estimert_mcap is NULL ORDER BY overvurdering DESC"
   },
   {
-    "id": 20,
+    "id": 3,
     "porteføljenavn": "undervurdert",
     "beskrivelse": "10 mest undervurderte selskap",
     "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap, (k.mcap - a.estimert_mcap) / ((k.mcap + a.estimert_mcap) / 2.0) AS overvurdering FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker WHERE k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap IS NOT NULL AND k.mcap IS NOT NULL AND k.mcap > 100000000 AND a.estimert_mcap > 0 AND NOT a.estimert_mcap is NULL ORDER BY overvurdering ASC"
