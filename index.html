@@ -237,6 +237,8 @@
                     html += '<div class="empty">Ingen posisjoner</div>';
                 } else {
                     // Beregn total
+                    // Beregn investert fra kurs * antall
+                    pos.forEach(p => { p.investert = (p.kurs || 0) * (p.antall || 0); });
                     const total = pos.reduce((sum, p) => sum + (p.investert || 0), 0);
                     
                     html += `
@@ -245,7 +247,8 @@
                                 <tr>
                                     <th>Aksje</th>
                                     <th>Navn</th>
-                                    <th>Markedsverdi</th>
+                                    <th>Kurs</th>
+                                    <th>Antall</th>
                                     <th>Investert</th>
                                     <th>Andel</th>
                                 </tr>
@@ -259,7 +262,8 @@
                             <tr>
                                 <td class="ticker">${aksje.ticker || '-'}</td>
                                 <td>${aksje.navn || '-'}</td>
-                                <td class="belop">${formaterBelop(aksje.mcap)}</td>
+                                <td class="belop">${formaterBelop(aksje.kurs)}</td>
+                                <td class="belop">${aksje.antall?.toLocaleString('nb-NO') ?? '-'}</td>
                                 <td class="belop">${formaterBelop(aksje.investert)}</td>
                                 <td class="andel">${formaterProsent(andel)}</td>
                             </tr>
@@ -268,7 +272,7 @@
                     
                     html += `
                                 <tr class="total">
-                                    <td colspan="3"><strong>Total</strong></td>
+                                    <td colspan="4"><strong>Total</strong></td>
                                     <td class="belop"><strong>${formaterBelop(total)}</strong></td>
                                     <td class="andel"><strong>100%</strong></td>
                                 </tr>

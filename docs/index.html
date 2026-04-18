@@ -422,6 +422,11 @@
                     const positions = posByPortefolje[name] || [];
                     if (positions.length === 0) return;
                     
+                    // Beregn investert fra kurs * antall
+                    positions.forEach(pos => {
+                        pos.investert = (pos.kurs || 0) * (pos.antall || 0);
+                    });
+
                     // Sorter synkende på investert
                     positions.sort((a, b) => b.investert - a.investert);
                     
@@ -438,6 +443,8 @@
                                     <tr>
                                         <th>Aksje</th>
                                         <th>Ticker</th>
+                                        <th class="number">Kurs</th>
+                                        <th class="number">Antall</th>
                                         <th class="number">Investert</th>
                                     </tr>
                                 </thead>
@@ -449,6 +456,8 @@
                             <tr>
                                 <td>${pos.navn}</td>
                                 <td>${pos.ticker}</td>
+                                <td class="number">${formatNOK(pos.kurs)}</td>
+                                <td class="number">${pos.antall?.toLocaleString('nb-NO') ?? ''}</td>
                                 <td class="number">${formatNOK(pos.investert)}</td>
                             </tr>
                         `;
