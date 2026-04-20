@@ -1,25 +1,25 @@
 [
   {
-    "id": 43,
+    "id": 46,
     "portefolje_id": 1,
     "porteføljenavn": "mcap",
-    "kjopsdato": "2026-04-17",
+    "kjopsdato": "2026-04-20",
     "kjopssum": 100000.0,
     "kommentar": null
   },
   {
-    "id": 44,
+    "id": 47,
     "portefolje_id": 2,
     "porteføljenavn": "overvurdert",
-    "kjopsdato": "2026-04-17",
+    "kjopsdato": "2026-04-20",
     "kjopssum": 100000.0,
     "kommentar": null
   },
   {
-    "id": 45,
+    "id": 48,
     "portefolje_id": 3,
     "porteføljenavn": "undervurdert",
-    "kjopsdato": "2026-04-17",
+    "kjopsdato": "2026-04-20",
     "kjopssum": 100000.0,
     "kommentar": null
   }
