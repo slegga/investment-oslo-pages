@@ -214,5 +214,29 @@
     "kjopsdato": "2026-04-30",
     "kjopssum": 101987.68500000001,
     "kommentar": null
+  },
+  {
+    "id": 73,
+    "portefolje_id": 1,
+    "porteføljenavn": "mcap",
+    "kjopsdato": "2026-05-01",
+    "kjopssum": 98903.26000000001,
+    "kommentar": null
+  },
+  {
+    "id": 74,
+    "portefolje_id": 2,
+    "porteføljenavn": "overvurdert",
+    "kjopsdato": "2026-05-01",
+    "kjopssum": 99870.455,
+    "kommentar": null
+  },
+  {
+    "id": 75,
+    "portefolje_id": 3,
+    "porteføljenavn": "undervurdert",
+    "kjopsdato": "2026-05-01",
+    "kjopssum": 101987.69,
+    "kommentar": null
   }
 ]
