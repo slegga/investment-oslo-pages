@@ -2,7 +2,7 @@
   {
     "id": 46,
     "portefolje_id": 1,
-    "porteføljenavn": "mcap",
+    "porteføljenavn": "Størst",
     "kjopsdato": "2026-04-20",
     "kjopssum": 100000.0,
     "kommentar": null
@@ -10,7 +10,7 @@
   {
     "id": 47,
     "portefolje_id": 2,
-    "porteføljenavn": "overvurdert",
+    "porteføljenavn": "overvurdert år",
     "kjopsdato": "2026-04-20",
     "kjopssum": 100000.0,
     "kommentar": null
@@ -18,7 +18,7 @@
   {
     "id": 48,
     "portefolje_id": 3,
-    "porteføljenavn": "undervurdert",
+    "porteføljenavn": "undervurdert år",
     "kjopsdato": "2026-04-20",
     "kjopssum": 100000.0,
     "kommentar": null
@@ -26,7 +26,7 @@
   {
     "id": 49,
     "portefolje_id": 1,
-    "porteføljenavn": "mcap",
+    "porteføljenavn": "Størst",
     "kjopsdato": "2026-04-21",
     "kjopssum": 100690.9,
     "kommentar": null
@@ -34,7 +34,7 @@
   {
     "id": 50,
     "portefolje_id": 2,
-    "porteføljenavn": "overvurdert",
+    "porteføljenavn": "overvurdert år",
     "kjopsdato": "2026-04-21",
     "kjopssum": 100583.49999999999,
     "kommentar": null
@@ -42,7 +42,7 @@
   {
     "id": 51,
     "portefolje_id": 3,
-    "porteføljenavn": "undervurdert",
+    "porteføljenavn": "undervurdert år",
     "kjopsdato": "2026-04-21",
     "kjopssum": 102600.864,
     "kommentar": null
@@ -50,7 +50,7 @@
   {
     "id": 52,
     "portefolje_id": 1,
-    "porteføljenavn": "mcap",
+    "porteføljenavn": "Størst",
     "kjopsdato": "2026-04-22",
     "kjopssum": 101010.71,
     "kommentar": null
@@ -58,7 +58,7 @@
   {
     "id": 53,
     "portefolje_id": 2,
-    "porteføljenavn": "overvurdert",
+    "porteføljenavn": "overvurdert år",
     "kjopsdato": "2026-04-22",
     "kjopssum": 97799.39,
     "kommentar": null
@@ -66,7 +66,7 @@
   {
     "id": 54,
     "portefolje_id": 3,
-    "porteføljenavn": "undervurdert",
+    "porteføljenavn": "undervurdert år",
     "kjopsdato": "2026-04-22",
     "kjopssum": 100725.29800000001,
     "kommentar": null
@@ -74,7 +74,7 @@
   {
     "id": 55,
     "portefolje_id": 1,
-    "porteføljenavn": "mcap",
+    "porteføljenavn": "Størst",
     "kjopsdato": "2026-04-23",
     "kjopssum": 99606.34999999999,
     "kommentar": null
@@ -82,7 +82,7 @@
   {
     "id": 56,
     "portefolje_id": 2,
-    "porteføljenavn": "overvurdert",
+    "porteføljenavn": "overvurdert år",
     "kjopsdato": "2026-04-23",
     "kjopssum": 98683.91,
     "kommentar": null
@@ -90,7 +90,7 @@
   {
     "id": 57,
     "portefolje_id": 3,
-    "porteføljenavn": "undervurdert",
+    "porteføljenavn": "undervurdert år",
     "kjopsdato": "2026-04-23",
     "kjopssum": 100194.84800000001,
     "kommentar": null
@@ -98,7 +98,7 @@
   {
     "id": 58,
     "portefolje_id": 1,
-    "porteføljenavn": "mcap",
+    "porteføljenavn": "Størst",
     "kjopsdato": "2026-04-24",
     "kjopssum": 98882.54000000001,
     "kommentar": null
@@ -106,7 +106,7 @@
   {
     "id": 59,
     "portefolje_id": 2,
-    "porteføljenavn": "overvurdert",
+    "porteføljenavn": "overvurdert år",
     "kjopsdato": "2026-04-24",
     "kjopssum": 98490.50000000001,
     "kommentar": null
@@ -114,7 +114,7 @@
   {
     "id": 60,
     "portefolje_id": 3,
-    "porteføljenavn": "undervurdert",
+    "porteføljenavn": "undervurdert år",
     "kjopsdato": "2026-04-24",
     "kjopssum": 100516.90999999999,
     "kommentar": null
@@ -122,7 +122,7 @@
   {
     "id": 61,
     "portefolje_id": 1,
-    "porteføljenavn": "mcap",
+    "porteføljenavn": "Størst",
     "kjopsdato": "2026-04-27",
     "kjopssum": 98538.40999999999,
     "kommentar": null
@@ -130,7 +130,7 @@
   {
     "id": 62,
     "portefolje_id": 2,
-    "porteføljenavn": "overvurdert",
+    "porteføljenavn": "overvurdert år",
     "kjopsdato": "2026-04-27",
     "kjopssum": 98439.73,
     "kommentar": null
@@ -138,7 +138,7 @@
   {
     "id": 63,
     "portefolje_id": 3,
-    "porteføljenavn": "undervurdert",
+    "porteføljenavn": "undervurdert år",
     "kjopsdato": "2026-04-27",
     "kjopssum": 102604.72,
     "kommentar": null
@@ -146,7 +146,7 @@
   {
     "id": 64,
     "portefolje_id": 1,
-    "porteføljenavn": "mcap",
+    "porteføljenavn": "Størst",
     "kjopsdato": "2026-04-28",
     "kjopssum": 97961.86000000002,
     "kommentar": null
@@ -154,7 +154,7 @@
   {
     "id": 65,
     "portefolje_id": 2,
-    "porteføljenavn": "overvurdert",
+    "porteføljenavn": "overvurdert år",
     "kjopsdato": "2026-04-28",
     "kjopssum": 99417.26000000001,
     "kommentar": null
@@ -162,7 +162,7 @@
   {
     "id": 66,
     "portefolje_id": 3,
-    "porteføljenavn": "undervurdert",
+    "porteføljenavn": "undervurdert år",
     "kjopsdato": "2026-04-28",
     "kjopssum": 103223.93800000001,
     "kommentar": null
@@ -170,7 +170,7 @@
   {
     "id": 67,
     "portefolje_id": 1,
-    "porteføljenavn": "mcap",
+    "porteføljenavn": "Størst",
     "kjopsdato": "2026-04-29",
     "kjopssum": 98055.1,
     "kommentar": null
@@ -178,7 +178,7 @@
   {
     "id": 68,
     "portefolje_id": 2,
-    "porteføljenavn": "overvurdert",
+    "porteføljenavn": "overvurdert år",
     "kjopsdato": "2026-04-29",
     "kjopssum": 99186.03,
     "kommentar": null
@@ -186,7 +186,7 @@
   {
     "id": 69,
     "portefolje_id": 3,
-    "porteføljenavn": "undervurdert",
+    "porteføljenavn": "undervurdert år",
     "kjopsdato": "2026-04-29",
     "kjopssum": 99306.25200000001,
     "kommentar": null
@@ -194,7 +194,7 @@
   {
     "id": 70,
     "portefolje_id": 1,
-    "porteføljenavn": "mcap",
+    "porteføljenavn": "Størst",
     "kjopsdato": "2026-04-30",
     "kjopssum": 98903.26,
     "kommentar": null
@@ -202,7 +202,7 @@
   {
     "id": 71,
     "portefolje_id": 2,
-    "porteføljenavn": "overvurdert",
+    "porteføljenavn": "overvurdert år",
     "kjopsdato": "2026-04-30",
     "kjopssum": 99870.45000000003,
     "kommentar": null
@@ -210,7 +210,7 @@
   {
     "id": 72,
     "portefolje_id": 3,
-    "porteføljenavn": "undervurdert",
+    "porteføljenavn": "undervurdert år",
     "kjopsdato": "2026-04-30",
     "kjopssum": 101987.68500000001,
     "kommentar": null
@@ -218,7 +218,7 @@
   {
     "id": 73,
     "portefolje_id": 1,
-    "porteføljenavn": "mcap",
+    "porteføljenavn": "Størst",
     "kjopsdato": "2026-05-01",
     "kjopssum": 98903.26000000001,
     "kommentar": null
@@ -226,7 +226,7 @@
   {
     "id": 74,
     "portefolje_id": 2,
-    "porteføljenavn": "overvurdert",
+    "porteføljenavn": "overvurdert år",
     "kjopsdato": "2026-05-01",
     "kjopssum": 99870.455,
     "kommentar": null
@@ -234,7 +234,7 @@
   {
     "id": 75,
     "portefolje_id": 3,
-    "porteføljenavn": "undervurdert",
+    "porteføljenavn": "undervurdert år",
     "kjopsdato": "2026-05-01",
     "kjopssum": 101987.69,
     "kommentar": null
