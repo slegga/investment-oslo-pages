@@ -224,11 +224,11 @@
             }).format(new Date(dateString));
         };
 
-        const colors = {
-            mcap: '#4cc9f0',
-            undervurdert: '#f72585',
-            overvurdert: '#7209b7'
-        };
+        // Standard colors for charts - cycles through these if more portfolios than colors
+        const chartColors = [
+            '#4cc9f0', '#f72585', '#7209b7', '#3a86ff', '#ff006e', 
+            '#8338ec', '#ffbe0b', '#fb5607', '#06d6a0', '#118ab2'
+        ];
 
         async function initDashboard() {
             try {
@@ -280,7 +280,17 @@
 
                 // Opprett summary cards
                 const summaryContainer = document.getElementById('summary-cards');
-                const pNames = ['mcap', 'undervurdert', 'overvurdert'];
+                
+                // Get portfolio names that have development data, in portefolje order
+                const pNames = portefoljer
+                    .map(p => p.porteføljenavn)
+                    .filter(name => utviklingByPortefolje[name] && utviklingByPortefolje[name].length > 0);
+                
+                // Generate colors for each portfolio
+                const portfolioColors = pNames.reduce((acc, name, i) => {
+                    acc[name] = chartColors[i % chartColors.length];
+                    return acc;
+                }, {});
                 
                 pNames.forEach(name => {
                     if (!utviklingByPortefolje[name] || utviklingByPortefolje[name].length === 0) return;
@@ -294,7 +304,7 @@
                     const changeClass = changePct >= 0 ? 'change-positive' : 'change-negative';
 
                     summaryContainer.innerHTML += `
-                        <div class="summary-card ${name}">
+                        <div class="summary-card" style="border-left-color: ${portfolioColors[name]}">
                             <h3 class="card-title">${name}</h3>
                             <p class="card-value">${formatNOK(currentValue)}</p>
                             <p class="card-change ${changeClass}">${formatPercent(changePct)}</p>
@@ -329,10 +339,10 @@
                     });
 
                     return {
-                        label: name.charAt(0).toUpperCase() + name.slice(1),
+                        label: name,
                         data: filledData,
-                        borderColor: colors[name],
-                        backgroundColor: colors[name],
+                        borderColor: portfolioColors[name],
+                        backgroundColor: portfolioColors[name],
                         borderWidth: 2,
                         pointRadius: 0,
                         pointHoverRadius: 4,
@@ -435,7 +445,7 @@
                     let tableHTML = `
                         <div class="portfolio-card">
                             <div class="portfolio-header">
-                                <h2 class="portfolio-title" style="color: ${colors[name]}">${name}</h2>
+                                <h2 class="portfolio-title" style="color: ${portfolioColors[name]}">${name}</h2>
                                 <p class="portfolio-desc">${info.beskrivelse}</p>
                             </div>
                             <table>
