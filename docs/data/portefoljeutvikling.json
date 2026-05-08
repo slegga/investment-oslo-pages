@@ -286,5 +286,21 @@
     "kjopsdato": "2026-05-08",
     "kjopssum": 100618.6725,
     "kommentar": null
+  },
+  {
+    "id": 82,
+    "portefolje_id": 4,
+    "porteføljenavn": "overvurdert kvartal",
+    "kjopsdato": "2026-05-08",
+    "kjopssum": 97675.93583333334,
+    "kommentar": null
+  },
+  {
+    "id": 83,
+    "portefolje_id": 5,
+    "porteføljenavn": "undervurdert kvartal",
+    "kjopsdato": "2026-05-08",
+    "kjopssum": 97675.93583333334,
+    "kommentar": null
   }
 ]
