@@ -2,6 +2,9 @@
 
 Offentlig GitHub Pages for investeringsporteføljen.
 
+Link til siden:
+https://slegga.github.io/investment-oslo-pages/
+
 ## Beskrivelse
 
 Dashbord som viser portefølje-data fra investment-oslo.
