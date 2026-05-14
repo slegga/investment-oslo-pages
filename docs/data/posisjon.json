@@ -1,552 +1,552 @@
 [
   {
-    "id": 939,
-    "portefolje_rebalansering_id": 94,
+    "id": 989,
+    "portefolje_rebalansering_id": 99,
     "navn": "Vår Energi",
     "ticker": "VAR",
     "kurs": 46.63,
     "antall": 207,
     "investert": 9652.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 933,
-    "portefolje_rebalansering_id": 94,
+    "id": 983,
+    "portefolje_rebalansering_id": 99,
     "navn": "Kongsberg Gruppen",
     "ticker": "KOG",
     "kurs": 292.3,
     "antall": 33,
     "investert": 9646.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 940,
-    "portefolje_rebalansering_id": 94,
+    "id": 990,
+    "portefolje_rebalansering_id": 99,
     "navn": "Orkla",
     "ticker": "ORK",
     "kurs": 109.3,
     "antall": 88,
     "investert": 9618.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 936,
-    "portefolje_rebalansering_id": 94,
+    "id": 986,
+    "portefolje_rebalansering_id": 99,
     "navn": "Norsk Hydro",
     "ticker": "NHY",
     "kurs": 106.8,
     "antall": 90,
     "investert": 9612.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 934,
-    "portefolje_rebalansering_id": 94,
+    "id": 984,
+    "portefolje_rebalansering_id": 99,
     "navn": "Telenor",
     "ticker": "TEL",
     "kurs": 157.5,
     "antall": 61,
     "investert": 9608.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 937,
-    "portefolje_rebalansering_id": 94,
+    "id": 987,
+    "portefolje_rebalansering_id": 99,
     "navn": "Yara International",
     "ticker": "YAR",
     "kurs": 526.0,
     "antall": 18,
     "investert": 9468.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 935,
-    "portefolje_rebalansering_id": 94,
+    "id": 985,
+    "portefolje_rebalansering_id": 99,
     "navn": "Aker BP",
     "ticker": "AKRBP",
     "kurs": 338.1,
     "antall": 28,
     "investert": 9467.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 938,
-    "portefolje_rebalansering_id": 94,
+    "id": 988,
+    "portefolje_rebalansering_id": 99,
     "navn": "Gjensidige Forsikring",
     "ticker": "GJF",
     "kurs": 248.6,
     "antall": 38,
     "investert": 9447.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 932,
-    "portefolje_rebalansering_id": 94,
+    "id": 982,
+    "portefolje_rebalansering_id": 99,
     "navn": "DNB Bank",
     "ticker": "DNB",
     "kurs": 276.3,
     "antall": 34,
     "investert": 9394.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 931,
-    "portefolje_rebalansering_id": 94,
+    "id": 981,
+    "portefolje_rebalansering_id": 99,
     "navn": "Equinor",
     "ticker": "EQNR",
     "kurs": 347.6,
     "antall": 27,
     "investert": 9385.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 948,
-    "portefolje_rebalansering_id": 95,
-    "navn": "Zenith Energy",
-    "ticker": "ZENA",
-    "kurs": 0.765,
-    "antall": 12451,
-    "investert": 9525.0,
-    "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-13"
-  },
-  {
-    "id": 946,
-    "portefolje_rebalansering_id": 95,
+    "id": 993,
+    "portefolje_rebalansering_id": 100,
     "navn": "SED Energy Holdings",
     "ticker": "ENH",
     "kurs": 8.96,
     "antall": 1063,
     "investert": 9524.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 949,
-    "portefolje_rebalansering_id": 95,
-    "navn": "5th Planet Games",
-    "ticker": "5PG",
-    "kurs": 1.755,
-    "antall": 5427,
+    "id": 994,
+    "portefolje_rebalansering_id": 100,
+    "navn": "Akobo Minerals",
+    "ticker": "AKOBO",
+    "kurs": 1.67,
+    "antall": 5703,
     "investert": 9524.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 947,
-    "portefolje_rebalansering_id": 95,
+    "id": 1000,
+    "portefolje_rebalansering_id": 100,
+    "navn": "Inify Laboratories",
+    "ticker": "INIFY",
+    "kurs": 3.96,
+    "antall": 2405,
+    "investert": 9524.0,
+    "porteføljenavn": "overvurdert år",
+    "kjopsdato": "2026-05-14"
+  },
+  {
+    "id": 995,
+    "portefolje_rebalansering_id": 100,
     "navn": "Gulf Keystone Petroleum",
     "ticker": "GKP",
     "kurs": 23.45,
     "antall": 406,
     "investert": 9521.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 943,
-    "portefolje_rebalansering_id": 95,
-    "navn": "Ventura Offshore Holding",
-    "ticker": "VTURA",
-    "kurs": 31.1,
-    "antall": 306,
-    "investert": 9517.0,
+    "id": 997,
+    "portefolje_rebalansering_id": 100,
+    "navn": "Paratus Energy Services",
+    "ticker": "PLSV",
+    "kurs": 51.0,
+    "antall": 186,
+    "investert": 9486.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 950,
-    "portefolje_rebalansering_id": 95,
-    "navn": "MPC Energy Solutions",
-    "ticker": "MPCES",
-    "kurs": 13.05,
-    "antall": 729,
-    "investert": 9513.0,
+    "id": 999,
+    "portefolje_rebalansering_id": 100,
+    "navn": "CMB.TECH NV",
+    "ticker": "CMBTO",
+    "kurs": 138.8,
+    "antall": 68,
+    "investert": 9438.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 944,
-    "portefolje_rebalansering_id": 95,
-    "navn": "Envipco Holding",
-    "ticker": "ENVIP",
-    "kurs": 49.0,
-    "antall": 194,
-    "investert": 9506.0,
-    "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-13"
-  },
-  {
-    "id": 941,
-    "portefolje_rebalansering_id": 95,
+    "id": 992,
+    "portefolje_rebalansering_id": 100,
     "navn": "Capital Tankers Corp",
     "ticker": "CAPT",
     "kurs": 123.86,
     "antall": 76,
     "investert": 9413.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 945,
-    "portefolje_rebalansering_id": 95,
+    "id": 996,
+    "portefolje_rebalansering_id": 100,
     "navn": "Okeanis Eco Tankers",
     "ticker": "OET",
     "kurs": 520.0,
     "antall": 18,
     "investert": 9360.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 942,
-    "portefolje_rebalansering_id": 95,
+    "id": 991,
+    "portefolje_rebalansering_id": 100,
     "navn": "BlueNord",
     "ticker": "BNOR",
     "kurs": 571.0,
     "antall": 16,
     "investert": 9136.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 958,
-    "portefolje_rebalansering_id": 96,
-    "navn": "Lifecare",
-    "ticker": "LIFE",
-    "kurs": 0.399,
-    "antall": 25729,
+    "id": 998,
+    "portefolje_rebalansering_id": 100,
+    "navn": "Protector Forsikring",
+    "ticker": "PROT",
+    "kurs": 454.2,
+    "antall": 20,
+    "investert": 9084.0,
+    "porteføljenavn": "overvurdert år",
+    "kjopsdato": "2026-05-14"
+  },
+  {
+    "id": 1005,
+    "portefolje_rebalansering_id": 101,
+    "navn": "The Kingfish Company",
+    "ticker": "KING",
+    "kurs": 0.73,
+    "antall": 14063,
     "investert": 10266.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 959,
-    "portefolje_rebalansering_id": 96,
-    "navn": "Insr",
-    "ticker": "INSR",
-    "kurs": 0.31,
-    "antall": 33116,
-    "investert": 10266.0,
-    "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-13"
-  },
-  {
-    "id": 951,
-    "portefolje_rebalansering_id": 96,
+    "id": 1001,
+    "portefolje_rebalansering_id": 101,
     "navn": "Norse Atlantic",
     "ticker": "NORSE",
     "kurs": 1.66,
     "antall": 6184,
     "investert": 10265.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 952,
-    "portefolje_rebalansering_id": 96,
+    "id": 1002,
+    "portefolje_rebalansering_id": 101,
     "navn": "Hexagon Purus",
     "ticker": "HPUR",
     "kurs": 1.26,
     "antall": 8147,
     "investert": 10265.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 957,
-    "portefolje_rebalansering_id": 96,
-    "navn": "Nykode Therapeutics",
-    "ticker": "NYKD",
-    "kurs": 3.105,
-    "antall": 3306,
+    "id": 1008,
+    "portefolje_rebalansering_id": 101,
+    "navn": "Elkem",
+    "ticker": "ELK",
+    "kurs": 29.08,
+    "antall": 353,
     "investert": 10265.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 954,
-    "portefolje_rebalansering_id": 96,
-    "navn": "HydrogenPro",
-    "ticker": "HYPRO",
-    "kurs": 3.1,
-    "antall": 3311,
+    "id": 1003,
+    "portefolje_rebalansering_id": 101,
+    "navn": "Axactor",
+    "ticker": "ACR",
+    "kurs": 5.25,
+    "antall": 1955,
     "investert": 10264.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 955,
-    "portefolje_rebalansering_id": 96,
-    "navn": "NRC Group",
-    "ticker": "NRC",
-    "kurs": 7.3,
-    "antall": 1406,
+    "id": 1004,
+    "portefolje_rebalansering_id": 101,
+    "navn": "OKEA",
+    "ticker": "OKEA",
+    "kurs": 38.3,
+    "antall": 268,
     "investert": 10264.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 960,
-    "portefolje_rebalansering_id": 96,
-    "navn": "Bergen Carbon Solutions",
-    "ticker": "BCS",
-    "kurs": 3.45,
-    "antall": 2975,
-    "investert": 10264.0,
+    "id": 1009,
+    "portefolje_rebalansering_id": 101,
+    "navn": "Hexagon Composites",
+    "ticker": "HEX",
+    "kurs": 9.17,
+    "antall": 1119,
+    "investert": 10261.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 953,
-    "portefolje_rebalansering_id": 96,
+    "id": 1006,
+    "portefolje_rebalansering_id": 101,
     "navn": "Grieg Seafood",
     "ticker": "GSF",
     "kurs": 31.66,
     "antall": 324,
     "investert": 10258.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 956,
-    "portefolje_rebalansering_id": 96,
+    "id": 1007,
+    "portefolje_rebalansering_id": 101,
     "navn": "Havila Kystruten",
     "ticker": "HKY",
     "kurs": 50.0,
     "antall": 205,
     "investert": 10250.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 961,
-    "portefolje_rebalansering_id": 97,
+    "id": 1010,
+    "portefolje_rebalansering_id": 101,
+    "navn": "Odfjell B",
+    "ticker": "ODFB",
+    "kurs": 107.8,
+    "antall": 95,
+    "investert": 10241.0,
+    "porteføljenavn": "undervurdert år",
+    "kjopsdato": "2026-05-14"
+  },
+  {
+    "id": 1013,
+    "portefolje_rebalansering_id": 102,
     "navn": "SED Energy Holdings",
     "ticker": "ENH",
     "kurs": 8.96,
     "antall": 1091,
     "investert": 9775.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 968,
-    "portefolje_rebalansering_id": 97,
-    "navn": "Aker Solutions",
-    "ticker": "AKSO",
-    "kurs": 44.18,
-    "antall": 221,
-    "investert": 9764.0,
+    "id": 1012,
+    "portefolje_rebalansering_id": 102,
+    "navn": "Vår Energi",
+    "ticker": "VAR",
+    "kurs": 46.63,
+    "antall": 209,
+    "investert": 9746.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 970,
-    "portefolje_rebalansering_id": 97,
-    "navn": "Grieg Seafood",
-    "ticker": "GSF",
-    "kurs": 31.66,
-    "antall": 308,
-    "investert": 9751.0,
-    "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-13"
-  },
-  {
-    "id": 963,
-    "portefolje_rebalansering_id": 97,
+    "id": 1015,
+    "portefolje_rebalansering_id": 102,
     "navn": "Stolt-Nielsen",
     "ticker": "SNI",
     "kurs": 303.0,
     "antall": 32,
     "investert": 9696.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 966,
-    "portefolje_rebalansering_id": 97,
+    "id": 1018,
+    "portefolje_rebalansering_id": 102,
     "navn": "Himalaya Shipping",
     "ticker": "HSHP",
     "kurs": 148.8,
     "antall": 65,
     "investert": 9672.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 965,
-    "portefolje_rebalansering_id": 97,
+    "id": 1017,
+    "portefolje_rebalansering_id": 102,
     "navn": "BW LPG",
     "ticker": "BWLPG",
     "kurs": 189.3,
     "antall": 51,
     "investert": 9654.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 964,
-    "portefolje_rebalansering_id": 97,
+    "id": 1016,
+    "portefolje_rebalansering_id": 102,
     "navn": "Atea",
     "ticker": "ATEA",
     "kurs": 155.4,
     "antall": 62,
     "investert": 9635.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 962,
-    "portefolje_rebalansering_id": 97,
+    "id": 1014,
+    "portefolje_rebalansering_id": 102,
     "navn": "Mowi",
     "ticker": "MOWI",
     "kurs": 192.5,
     "antall": 50,
     "investert": 9625.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 969,
-    "portefolje_rebalansering_id": 97,
+    "id": 1020,
+    "portefolje_rebalansering_id": 102,
     "navn": "Protector Forsikring",
     "ticker": "PROT",
     "kurs": 454.2,
     "antall": 21,
     "investert": 9538.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 967,
-    "portefolje_rebalansering_id": 97,
+    "id": 1019,
+    "portefolje_rebalansering_id": 102,
     "navn": "Bonheur",
     "ticker": "BONHR",
     "kurs": 257.5,
     "antall": 37,
     "investert": 9528.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 971,
-    "portefolje_rebalansering_id": 98,
+    "id": 1011,
+    "portefolje_rebalansering_id": 102,
+    "navn": "Aker",
+    "ticker": "AKER",
+    "kurs": 1170.0,
+    "antall": 8,
+    "investert": 9360.0,
+    "porteføljenavn": "overvurdert kvartal",
+    "kjopsdato": "2026-05-14"
+  },
+  {
+    "id": 1021,
+    "portefolje_rebalansering_id": 103,
     "navn": "Norse Atlantic",
     "ticker": "NORSE",
     "kurs": 1.66,
     "antall": 5691,
     "investert": 9447.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 973,
-    "portefolje_rebalansering_id": 98,
+    "id": 1024,
+    "portefolje_rebalansering_id": 103,
     "navn": "Hexagon Composites",
     "ticker": "HEX",
     "kurs": 9.17,
     "antall": 1030,
     "investert": 9445.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 972,
-    "portefolje_rebalansering_id": 98,
+    "id": 1023,
+    "portefolje_rebalansering_id": 103,
     "navn": "Norske Skog",
     "ticker": "NSKOG",
     "kurs": 44.45,
     "antall": 212,
     "investert": 9423.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 974,
-    "portefolje_rebalansering_id": 98,
+    "id": 1022,
+    "portefolje_rebalansering_id": 103,
     "navn": "OKEA",
     "ticker": "OKEA",
     "kurs": 38.3,
     "antall": 246,
     "investert": 9422.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 976,
-    "portefolje_rebalansering_id": 98,
-    "navn": "Pexip Holding",
-    "ticker": "PEXIP",
-    "kurs": 79.7,
-    "antall": 118,
-    "investert": 9405.0,
-    "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-13"
-  },
-  {
-    "id": 978,
-    "portefolje_rebalansering_id": 98,
+    "id": 1027,
+    "portefolje_rebalansering_id": 103,
     "navn": "Orkla",
     "ticker": "ORK",
     "kurs": 109.3,
     "antall": 86,
     "investert": 9400.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 977,
-    "portefolje_rebalansering_id": 98,
+    "id": 1026,
+    "portefolje_rebalansering_id": 103,
     "navn": "Norsk Hydro",
     "ticker": "NHY",
     "kurs": 106.8,
     "antall": 88,
     "investert": 9398.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 979,
-    "portefolje_rebalansering_id": 98,
+    "id": 1028,
+    "portefolje_rebalansering_id": 103,
     "navn": "Storebrand",
     "ticker": "STB",
     "kurs": 177.1,
     "antall": 53,
     "investert": 9386.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 975,
-    "portefolje_rebalansering_id": 98,
+    "id": 1030,
+    "portefolje_rebalansering_id": 103,
+    "navn": "Vend Marketplaces",
+    "ticker": "VEND",
+    "kurs": 240.6,
+    "antall": 39,
+    "investert": 9383.0,
+    "porteføljenavn": "undervurdert kvartal",
+    "kjopsdato": "2026-05-14"
+  },
+  {
+    "id": 1025,
+    "portefolje_rebalansering_id": 103,
     "navn": "Kongsberg Gruppen",
     "ticker": "KOG",
     "kurs": 292.3,
     "antall": 32,
     "investert": 9354.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   },
   {
-    "id": 980,
-    "portefolje_rebalansering_id": 98,
+    "id": 1029,
+    "portefolje_rebalansering_id": 103,
     "navn": "SalMar",
     "ticker": "SALM",
     "kurs": 546.0,
     "antall": 17,
     "investert": 9282.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-13"
+    "kjopsdato": "2026-05-14"
   }
 ]
