@@ -157,6 +157,19 @@
             border-bottom: none;
         }
 
+        .sparkline {
+            width: 110px;
+            height: 32px;
+            display: block;
+            margin-left: auto;
+        }
+
+        td.sparkline-cell {
+            width: 120px;
+            padding: 0.25rem 0 0.25rem 0.5rem;
+            text-align: right;
+        }
+
         .error-message {
             background-color: rgba(248, 113, 113, 0.1);
             color: #f87171;
@@ -235,10 +248,11 @@
                 // Hent data
                 const BASE = 'data';
 
-                const [portefoljerRes, utviklingRes, posisjonerRes] = await Promise.all([
+                const [portefoljerRes, utviklingRes, posisjonerRes, kursRes] = await Promise.all([
                     fetch(`${BASE}/portefolje.json`),
                     fetch(`${BASE}/portefoljeutvikling.json`),
-                    fetch(`${BASE}/posisjon.json`)
+                    fetch(`${BASE}/posisjon.json`),
+                    fetch(`${BASE}/kursutvikling_14d.json`)
                 ]);
 
                 if (!portefoljerRes.ok || !utviklingRes.ok || !posisjonerRes.ok) {
@@ -248,6 +262,17 @@
                 const portefoljer = await portefoljerRes.json();
                 const utvikling = await utviklingRes.json();
                 const posisjoner = await posisjonerRes.json();
+                const kursutvikling = kursRes.ok ? await kursRes.json() : [];
+
+                // Grupper kursutvikling per ticker, sortert på dato
+                const kursByTicker = {};
+                kursutvikling.forEach(k => {
+                    if (!kursByTicker[k.ticker]) kursByTicker[k.ticker] = [];
+                    kursByTicker[k.ticker].push(k);
+                });
+                Object.values(kursByTicker).forEach(arr =>
+                    arr.sort((a, b) => a.dato.localeCompare(b.dato))
+                );
 
                 // Prosesser data
                 const portefoljeMap = new Map(portefoljer.map(p => [p.porteføljenavn, p]));
@@ -454,21 +479,26 @@
                                         <th>Aksje</th>
                                         <th>Ticker</th>
                                         <th class="number">Kurs</th>
-                                        <th class="number">Antall</th>
                                         <th class="number">Investert</th>
+                                        <th class="number">Utvikling 14d</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                     `;
                     
                     positions.forEach(pos => {
+                        const canvasId = `spark-${name.replace(/[^a-z0-9]/gi,'_')}-${pos.ticker}`;
+                        const hasSeries = (kursByTicker[pos.ticker] || []).length >= 2;
+                        const sparkCell = hasSeries
+                            ? `<canvas id="${canvasId}" class="sparkline"></canvas>`
+                            : `<span style="color: var(--text-muted)">—</span>`;
                         tableHTML += `
                             <tr>
                                 <td>${pos.navn}</td>
                                 <td>${pos.ticker}</td>
                                 <td class="number">${formatNOK(pos.kurs)}</td>
-                                <td class="number">${pos.antall?.toLocaleString('nb-NO') ?? ''}</td>
                                 <td class="number">${formatNOK(pos.investert)}</td>
+                                <td class="sparkline-cell">${sparkCell}</td>
                             </tr>
                         `;
                     });
@@ -480,6 +510,59 @@
                     `;
                     
                     portfoliosContainer.innerHTML += tableHTML;
+                });
+
+                // Tegn sparkline for hver posisjon etter at DOM er oppdatert
+                Object.values(posByPortefolje).flat().forEach(pos => {
+                    const portName = pos.porteføljenavn;
+                    const canvasId = `spark-${portName.replace(/[^a-z0-9]/gi,'_')}-${pos.ticker}`;
+                    const canvas = document.getElementById(canvasId);
+                    if (!canvas) return;
+                    const series = kursByTicker[pos.ticker];
+                    if (!series || series.length < 2) return;
+
+                    const values = series.map(p => p.aksjeverdi);
+                    const first = values[0];
+                    const last = values[values.length - 1];
+                    const up = last >= first;
+                    const lineColor = up ? '#4ade80' : '#f87171';
+
+                    new Chart(canvas.getContext('2d'), {
+                        type: 'line',
+                        data: {
+                            labels: series.map(p => p.dato),
+                            datasets: [{
+                                data: values,
+                                borderColor: lineColor,
+                                backgroundColor: lineColor + '33',
+                                borderWidth: 1.5,
+                                pointRadius: 0,
+                                pointHoverRadius: 3,
+                                tension: 0.25,
+                                fill: true
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            animation: false,
+                            plugins: {
+                                legend: { display: false },
+                                tooltip: {
+                                    displayColors: false,
+                                    callbacks: {
+                                        title: (items) => items[0].label,
+                                        label: (ctx) => formatNOK(ctx.parsed.y)
+                                    }
+                                }
+                            },
+                            scales: {
+                                x: { display: false },
+                                y: { display: false }
+                            },
+                            elements: { line: { borderJoinStyle: 'round' } }
+                        }
+                    });
                 });
 
             } catch (error) {
