@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksje – Oslo Børs Porteføljer</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-color: #1a1a2e;
+            --card-bg: #16213e;
+            --text-light: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --border-color: #2a2a4e;
+            --accent: #4cc9f0;
+            --link: #4cc9f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--link);
+            text-decoration: none;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        .back-link:hover { text-decoration: underline; }
+
+        header {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        h1 {
+            margin: 0 0 0.25rem 0;
+            font-weight: 600;
+            font-size: 2.2rem;
+        }
+
+        .ticker-badge {
+            display: inline-block;
+            background: var(--card-bg);
+            color: var(--accent);
+            padding: 0.15rem 0.6rem;
+            border-radius: 4px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-size: 1rem;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            margin: 0 0 1rem 0;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+
+        .info-item {
+            background: rgba(255,255,255,0.03);
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+        }
+
+        .info-label {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .info-value {
+            font-size: 1.05rem;
+            font-weight: 500;
+            font-variant-numeric: tabular-nums;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 0.6rem 0.5rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        th {
+            color: var(--text-muted);
+            font-weight: 500;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        td.number, th.number {
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+        tbody tr:last-child td { border-bottom: none; }
+
+        .links-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 0.75rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .links-list a {
+            display: block;
+            background: rgba(76, 201, 240, 0.08);
+            border: 1px solid rgba(76, 201, 240, 0.3);
+            color: var(--link);
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: background 0.15s;
+        }
+        .links-list a:hover {
+            background: rgba(76, 201, 240, 0.18);
+        }
+        .links-list a.disabled {
+            color: var(--text-muted);
+            background: rgba(255,255,255,0.03);
+            border-color: var(--border-color);
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        .link-sub {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 0.15rem;
+        }
+
+        .chart-container {
+            height: 320px;
+            position: relative;
+        }
+
+        .error-message {
+            background-color: rgba(248, 113, 113, 0.1);
+            color: #f87171;
+            padding: 1rem;
+            border-radius: 6px;
+            border: 1px solid rgba(248, 113, 113, 0.2);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 4rem;
+            color: var(--text-muted);
+        }
+
+        .muted { color: var(--text-muted); font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a class="back-link" href="index.html">← Tilbake til oversikt</a>
+
+        <div id="loading-indicator" class="loading">Laster aksjedata...</div>
+        <div id="error-container" class="error-message" style="display:none;"></div>
+        <div id="content" style="display: none;"></div>
+    </div>
+
+    <script>
+        const qs = new URLSearchParams(window.location.search);
+        const tickerParam = (qs.get('ticker') || '').trim().toUpperCase();
+
+        const fmtInt = v => v == null ? '—' : new Intl.NumberFormat('nb-NO').format(Math.round(v));
+        const fmtNum = (v, frac = 2) => v == null ? '—' : new Intl.NumberFormat('nb-NO', { minimumFractionDigits: frac, maximumFractionDigits: frac }).format(v);
+        const fmtMoney = (v, valuta = 'NOK') => v == null ? '—' :
+            new Intl.NumberFormat('nb-NO', { style: 'currency', currency: valuta, maximumFractionDigits: 0 }).format(v);
+        const fmtMrd = (v, valuta = 'NOK') => {
+            if (v == null) return '—';
+            const abs = Math.abs(v);
+            const suffix = valuta === 'NOK' ? ' kr' : ' ' + valuta;
+            if (abs >= 1e9) return new Intl.NumberFormat('nb-NO', { maximumFractionDigits: 2 }).format(v / 1e9) + ' mrd' + suffix;
+            if (abs >= 1e6) return new Intl.NumberFormat('nb-NO', { maximumFractionDigits: 2 }).format(v / 1e6) + ' mill' + suffix;
+            return new Intl.NumberFormat('nb-NO', { maximumFractionDigits: 0 }).format(v) + suffix;
+        };
+        const fmtDate = s => s ? new Intl.DateTimeFormat('nb-NO', { year: 'numeric', month: 'long', day: 'numeric' }).format(new Date(s)) : '—';
+
+        function showError(msg) {
+            document.getElementById('loading-indicator').style.display = 'none';
+            const el = document.getElementById('error-container');
+            el.textContent = msg;
+            el.style.display = 'block';
+        }
+
+        async function loadJson(path) {
+            const res = await fetch(path);
+            if (!res.ok) throw new Error(`Kunne ikke laste ${path}`);
+            return res.json();
+        }
+
+        function infoItem(label, value) {
+            return `<div class="info-item"><div class="info-label">${label}</div><div class="info-value">${value}</div></div>`;
+        }
+
+        function renderPosisjoner(positions) {
+            if (!positions.length) {
+                return '<p class="muted">Ingen aktive posisjoner.</p>';
+            }
+            const rows = positions.map(p => `
+                <tr>
+                    <td>${p.porteføljenavn}</td>
+                    <td class="number">${fmtNum(p.kurs, 2)}</td>
+                    <td class="number">${fmtInt(p.antall)}</td>
+                    <td class="number">${fmtMoney(p.investert)}</td>
+                    <td>${fmtDate(p.kjopsdato)}</td>
+                </tr>`).join('');
+            return `<table>
+                <thead><tr>
+                    <th>Portefølje</th>
+                    <th class="number">Kurs</th>
+                    <th class="number">Antall</th>
+                    <th class="number">Investert</th>
+                    <th>Kjøpsdato</th>
+                </tr></thead>
+                <tbody>${rows}</tbody>
+            </table>`;
+        }
+
+        function renderLenker(info) {
+            const orgnr = info && info.organisasjonsnummer;
+            const pdfUrl = info && info.siste_kvartalsrapport && info.siste_kvartalsrapport.rapport_pdf_url;
+
+            const items = [];
+
+            // Kvartalsrapport PDF
+            if (pdfUrl) {
+                const k = info.siste_kvartalsrapport;
+                items.push(`<li><a href="${pdfUrl}" target="_blank" rel="noopener">
+                    Siste kvartalsrapport (PDF)
+                    <span class="link-sub">Q${k.kvartal} ${k.aar}</span>
+                </a></li>`);
+            } else {
+                items.push(`<li><a class="disabled">Siste kvartalsrapport (PDF)<span class="link-sub">Ikke tilgjengelig</span></a></li>`);
+            }
+
+            // Årsregnskap hos Brønnøysund
+            if (orgnr) {
+                items.push(`<li><a href="https://w2.brreg.no/regnskap/AarsregnskaperFraRegnskapsregisteret.jsp?orgnr=${orgnr}" target="_blank" rel="noopener">
+                    Årsregnskap (Brønnøysund)
+                    <span class="link-sub">Regnskapsregisteret</span>
+                </a></li>`);
+            } else {
+                items.push(`<li><a class="disabled">Årsregnskap<span class="link-sub">Mangler orgnr</span></a></li>`);
+            }
+
+            // Brønnøysund enhet
+            if (orgnr) {
+                items.push(`<li><a href="https://virksomhet.brreg.no/nb/oppslag/enheter/${orgnr}" target="_blank" rel="noopener">
+                    Brønnøysundregisteret
+                    <span class="link-sub">Org.nr ${orgnr}</span>
+                </a></li>`);
+            } else {
+                items.push(`<li><a class="disabled">Brønnøysundregisteret<span class="link-sub">Mangler orgnr</span></a></li>`);
+            }
+
+            // Kunngjøringer på newsweb (Oslo Børs)
+            const newswebUrl = `https://newsweb.oslobors.no/search?searchType=quick&q=${encodeURIComponent(tickerParam)}`;
+            items.push(`<li><a href="${newswebUrl}" target="_blank" rel="noopener">
+                Kunngjøringer (Oslo Børs newsweb)
+                <span class="link-sub">Søk på ${tickerParam}</span>
+            </a></li>`);
+
+            // Euronext-side (handelsdata)
+            items.push(`<li><a href="https://live.euronext.com/en/search_instruments?text=${encodeURIComponent(tickerParam)}" target="_blank" rel="noopener">
+                Euronext / Oslo Børs
+                <span class="link-sub">Handelsdata</span>
+            </a></li>`);
+
+            return `<ul class="links-list">${items.join('')}</ul>`;
+        }
+
+        function renderKvartalsrapport(k) {
+            if (!k) return '<p class="muted">Ingen kvartalsrapport registrert.</p>';
+            const valuta = k.valuta || 'NOK';
+            return `
+                <div class="info-grid">
+                    ${infoItem('Periode', `Q${k.kvartal} ${k.aar}`)}
+                    ${infoItem('Rapport-dato', fmtDate(k.rapport_dato))}
+                    ${infoItem('Valuta', valuta)}
+                    ${infoItem('Omsetning', fmtMrd(k.omsetning, valuta))}
+                    ${infoItem('EBITDA', fmtMrd(k.ebitda, valuta))}
+                    ${infoItem('Driftsresultat', fmtMrd(k.driftsresultat, valuta))}
+                    ${infoItem('Nettoresultat', fmtMrd(k.nettoresultat, valuta))}
+                    ${infoItem('Resultat per aksje', k.resultat_per_aksje == null ? '—' : fmtNum(k.resultat_per_aksje, 2) + ' ' + valuta)}
+                    ${infoItem('Sum eiendeler', fmtMrd(k.sum_eiendeler, valuta))}
+                    ${infoItem('Sum egenkapital', fmtMrd(k.sum_egenkapital, valuta))}
+                    ${infoItem('Sum gjeld', fmtMrd(k.sum_gjeld, valuta))}
+                    ${infoItem('Kontanter', fmtMrd(k.kontanter, valuta))}
+                </div>`;
+        }
+
+        function renderAarsregnskap(a) {
+            if (!a) return '<p class="muted">Ingen årsregnskap registrert.</p>';
+            const valuta = a.valuta || 'NOK';
+            const periode = a.til_dato ? a.til_dato.substring(0, 4) : '—';
+            return `
+                <div class="info-grid">
+                    ${infoItem('Regnskapsår', periode)}
+                    ${infoItem('Periode', `${a.fra_dato || '—'} – ${a.til_dato || '—'}`)}
+                    ${infoItem('Regnskapstype', a.regnskapstype || '—')}
+                    ${infoItem('Valuta', valuta)}
+                    ${infoItem('Sum driftsinntekter', fmtMrd(a.sum_driftsinntekter, valuta))}
+                    ${infoItem('Driftsresultat', fmtMrd(a.driftsresultat, valuta))}
+                    ${infoItem('Årsresultat', fmtMrd(a.aarsresultat, valuta))}
+                    ${infoItem('Totalresultat', fmtMrd(a.totalresultat, valuta))}
+                    ${infoItem('Sum eiendeler', fmtMrd(a.sum_eiendeler, valuta))}
+                    ${infoItem('Sum egenkapital', fmtMrd(a.sum_egenkapital, valuta))}
+                    ${infoItem('Sum gjeld', fmtMrd(a.sum_gjeld, valuta))}
+                    ${infoItem('Antall ansatte', fmtInt(a.antall_ansatte))}
+                </div>`;
+        }
+
+        function renderSelskapsinfo(info, navnFallback) {
+            const orgnrTxt = info && info.organisasjonsnummer ? info.organisasjonsnummer : '—';
+            const navnReg = info && info.regnskap_navn ? info.regnskap_navn : (info && info.navn) || navnFallback || '—';
+            const naering = info && info.naeringskode_beskrivelse ? `${info.naeringskode || ''} ${info.naeringskode_beskrivelse}`.trim() : '—';
+            const totalt = info && info.totalt_antall_i_markedet;
+            const mcapAar = info && info.estimert_mcap_aar;
+            const mcapKv = info && info.estimert_mcap_kvartal;
+            const omsDager = info && info.prosent_dager_omsetning;
+
+            return `
+                <div class="info-grid">
+                    ${infoItem('Selskapsnavn', navnReg)}
+                    ${infoItem('Organisasjonsnummer', orgnrTxt)}
+                    ${infoItem('Næringskode', naering)}
+                    ${infoItem('Aksjer utestående', fmtInt(totalt))}
+                    ${infoItem('Estimert mcap (år)', fmtMrd(mcapAar))}
+                    ${infoItem('Estimert mcap (kvartal)', fmtMrd(mcapKv))}
+                    ${infoItem('Omsetningsdager (siste år)', omsDager == null ? '—' : omsDager + ' %')}
+                </div>`;
+        }
+
+        function drawChart(canvas, series) {
+            const values = series.map(p => p.aksjeverdi);
+            const first = values[0];
+            const last = values[values.length - 1];
+            const up = last >= first;
+            const lineColor = up ? '#4ade80' : '#f87171';
+
+            new Chart(canvas.getContext('2d'), {
+                type: 'line',
+                data: {
+                    labels: series.map(p => p.dato),
+                    datasets: [{
+                        label: 'Aksjeverdi',
+                        data: values,
+                        borderColor: lineColor,
+                        backgroundColor: lineColor + '22',
+                        borderWidth: 2,
+                        pointRadius: 0,
+                        pointHoverRadius: 4,
+                        tension: 0.2,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: { mode: 'index', intersect: false },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            displayColors: false,
+                            callbacks: {
+                                title: items => items[0].label,
+                                label: ctx => fmtNum(ctx.parsed.y, 2) + ' kr'
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: { color: '#2a2a4e' },
+                            ticks: { color: '#a0a0a0', maxTicksLimit: 7 }
+                        },
+                        y: {
+                            grid: { color: '#2a2a4e' },
+                            ticks: { color: '#a0a0a0' }
+                        }
+                    }
+                }
+            });
+        }
+
+        async function init() {
+            if (!tickerParam) {
+                showError('Mangler ?ticker=… i URL.');
+                return;
+            }
+
+            try {
+                const [aksjeinfo, posisjoner, kursutvikling] = await Promise.all([
+                    loadJson('data/aksjeinfo.json').catch(() => []),
+                    loadJson('data/posisjon.json'),
+                    loadJson('data/kursutvikling_14d.json').catch(() => [])
+                ]);
+
+                const info = aksjeinfo.find(a => a.ticker === tickerParam);
+                const positions = posisjoner.filter(p => p.ticker === tickerParam);
+                const series = kursutvikling
+                    .filter(k => k.ticker === tickerParam)
+                    .sort((a, b) => a.dato.localeCompare(b.dato));
+
+                if (!info && positions.length === 0) {
+                    showError(`Fant ingen data for ticker "${tickerParam}".`);
+                    return;
+                }
+
+                const navn = (info && info.navn) || (positions[0] && positions[0].navn) || tickerParam;
+                document.title = `${navn} (${tickerParam}) – Oslo Børs Porteføljer`;
+
+                const k = info && info.siste_kvartalsrapport;
+                const a = info && info.siste_aarsregnskap;
+
+                document.getElementById('content').innerHTML = `
+                    <header>
+                        <h1>${navn}<span class="ticker-badge">${tickerParam}</span></h1>
+                        <p class="subtitle">${info && info.naeringskode_beskrivelse ? info.naeringskode_beskrivelse : ''}</p>
+                    </header>
+
+                    <section>
+                        <h2>Selskapsinfo</h2>
+                        ${renderSelskapsinfo(info, navn)}
+                    </section>
+
+                    <section>
+                        <h2>Eksterne lenker</h2>
+                        ${renderLenker(info)}
+                    </section>
+
+                    <section>
+                        <h2>Posisjoner i porteføljer</h2>
+                        ${renderPosisjoner(positions)}
+                    </section>
+
+                    ${series.length >= 2 ? `
+                    <section>
+                        <h2>Kursutvikling (siste 14 dager)</h2>
+                        <div class="chart-container"><canvas id="priceChart"></canvas></div>
+                    </section>` : ''}
+
+                    <section>
+                        <h2>Siste kvartalsrapport</h2>
+                        ${renderKvartalsrapport(k)}
+                    </section>
+
+                    <section>
+                        <h2>Siste årsregnskap</h2>
+                        ${renderAarsregnskap(a)}
+                    </section>
+                `;
+
+                document.getElementById('loading-indicator').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+
+                if (series.length >= 2) {
+                    drawChart(document.getElementById('priceChart'), series);
+                }
+            } catch (err) {
+                console.error(err);
+                showError(`Feil ved lasting av data: ${err.message}`);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

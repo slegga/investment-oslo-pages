@@ -157,6 +157,15 @@
             border-bottom: none;
         }
 
+        td a.stock-link {
+            color: var(--text-light);
+            text-decoration: none;
+        }
+        td a.stock-link:hover {
+            color: var(--mcap-color);
+            text-decoration: underline;
+        }
+
         .sparkline {
             width: 110px;
             height: 32px;
@@ -492,10 +501,11 @@
                         const sparkCell = hasSeries
                             ? `<canvas id="${canvasId}" class="sparkline"></canvas>`
                             : `<span style="color: var(--text-muted)">—</span>`;
+                        const stockHref = `stock.html?ticker=${encodeURIComponent(pos.ticker)}`;
                         tableHTML += `
                             <tr>
-                                <td>${pos.navn}</td>
-                                <td>${pos.ticker}</td>
+                                <td><a class="stock-link" href="${stockHref}">${pos.navn}</a></td>
+                                <td><a class="stock-link" href="${stockHref}">${pos.ticker}</a></td>
                                 <td class="number">${formatNOK(pos.kurs)}</td>
                                 <td class="number">${formatNOK(pos.investert)}</td>
                                 <td class="sparkline-cell">${sparkCell}</td>
