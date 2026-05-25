@@ -1,552 +1,552 @@
 [
   {
-    "id": 1286,
-    "portefolje_rebalansering_id": 129,
+    "id": 1336,
+    "portefolje_rebalansering_id": 134,
     "navn": "Telenor",
     "ticker": "TEL",
     "kurs": 154.0,
     "antall": 64,
     "investert": 9856.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1284,
-    "portefolje_rebalansering_id": 129,
+    "id": 1334,
+    "portefolje_rebalansering_id": 134,
     "navn": "Aker BP",
     "ticker": "AKRBP",
     "kurs": 351.6,
     "antall": 28,
     "investert": 9845.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1290,
-    "portefolje_rebalansering_id": 129,
+    "id": 1340,
+    "portefolje_rebalansering_id": 134,
     "navn": "Mowi",
     "ticker": "MOWI",
     "kurs": 200.6,
     "antall": 49,
     "investert": 9829.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1289,
-    "portefolje_rebalansering_id": 129,
+    "id": 1339,
+    "portefolje_rebalansering_id": 134,
     "navn": "Vår Energi",
     "ticker": "VAR",
     "kurs": 47.22,
     "antall": 208,
     "investert": 9822.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1288,
-    "portefolje_rebalansering_id": 129,
+    "id": 1338,
+    "portefolje_rebalansering_id": 134,
     "navn": "Gjensidige Forsikring",
     "ticker": "GJF",
     "kurs": 258.2,
     "antall": 38,
     "investert": 9812.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1285,
-    "portefolje_rebalansering_id": 129,
+    "id": 1335,
+    "portefolje_rebalansering_id": 134,
     "navn": "Norsk Hydro",
     "ticker": "NHY",
     "kurs": 110.9,
     "antall": 88,
     "investert": 9759.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1281,
-    "portefolje_rebalansering_id": 129,
+    "id": 1331,
+    "portefolje_rebalansering_id": 134,
     "navn": "Equinor",
     "ticker": "EQNR",
     "kurs": 360.0,
     "antall": 27,
     "investert": 9720.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1283,
-    "portefolje_rebalansering_id": 129,
+    "id": 1333,
+    "portefolje_rebalansering_id": 134,
     "navn": "Kongsberg Gruppen",
     "ticker": "KOG",
     "kurs": 311.5,
     "antall": 31,
     "investert": 9656.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1282,
-    "portefolje_rebalansering_id": 129,
+    "id": 1332,
+    "portefolje_rebalansering_id": 134,
     "navn": "DNB Bank",
     "ticker": "DNB",
     "kurs": 291.7,
     "antall": 33,
     "investert": 9626.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1287,
-    "portefolje_rebalansering_id": 129,
+    "id": 1337,
+    "portefolje_rebalansering_id": 134,
     "navn": "Yara International",
     "ticker": "YAR",
     "kurs": 523.8,
     "antall": 18,
     "investert": 9428.0,
     "porteføljenavn": "Størst",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1296,
-    "portefolje_rebalansering_id": 130,
+    "id": 1346,
+    "portefolje_rebalansering_id": 135,
     "navn": "Akobo Minerals",
     "ticker": "AKOBO",
     "kurs": 1.7,
     "antall": 5644,
     "investert": 9595.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1294,
-    "portefolje_rebalansering_id": 130,
+    "id": 1344,
+    "portefolje_rebalansering_id": 135,
     "navn": "Pelagic Credit",
     "ticker": "PLGC",
     "kurs": 17.9,
     "antall": 536,
     "investert": 9594.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1295,
-    "portefolje_rebalansering_id": 130,
+    "id": 1345,
+    "portefolje_rebalansering_id": 135,
     "navn": "SED Energy Holdings",
     "ticker": "ENH",
     "kurs": 9.03,
     "antall": 1062,
     "investert": 9590.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1298,
-    "portefolje_rebalansering_id": 130,
+    "id": 1348,
+    "portefolje_rebalansering_id": 135,
     "navn": "Gulf Keystone Petroleum",
     "ticker": "GKP",
     "kurs": 23.1,
     "antall": 415,
     "investert": 9586.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1297,
-    "portefolje_rebalansering_id": 130,
+    "id": 1347,
+    "portefolje_rebalansering_id": 135,
     "navn": "Ventura Offshore Holding",
     "ticker": "VTURA",
     "kurs": 32.9,
     "antall": 291,
     "investert": 9574.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1293,
-    "portefolje_rebalansering_id": 130,
+    "id": 1343,
+    "portefolje_rebalansering_id": 135,
     "navn": "KONGSBERG MARITIME ASA",
     "ticker": "KMAR",
     "kurs": 58.3,
     "antall": 164,
     "investert": 9561.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1299,
-    "portefolje_rebalansering_id": 130,
+    "id": 1349,
+    "portefolje_rebalansering_id": 135,
     "navn": "Frontline",
     "ticker": "FRO",
     "kurs": 341.2,
     "antall": 28,
     "investert": 9554.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1291,
-    "portefolje_rebalansering_id": 130,
+    "id": 1341,
+    "portefolje_rebalansering_id": 135,
     "navn": "BlueNord",
     "ticker": "BNOR",
     "kurs": 561.0,
     "antall": 17,
     "investert": 9537.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1292,
-    "portefolje_rebalansering_id": 130,
+    "id": 1342,
+    "portefolje_rebalansering_id": 135,
     "navn": "Capital Tankers Corp",
     "ticker": "CAPT",
     "kurs": 126.8,
     "antall": 75,
     "investert": 9510.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1300,
-    "portefolje_rebalansering_id": 130,
+    "id": 1350,
+    "portefolje_rebalansering_id": 135,
     "navn": "Okeanis Eco Tankers",
     "ticker": "OET",
     "kurs": 498.5,
     "antall": 19,
     "investert": 9472.0,
     "porteføljenavn": "overvurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1304,
-    "portefolje_rebalansering_id": 131,
+    "id": 1354,
+    "portefolje_rebalansering_id": 136,
     "navn": "Electromagnetic Geoservices",
     "ticker": "EMGS",
     "kurs": 0.1935,
     "antall": 54978,
     "investert": 10638.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1301,
-    "portefolje_rebalansering_id": 131,
+    "id": 1351,
+    "portefolje_rebalansering_id": 136,
     "navn": "Atlantic Sapphire",
     "ticker": "ASA",
     "kurs": 1.7,
     "antall": 6257,
     "investert": 10637.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1303,
-    "portefolje_rebalansering_id": 131,
+    "id": 1353,
+    "portefolje_rebalansering_id": 136,
     "navn": "Norse Atlantic",
     "ticker": "NORSE",
     "kurs": 1.596,
     "antall": 6665,
     "investert": 10637.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1302,
-    "portefolje_rebalansering_id": 131,
+    "id": 1352,
+    "portefolje_rebalansering_id": 136,
     "navn": "2020 Bulkers",
     "ticker": "2020",
     "kurs": 4.748,
     "antall": 2240,
     "investert": 10636.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1305,
-    "portefolje_rebalansering_id": 131,
+    "id": 1355,
+    "portefolje_rebalansering_id": 136,
     "navn": "Black Sea Property",
     "ticker": "BSP",
     "kurs": 2.98,
     "antall": 3569,
     "investert": 10636.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1306,
-    "portefolje_rebalansering_id": 131,
+    "id": 1356,
+    "portefolje_rebalansering_id": 136,
     "navn": "Hexagon Purus",
     "ticker": "HPUR",
     "kurs": 13.6,
     "antall": 782,
     "investert": 10635.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1308,
-    "portefolje_rebalansering_id": 131,
+    "id": 1358,
+    "portefolje_rebalansering_id": 136,
     "navn": "Axactor",
     "ticker": "ACR",
     "kurs": 5.12,
     "antall": 2077,
     "investert": 10634.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1310,
-    "portefolje_rebalansering_id": 131,
+    "id": 1360,
+    "portefolje_rebalansering_id": 136,
     "navn": "Grieg Seafood",
     "ticker": "GSF",
     "kurs": 32.4,
     "antall": 328,
     "investert": 10627.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1309,
-    "portefolje_rebalansering_id": 131,
+    "id": 1359,
+    "portefolje_rebalansering_id": 136,
     "navn": "OKEA",
     "ticker": "OKEA",
     "kurs": 39.2,
     "antall": 271,
     "investert": 10623.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1307,
-    "portefolje_rebalansering_id": 131,
+    "id": 1357,
+    "portefolje_rebalansering_id": 136,
     "navn": "Polaris Media",
     "ticker": "POL",
     "kurs": 58.0,
     "antall": 183,
     "investert": 10614.0,
     "porteføljenavn": "undervurdert år",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1314,
-    "portefolje_rebalansering_id": 132,
+    "id": 1363,
+    "portefolje_rebalansering_id": 137,
     "navn": "Prosafe",
     "ticker": "PRS",
     "kurs": 4.255,
     "antall": 2327,
     "investert": 9901.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1316,
-    "portefolje_rebalansering_id": 132,
+    "id": 1366,
+    "portefolje_rebalansering_id": 137,
     "navn": "Capsol Technologies",
     "ticker": "CAPSL",
     "kurs": 4.45,
     "antall": 2225,
     "investert": 9901.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1315,
-    "portefolje_rebalansering_id": 132,
-    "navn": "Cavendish Hydrogen",
-    "ticker": "CAVEN",
-    "kurs": 8.51,
-    "antall": 1163,
-    "investert": 9897.0,
-    "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-22"
-  },
-  {
-    "id": 1317,
-    "portefolje_rebalansering_id": 132,
-    "navn": "Goodtech",
-    "ticker": "GOD",
-    "kurs": 11.4,
-    "antall": 868,
-    "investert": 9895.0,
-    "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-22"
-  },
-  {
-    "id": 1313,
-    "portefolje_rebalansering_id": 132,
+    "id": 1364,
+    "portefolje_rebalansering_id": 137,
     "navn": "Magnora",
     "ticker": "MGN",
     "kurs": 29.6,
     "antall": 334,
     "investert": 9886.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1312,
-    "portefolje_rebalansering_id": 132,
+    "id": 1367,
+    "portefolje_rebalansering_id": 137,
+    "navn": "Integrated Wind Solutions",
+    "ticker": "IWS",
+    "kurs": 64.6,
+    "antall": 153,
+    "investert": 9884.0,
+    "porteføljenavn": "overvurdert kvartal",
+    "kjopsdato": "2026-05-25"
+  },
+  {
+    "id": 1362,
+    "portefolje_rebalansering_id": 137,
     "navn": "Aker BioMarine",
     "ticker": "AKBM",
     "kurs": 108.6,
     "antall": 91,
     "investert": 9883.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1319,
-    "portefolje_rebalansering_id": 132,
+    "id": 1369,
+    "portefolje_rebalansering_id": 137,
+    "navn": "Odfjell B",
+    "ticker": "ODFB",
+    "kurs": 107.2,
+    "antall": 92,
+    "investert": 9862.0,
+    "porteføljenavn": "overvurdert kvartal",
+    "kjopsdato": "2026-05-25"
+  },
+  {
+    "id": 1368,
+    "portefolje_rebalansering_id": 137,
     "navn": "SoftwareOne Holding",
     "ticker": "SWON",
     "kurs": 97.4,
     "antall": 101,
     "investert": 9837.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1318,
-    "portefolje_rebalansering_id": 132,
+    "id": 1365,
+    "portefolje_rebalansering_id": 137,
     "navn": "Veidekke",
     "ticker": "VEI",
     "kurs": 180.4,
     "antall": 54,
     "investert": 9742.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1320,
-    "portefolje_rebalansering_id": 132,
+    "id": 1370,
+    "portefolje_rebalansering_id": 137,
     "navn": "Okeanis Eco Tankers",
     "ticker": "OET",
     "kurs": 498.5,
     "antall": 19,
     "investert": 9472.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1311,
-    "portefolje_rebalansering_id": 132,
+    "id": 1361,
+    "portefolje_rebalansering_id": 137,
     "navn": "Aker",
     "ticker": "AKER",
     "kurs": 1320.0,
     "antall": 7,
     "investert": 9240.0,
     "porteføljenavn": "overvurdert kvartal",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1322,
-    "portefolje_rebalansering_id": 133,
+    "id": 1371,
+    "portefolje_rebalansering_id": 138,
     "navn": "NEXT Biometrics Group",
     "ticker": "NEXT",
     "kurs": 1.2,
     "antall": 8129,
     "investert": 9755.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1325,
-    "portefolje_rebalansering_id": 133,
+    "id": 1375,
+    "portefolje_rebalansering_id": 138,
     "navn": "Fjord Defence Group",
     "ticker": "DFENS",
     "kurs": 16.15,
     "antall": 604,
     "investert": 9755.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1326,
-    "portefolje_rebalansering_id": 133,
-    "navn": "Awilco LNG",
-    "ticker": "ALNG",
-    "kurs": 3.37,
-    "antall": 2894,
-    "investert": 9753.0,
+    "id": 1376,
+    "portefolje_rebalansering_id": 138,
+    "navn": "North Energy",
+    "ticker": "NORTH",
+    "kurs": 2.5,
+    "antall": 3902,
+    "investert": 9755.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1327,
-    "portefolje_rebalansering_id": 133,
-    "navn": "Vistin Pharma",
-    "ticker": "VISTN",
-    "kurs": 21.2,
-    "antall": 460,
-    "investert": 9752.0,
-    "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-22"
-  },
-  {
-    "id": 1321,
-    "portefolje_rebalansering_id": 133,
+    "id": 1372,
+    "portefolje_rebalansering_id": 138,
     "navn": "Techstep",
     "ticker": "TECH",
     "kurs": 10.2,
     "antall": 956,
     "investert": 9751.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1330,
-    "portefolje_rebalansering_id": 133,
-    "navn": "Hexagon Purus",
-    "ticker": "HPUR",
-    "kurs": 13.6,
-    "antall": 717,
-    "investert": 9751.0,
-    "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-22"
-  },
-  {
-    "id": 1329,
-    "portefolje_rebalansering_id": 133,
+    "id": 1378,
+    "portefolje_rebalansering_id": 138,
     "navn": "Reach Subsea",
     "ticker": "REACH",
     "kurs": 6.23,
     "antall": 1565,
     "investert": 9750.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1323,
-    "portefolje_rebalansering_id": 133,
+    "id": 1380,
+    "portefolje_rebalansering_id": 138,
+    "navn": "Cloudberry Clean Energy",
+    "ticker": "CLOUD",
+    "kurs": 12.5,
+    "antall": 780,
+    "investert": 9750.0,
+    "porteføljenavn": "undervurdert kvartal",
+    "kjopsdato": "2026-05-25"
+  },
+  {
+    "id": 1373,
+    "portefolje_rebalansering_id": 138,
     "navn": "Borgestad",
     "ticker": "BOR",
     "kurs": 15.8,
     "antall": 617,
     "investert": 9749.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1328,
-    "portefolje_rebalansering_id": 133,
-    "navn": "Moreld",
-    "ticker": "MORLD",
-    "kurs": 19.42,
-    "antall": 502,
+    "id": 1377,
+    "portefolje_rebalansering_id": 138,
+    "navn": "ABG Sundal Collier Holding",
+    "ticker": "ABG",
+    "kurs": 7.08,
+    "antall": 1377,
     "investert": 9749.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
   },
   {
-    "id": 1324,
-    "portefolje_rebalansering_id": 133,
+    "id": 1374,
+    "portefolje_rebalansering_id": 138,
     "navn": "ArcticZymes Technologies",
     "ticker": "AZT",
     "kurs": 20.0,
     "antall": 487,
     "investert": 9740.0,
     "porteføljenavn": "undervurdert kvartal",
-    "kjopsdato": "2026-05-22"
+    "kjopsdato": "2026-05-25"
+  },
+  {
+    "id": 1379,
+    "portefolje_rebalansering_id": 138,
+    "navn": "Kid",
+    "ticker": "KID",
+    "kurs": 124.2,
+    "antall": 78,
+    "investert": 9688.0,
+    "porteføljenavn": "undervurdert kvartal",
+    "kjopsdato": "2026-05-25"
   }
 ]
