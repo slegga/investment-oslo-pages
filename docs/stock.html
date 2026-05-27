@@ -296,10 +296,14 @@
             }
 
             // Kunngjøringer på newsweb (Oslo Børs)
-            const newswebUrl = `https://newsweb.oslobors.no/search?searchType=quick&q=${encodeURIComponent(tickerParam)}`;
+            const issuerId = info && info.oslobors_issuer_id;
+            const newswebUrl = issuerId
+                ? `https://newsweb.oslobors.no/search?issuer=${issuerId}`
+                : `https://newsweb.oslobors.no/search?searchType=quick&q=${encodeURIComponent(tickerParam)}`;
+            const newswebSub = issuerId ? `Issuer ${issuerId}` : `Søk på ${tickerParam}`;
             items.push(`<li><a href="${newswebUrl}" target="_blank" rel="noopener">
                 Kunngjøringer (Oslo Børs newsweb)
-                <span class="link-sub">Søk på ${tickerParam}</span>
+                <span class="link-sub">${newswebSub}</span>
             </a></li>`);
 
             // Euronext-side (handelsdata)
