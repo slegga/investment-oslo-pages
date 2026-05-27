@@ -928,6 +928,52 @@
     }
   },
   {
+    "ticker": "GSF",
+    "navn": "Grieg Seafood",
+    "regnskap_navn": "GRIEG SEAFOOD ASA",
+    "organisasjonsnummer": "946598038",
+    "oslobors_issuer_id": 8362,
+    "naeringskode": "03.211",
+    "naeringskode_beskrivelse": "Produksjon av fisk, bløtdyr, krepsdyr og pigghuder i sjø og brakkvann",
+    "totalt_antall_i_markedet": null,
+    "estimert_mcap_aar": 68422804179.73658,
+    "estimert_mcap_kvartal": 89.13860164499307,
+    "prosent_dager_omsetning": 100,
+    "siste_kvartalsrapport": {
+      "aar": 2026,
+      "kvartal": 1,
+      "rapport_dato": "2026-05-19",
+      "rapport_pdf_url": "https://cdn.prod.nntech.io/company-events/reports/a00fb716-b68a-3b9b-8b1e-7c16699d8962/report.pdf",
+      "valuta": "NOK",
+      "omsetning": 75500000.0,
+      "driftsresultat": null,
+      "ebitda": null,
+      "ebit": 4700000.0,
+      "nettoresultat": null,
+      "resultat_per_aksje": null,
+      "sum_eiendeler": null,
+      "sum_egenkapital": null,
+      "sum_gjeld": null,
+      "kontanter": 4629000000.0,
+      "kontantstroem_drift": null
+    },
+    "siste_aarsregnskap": {
+      "fra_dato": "2024-01-01",
+      "til_dato": "2024-12-31",
+      "valuta": "NOK",
+      "aarsresultat": -31353000.0,
+      "totalresultat": null,
+      "sum_driftsinntekter": 271266000.0,
+      "driftsresultat": -2185243000.0,
+      "sum_egenkapital": 2956057000.0,
+      "sum_eiendeler": 10436348000.0,
+      "sum_gjeld": 7480290000.0,
+      "antall_ansatte": 17,
+      "regnskapstype": "SELSKAP",
+      "regnskapsregler": "regnskapslovenAlminneligRegler"
+    }
+  },
+  {
     "ticker": "HPUR",
     "navn": "Hexagon Purus",
     "regnskap_navn": "HEXAGON PURUS ASA",
@@ -1431,35 +1477,6 @@
       "antall_ansatte": 0,
       "regnskapstype": "SELSKAP",
       "regnskapsregler": "IFRS"
-    }
-  },
-  {
-    "ticker": "NOSN",
-    "navn": "NOS Nova",
-    "regnskap_navn": "NOS NOVA AS",
-    "organisasjonsnummer": "923377476",
-    "oslobors_issuer_id": 12845,
-    "naeringskode": "35.210",
-    "naeringskode_beskrivelse": "Produksjon av gass",
-    "totalt_antall_i_markedet": null,
-    "estimert_mcap_aar": 815877542.9199072,
-    "estimert_mcap_kvartal": null,
-    "prosent_dager_omsetning": 100,
-    "siste_kvartalsrapport": null,
-    "siste_aarsregnskap": {
-      "fra_dato": "2024-01-01",
-      "til_dato": "2024-12-31",
-      "valuta": "NOK",
-      "aarsresultat": -112999894.0,
-      "totalresultat": -112999894.0,
-      "sum_driftsinntekter": 377400.0,
-      "driftsresultat": -118595969.0,
-      "sum_egenkapital": 78730831.0,
-      "sum_eiendeler": 102494941.0,
-      "sum_gjeld": 23764110.0,
-      "antall_ansatte": 5,
-      "regnskapstype": "SELSKAP",
-      "regnskapsregler": "forenkletAnvendelseIFRS"
     }
   },
   {
