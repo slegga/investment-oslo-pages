@@ -15,7 +15,7 @@
     "id": 3,
     "porteføljenavn": "undervurdert år",
     "beskrivelse": "10 mest undervurderte selskap",
-    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, (k.mcap - a.estimert_mcap_aar) / ((k.mcap + a.estimert_mcap_aar) / 2.0) AS overvurdering FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL ORDER BY overvurdering ASC"
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, (k.mcap - a.estimert_mcap_aar) / ((k.mcap + a.estimert_mcap_aar) / 2.0) AS overvurdering FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap ar ON ar.organisasjonsnummer=regnskap_organisasjonsnummer AND ar.sum_egenkapital + 2 * ar.driftsresultat > 0 WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL AND til_dato = (SELECT MAX(til_dato) FROM aarsregnskap WHERE a.regnskap_organisasjonsnummer = organisasjonsnummer)  ORDER BY overvurdering ASC"
   },
   {
     "id": 4,
