@@ -902,5 +902,45 @@
     "kjopsdato": "2026-05-29",
     "kjopssum": 98320.15999999999,
     "kommentar": null
+  },
+  {
+    "id": 159,
+    "portefolje_id": 1,
+    "porteføljenavn": "Størst",
+    "kjopsdato": "2026-06-01",
+    "kjopssum": 97707.3,
+    "kommentar": null
+  },
+  {
+    "id": 160,
+    "portefolje_id": 2,
+    "porteføljenavn": "overvurdert år",
+    "kjopsdato": "2026-06-01",
+    "kjopssum": 92213.42,
+    "kommentar": null
+  },
+  {
+    "id": 161,
+    "portefolje_id": 3,
+    "porteføljenavn": "undervurdert år",
+    "kjopsdato": "2026-06-01",
+    "kjopssum": 100332.592,
+    "kommentar": null
+  },
+  {
+    "id": 162,
+    "portefolje_id": 4,
+    "porteføljenavn": "overvurdert kvartal",
+    "kjopsdato": "2026-06-01",
+    "kjopssum": 98227.32,
+    "kommentar": null
+  },
+  {
+    "id": 163,
+    "portefolje_id": 5,
+    "porteføljenavn": "undervurdert kvartal",
+    "kjopsdato": "2026-06-01",
+    "kjopssum": 97919.1,
+    "kommentar": null
   }
 ]
