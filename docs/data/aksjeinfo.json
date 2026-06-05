@@ -1203,6 +1203,36 @@
     }
   },
   {
+    "ticker": "NTG",
+    "navn": "Nordic Technology Group",
+    "regnskap_navn": "NORDIC TECHNOLOGY GROUP AS",
+    "organisasjonsnummer": "926789759",
+    "oslobors_issuer_id": 12974,
+    "naeringskode": "77.400",
+    "naeringskode_beskrivelse": "Leasing av immateriell eiendom og lignende produkter, unntatt opphavsrettsbeskyttede verker",
+    "totalt_antall_i_markedet": null,
+    "selskapstype": "vanlig",
+    "estimert_mcap_aar": 10128459539.31183,
+    "estimert_mcap_kvartal": null,
+    "prosent_dager_omsetning": 81,
+    "siste_kvartalsrapport": null,
+    "siste_aarsregnskap": {
+      "fra_dato": "2024-01-01",
+      "til_dato": "2024-12-31",
+      "valuta": "NOK",
+      "aarsresultat": -235512000.0,
+      "totalresultat": null,
+      "sum_driftsinntekter": 1694000.0,
+      "driftsresultat": -17777000.0,
+      "sum_egenkapital": 524372000.0,
+      "sum_eiendeler": 550565000.0,
+      "sum_gjeld": 26192000.0,
+      "antall_ansatte": 0,
+      "regnskapstype": "SELSKAP",
+      "regnskapsregler": "regnskapslovenAlminneligRegler"
+    }
+  },
+  {
     "ticker": "OCEAN",
     "navn": "Ocean GeoLoop",
     "regnskap_navn": "OCEAN GEOLOOP AS",
