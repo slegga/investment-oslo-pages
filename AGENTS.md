@@ -1,4 +1,6 @@
 # Retningslinjer
+- Ingen git commit
+- Ingen git push
 - Når e sesjon starter så sjekk git status om alle filer og endringer er committed i git.
 - Alle script skal ha et --silence argument, som da undertrykker skriving til stdout. Kun feilmeldinger skal skrives ut.
 - Alle py script skal lages med --dryrun opsjon. Da skrives ingenting til database eller fil, men det gjør nødvendig

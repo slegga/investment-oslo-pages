@@ -471,9 +471,6 @@
                         pos.investert = (pos.kurs || 0) * (pos.antall || 0);
                     });
 
-                    // Sorter synkende på investert
-                    positions.sort((a, b) => b.investert - a.investert);
-                    
                     const info = portefoljeMap.get(name) || { beskrivelse: '' };
                     
                     let tableHTML = `
@@ -522,56 +519,95 @@
                     portfoliosContainer.innerHTML += tableHTML;
                 });
 
-                // Tegn sparkline for hver posisjon etter at DOM er oppdatert
-                Object.values(posByPortefolje).flat().forEach(pos => {
-                    const portName = pos.porteføljenavn;
-                    const canvasId = `spark-${portName.replace(/[^a-z0-9]/gi,'_')}-${pos.ticker}`;
-                    const canvas = document.getElementById(canvasId);
-                    if (!canvas) return;
-                    const series = kursByTicker[pos.ticker];
-                    if (!series || series.length < 2) return;
+                // Tegn sparkline for hver posisjon etter at DOM er oppdatert.
+                // Grafene innen samme portefølje deler samme prosent-skala (relativ til
+                // hver aksjes startverdi), slik at store kurshopp blir høye linjer og
+                // små bevegelser blir flate – uavhengig av aksjenes absolutte kursnivå.
+                Object.entries(posByPortefolje).forEach(([portName, positions]) => {
+                    // 1) Finn felles prosentbånd (min/maks endring fra startverdi) for porteføljen
+                    let bandMin = Infinity;
+                    let bandMax = -Infinity;
+                    positions.forEach(pos => {
+                        const series = kursByTicker[pos.ticker];
+                        if (!series || series.length < 2) return;
+                        const base = series[0].aksjeverdi;
+                        if (!base) return;
+                        series.forEach(p => {
+                            const pct = (p.aksjeverdi / base - 1) * 100;
+                            if (pct < bandMin) bandMin = pct;
+                            if (pct > bandMax) bandMax = pct;
+                        });
+                    });
+                    if (!isFinite(bandMin) || !isFinite(bandMax)) return;
 
-                    const values = series.map(p => p.aksjeverdi);
-                    const first = values[0];
-                    const last = values[values.length - 1];
-                    const up = last >= first;
-                    const lineColor = up ? '#4ade80' : '#f87171';
+                    // Sikre et minimum spenn og litt luft så linjene ikke klippes i kanten
+                    let range = bandMax - bandMin;
+                    if (range < 1) {
+                        const mid = (bandMin + bandMax) / 2;
+                        bandMin = mid - 0.5;
+                        bandMax = mid + 0.5;
+                        range = 1;
+                    }
+                    const pad = range * 0.08;
+                    bandMin -= pad;
+                    bandMax += pad;
 
-                    new Chart(canvas.getContext('2d'), {
-                        type: 'line',
-                        data: {
-                            labels: series.map(p => p.dato),
-                            datasets: [{
-                                data: values,
-                                borderColor: lineColor,
-                                backgroundColor: lineColor + '33',
-                                borderWidth: 1.5,
-                                pointRadius: 0,
-                                pointHoverRadius: 3,
-                                tension: 0.25,
-                                fill: true
-                            }]
-                        },
-                        options: {
-                            responsive: true,
-                            maintainAspectRatio: false,
-                            animation: false,
-                            plugins: {
-                                legend: { display: false },
-                                tooltip: {
-                                    displayColors: false,
-                                    callbacks: {
-                                        title: (items) => items[0].label,
-                                        label: (ctx) => formatNOK(ctx.parsed.y)
+                    // 2) Tegn hver sparkline med porteføljens felles skala
+                    positions.forEach(pos => {
+                        const canvasId = `spark-${portName.replace(/[^a-z0-9]/gi,'_')}-${pos.ticker}`;
+                        const canvas = document.getElementById(canvasId);
+                        if (!canvas) return;
+                        const series = kursByTicker[pos.ticker];
+                        if (!series || series.length < 2) return;
+
+                        const values = series.map(p => p.aksjeverdi);
+                        const base = values[0];
+                        const last = values[values.length - 1];
+                        const up = last >= base;
+                        const lineColor = up ? '#4ade80' : '#f87171';
+
+                        // Konverter porteføljens felles prosentbånd til absolutte kursverdier
+                        // for nettopp denne aksjen. Da viser alle grafene samme prosentvise
+                        // spenn rundt sin egen startverdi, men beholder reelle kr-verdier i tooltip.
+                        const yMin = base * (1 + bandMin / 100);
+                        const yMax = base * (1 + bandMax / 100);
+
+                        new Chart(canvas.getContext('2d'), {
+                            type: 'line',
+                            data: {
+                                labels: series.map(p => p.dato),
+                                datasets: [{
+                                    data: values,
+                                    borderColor: lineColor,
+                                    backgroundColor: lineColor + '33',
+                                    borderWidth: 1.5,
+                                    pointRadius: 0,
+                                    pointHoverRadius: 3,
+                                    tension: 0.25,
+                                    fill: true
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                animation: false,
+                                plugins: {
+                                    legend: { display: false },
+                                    tooltip: {
+                                        displayColors: false,
+                                        callbacks: {
+                                            title: (items) => items[0].label,
+                                            label: (ctx) => `${formatNOK(ctx.parsed.y)} (${formatPercent(ctx.parsed.y / base - 1)})`
+                                        }
                                     }
-                                }
-                            },
-                            scales: {
-                                x: { display: false },
-                                y: { display: false }
-                            },
-                            elements: { line: { borderJoinStyle: 'round' } }
-                        }
+                                },
+                                scales: {
+                                    x: { display: false },
+                                    y: { display: false, min: yMin, max: yMax }
+                                },
+                                elements: { line: { borderJoinStyle: 'round' } }
+                            }
+                        });
                     });
                 });
 
