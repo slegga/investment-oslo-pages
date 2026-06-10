@@ -312,6 +312,36 @@
     }
   },
   {
+    "ticker": "BSP",
+    "navn": "Black Sea Property",
+    "regnskap_navn": "BLACK SEA PROPERTY AS",
+    "organisasjonsnummer": "914892902",
+    "oslobors_issuer_id": 12461,
+    "naeringskode": "68.320",
+    "naeringskode_beskrivelse": "Eiendomsforvaltning på oppdrag",
+    "totalt_antall_i_markedet": null,
+    "selskapstype": "holding",
+    "estimert_mcap_aar": 130445372.85721722,
+    "estimert_mcap_kvartal": null,
+    "prosent_dager_omsetning": 81,
+    "siste_kvartalsrapport": null,
+    "siste_aarsregnskap": {
+      "fra_dato": "2024-01-01",
+      "til_dato": "2024-12-31",
+      "valuta": "NOK",
+      "aarsresultat": 3951000.0,
+      "totalresultat": null,
+      "sum_driftsinntekter": 355000.0,
+      "driftsresultat": -2288000.0,
+      "sum_egenkapital": 220638000.0,
+      "sum_eiendeler": 235706000.0,
+      "sum_gjeld": 15068000.0,
+      "antall_ansatte": 0,
+      "regnskapstype": "SELSKAP",
+      "regnskapsregler": "regnskapslovenAlminneligRegler"
+    }
+  },
+  {
     "ticker": "BWE",
     "navn": "BW Energy Limited",
     "regnskap_navn": "BW ENERGY NORWAY MANAGEMENT AS",
@@ -701,36 +731,6 @@
       "antall_ansatte": 21408,
       "regnskapstype": "SELSKAP",
       "regnskapsregler": "forenkletAnvendelseIFRS"
-    }
-  },
-  {
-    "ticker": "EXTX",
-    "navn": "EXACT Therapeutics",
-    "regnskap_navn": "EXACT THERAPEUTICS AS",
-    "organisasjonsnummer": "998317487",
-    "oslobors_issuer_id": 12784,
-    "naeringskode": "72.100",
-    "naeringskode_beskrivelse": "Forskning og eksperimentell utvikling innenfor naturvitenskap og teknikk",
-    "totalt_antall_i_markedet": null,
-    "selskapstype": "vanlig",
-    "estimert_mcap_aar": 1263967810.4864092,
-    "estimert_mcap_kvartal": null,
-    "prosent_dager_omsetning": 100,
-    "siste_kvartalsrapport": null,
-    "siste_aarsregnskap": {
-      "fra_dato": "2024-01-01",
-      "til_dato": "2024-12-31",
-      "valuta": "NOK",
-      "aarsresultat": -51624981.0,
-      "totalresultat": null,
-      "sum_driftsinntekter": null,
-      "driftsresultat": -52215800.0,
-      "sum_egenkapital": 128439298.0,
-      "sum_eiendeler": 151193839.0,
-      "sum_gjeld": 22754542.0,
-      "antall_ansatte": 13,
-      "regnskapstype": "SELSKAP",
-      "regnskapsregler": "regnskapslovenAlminneligRegler"
     }
   },
   {
