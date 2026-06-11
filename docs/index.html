@@ -195,6 +195,38 @@
             color: var(--text-muted);
             font-size: 1.2rem;
         }
+
+        .chart-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            align-items: center;
+        }
+
+        .chart-controls label {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            padding: 0.35rem 0.6rem;
+            border-radius: 4px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            transition: border-color 0.2s;
+        }
+
+        .chart-controls label:hover {
+            border-color: var(--text-muted);
+        }
+
+        .chart-controls input[type="checkbox"] {
+            accent-color: var(--mcap-color);
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -209,6 +241,9 @@
 
         <div id="content" style="display: none;">
             <div id="summary-cards" class="summary-grid">
+            </div>
+
+            <div class="chart-controls" id="chart-controls">
             </div>
 
             <div class="chart-container">
@@ -385,7 +420,29 @@
                     };
                 });
 
-                new Chart(ctx, {
+                // Opprett checkboxes for å kontrollere visning av hver portefølje i grafen
+                const chartControls = document.getElementById('chart-controls');
+                pNames.forEach((name, i) => {
+                    const checked = i < 5 ? 'checked' : '';
+                    const colorDot = `<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background-color:${portfolioColors[name]};margin-right:4px;"></span>`;
+                    chartControls.innerHTML += `
+                        <label style="color: ${portfolioColors[name]}">
+                            <input type="checkbox" data-index="${i}" ${checked}>
+                            ${colorDot}${name}
+                        </label>
+                    `;
+                });
+
+                // Håndter checkbox-endringer
+                chartControls.addEventListener('change', (e) => {
+                    if (e.target.tagName === 'INPUT' && e.target.type === 'checkbox') {
+                        const idx = parseInt(e.target.dataset.index, 10);
+                        performanceChart.data.datasets[idx].hidden = !e.target.checked;
+                        performanceChart.update();
+                    }
+                });
+
+                performanceChart = new Chart(ctx, {
                     type: 'line',
                     data: {
                         labels: sortedDates,
@@ -492,6 +549,7 @@
                                 <tbody>
                     `;
                     
+                    positions.sort((a, b) => a.id - b.id);
                     positions.forEach(pos => {
                         const canvasId = `spark-${name.replace(/[^a-z0-9]/gi,'_')}-${pos.ticker}`;
                         const hasSeries = (kursByTicker[pos.ticker] || []).length >= 2;
