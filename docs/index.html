@@ -456,18 +456,19 @@
                 let isNormalized = false;
                 let originalChartState = null;
 
-                // Finner startdatoen til den nyeste porteføljen (alle må være aktive fra denne datoen)
-                const latestPortfolioStart = sortedDates.reduce((latest, date) => {
-                    // Sjekk om alle porteføljer har data på denne datoen
+                // Finner startdatoen til den nyeste porteføljen (første dato hvor alle porteføljer er aktive)
+                let latestPortfolioStart = null;
+                for (const date of sortedDates) {
                     const allHaveData = pNames.every(name => {
                         const pData = utviklingByPortefolje[name] || [];
                         return pData.some(d => d.kjopsdato === date);
                     });
-                    if (allHaveData && date > latest) {
-                        return date;
+                    if (allHaveData) {
+                        latestPortfolioStart = date;
+                        break; // Stopp ved første treff
                     }
-                    return latest;
-                }, '1970-01-01');
+                }
+                latestPortfolioStart = latestPortfolioStart || sortedDates[0]; // Fallback til første dato
 
                 // Lagre original state en gang først
                 function saveOriginalState() {
