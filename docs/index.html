@@ -454,8 +454,7 @@
 
                 // Håndter normalisering til 100000
                 let isNormalized = false;
-                let originalDatasets = null;
-                let originalLabels = null;
+                let originalChartState = null;
 
                 // Finner startdatoen til den nyeste porteføljen (alle må være aktive fra denne datoen)
                 const latestPortfolioStart = sortedDates.reduce((latest, date) => {
@@ -470,58 +469,63 @@
                     return latest;
                 }, '1970-01-01');
 
+                // Lagre original state en gang først
+                function saveOriginalState() {
+                    if (!originalChartState) {
+                        originalChartState = {
+                            labels: [...performanceChart.data.labels],
+                            datasets: performanceChart.data.datasets.map(ds => ({
+                                label: ds.label,
+                                data: [...ds.data]
+                            }))
+                        };
+                    }
+                }
+
                 const normalizeCheckbox = document.getElementById('normalize-checkbox');
                 normalizeCheckbox.addEventListener('change', (e) => {
                     isNormalized = e.target.checked;
 
                     if (isNormalized) {
-                        // Lagre original data, labels og finn startindeks
-                        originalDatasets = performanceChart.data.datasets.map(ds => ({
-                            label: ds.label,
-                            data: [...ds.data]
-                        }));
-                        originalLabels = [...performanceChart.data.labels];
+                        // Lagre original state første gang
+                        saveOriginalState();
 
                         // Finn indeks der fellesperioden starter
                         const startIdx = performanceChart.data.labels.findIndex(d => d >= latestPortfolioStart);
 
                         // Filtrer labels til kun å vise fra nyeste portefølje startet
-                        const filteredLabels = performanceChart.data.labels.slice(startIdx);
+                        performanceChart.data.labels = performanceChart.data.labels.slice(startIdx);
 
                         // Normaliser data og filtrer til fellesperioden
                         performanceChart.data.datasets.forEach((ds, idx) => {
-                            const originalData = originalDatasets[idx].data.slice(startIdx);
-                            // Finn første ikke-null verdi i original data (før slicing)
-                            const fullOriginalData = originalDatasets[idx].data;
+                            const fullData = originalChartState.datasets[idx].data;
+                            // Finn første ikke-null verdi fra startIdx og ut
                             let firstValid = null;
-                            for (let i = startIdx; i < fullOriginalData.length; i++) {
-                                if (fullOriginalData[i] !== null) {
-                                    firstValid = fullOriginalData[i];
+                            for (let i = startIdx; i < fullData.length; i++) {
+                                if (fullData[i] !== null) {
+                                    firstValid = fullData[i];
                                     break;
                                 }
                             }
+                            const slicedData = fullData.slice(startIdx);
                             if (firstValid && firstValid > 0) {
-                                ds.data = originalData.map(val => val !== null ? (val / firstValid) * 100000 : null);
+                                ds.data = slicedData.map(val => val !== null ? (val / firstValid) * 100000 : null);
                             } else {
-                                ds.data = originalData;
+                                ds.data = slicedData;
                             }
                         });
-
-                        performanceChart.data.labels = filteredLabels;
 
                         // Oppdater Y-akse label
                         performanceChart.options.scales.y.ticks.callback = function(value) {
                             return new Intl.NumberFormat('nb-NO').format(value);
                         };
                     } else {
-                        // Gjenopprett original data og labels
-                        if (originalDatasets) {
+                        // Gjenopprett original state
+                        if (originalChartState) {
+                            performanceChart.data.labels = [...originalChartState.labels];
                             performanceChart.data.datasets.forEach((ds, idx) => {
-                                ds.data = originalDatasets[idx].data;
+                                ds.data = [...originalChartState.datasets[idx].data];
                             });
-                        }
-                        if (originalLabels) {
-                            performanceChart.data.labels = originalLabels;
                         }
 
                         // Gjenopprett kronelabels
