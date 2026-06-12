@@ -49,42 +49,6 @@
             font-size: 0.9rem;
         }
 
-        .summary-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .summary-card {
-            background-color: var(--card-bg);
-            border-radius: 8px;
-            padding: 1.5rem;
-            border-left: 4px solid var(--border-color);
-        }
-
-        .summary-card.mcap { border-left-color: var(--mcap-color); }
-        .summary-card.undervurdert { border-left-color: var(--under-color); }
-        .summary-card.overvurdert { border-left-color: var(--over-color); }
-
-        .card-title {
-            font-size: 1.1rem;
-            font-weight: 500;
-            margin: 0 0 0.5rem 0;
-            text-transform: capitalize;
-        }
-
-        .card-value {
-            font-size: 2rem;
-            font-weight: 700;
-            margin: 0 0 0.25rem 0;
-        }
-
-        .card-change {
-            font-size: 1rem;
-            font-weight: 500;
-        }
-
         .change-positive { color: #4ade80; }
         .change-negative { color: #f87171; }
 
@@ -198,20 +162,20 @@
 
         .chart-controls {
             display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            margin-bottom: 1rem;
-            align-items: center;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            max-width: 520px;
         }
 
         .chart-controls label {
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            gap: 0.35rem;
             cursor: pointer;
-            font-size: 0.9rem;
-            padding: 0.35rem 0.6rem;
-            border-radius: 4px;
+            font-size: 0.95rem;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
             transition: border-color 0.2s;
@@ -221,11 +185,39 @@
             border-color: var(--text-muted);
         }
 
+        .chart-control-left {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+
+        .chart-control-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 500;
+        }
+
+        .chart-control-value {
+            color: var(--text-light);
+            font-variant-numeric: tabular-nums;
+            font-weight: normal;
+        }
+
+        .chart-control-pct {
+            min-width: 70px;
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+
         .chart-controls input[type="checkbox"] {
             accent-color: var(--mcap-color);
             width: 16px;
             height: 16px;
             cursor: pointer;
+            margin: 0;
         }
     </style>
 </head>
@@ -240,9 +232,6 @@
         <div id="loading-indicator" class="loading">Laster porteføljedata...</div>
 
         <div id="content" style="display: none;">
-            <div id="summary-cards" class="summary-grid">
-            </div>
-
             <div class="chart-controls" id="chart-controls">
             </div>
 
@@ -346,9 +335,6 @@
                 // Skjul loading, vis innhold
                 document.getElementById('loading-indicator').style.display = 'none';
                 document.getElementById('content').style.display = 'block';
-
-                // Opprett summary cards
-                const summaryContainer = document.getElementById('summary-cards');
                 
                 // Get portfolio names that have development data, in portefolje order
                 const pNames = portefoljer
@@ -360,26 +346,6 @@
                     acc[name] = chartColors[i % chartColors.length];
                     return acc;
                 }, {});
-                
-                pNames.forEach(name => {
-                    if (!utviklingByPortefolje[name] || utviklingByPortefolje[name].length === 0) return;
-                    
-                    const pData = utviklingByPortefolje[name].sort((a, b) => a.kjopsdato.localeCompare(b.kjopsdato));
-                    const latest = pData[pData.length - 1];
-                    const startValue = 100000;
-                    const currentValue = latest.kjopssum;
-                    const changePct = (currentValue - startValue) / startValue;
-                    
-                    const changeClass = changePct >= 0 ? 'change-positive' : 'change-negative';
-
-                    summaryContainer.innerHTML += `
-                        <div class="summary-card" style="border-left-color: ${portfolioColors[name]}">
-                            <h3 class="card-title">${name}</h3>
-                            <p class="card-value">${formatNOK(currentValue)}</p>
-                            <p class="card-change ${changeClass}">${formatPercent(changePct)}</p>
-                        </div>
-                    `;
-                });
 
                 // Tegn graf
                 const ctx = document.getElementById('performanceChart').getContext('2d');
@@ -425,10 +391,24 @@
                 pNames.forEach((name, i) => {
                     const checked = i < 5 ? 'checked' : '';
                     const colorDot = `<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background-color:${portfolioColors[name]};margin-right:4px;"></span>`;
+                    
+                    const cbData = utviklingByPortefolje[name].slice().sort((a, b) => a.kjopsdato.localeCompare(b.kjopsdato));
+                    const cbLatest = cbData[cbData.length - 1];
+                    const cbStartValue = 100000;
+                    const cbCurrentValue = cbLatest.kjopssum;
+                    const cbChangePct = (cbCurrentValue - cbStartValue) / cbStartValue;
+                    const cbChangeClass = cbChangePct >= 0 ? 'change-positive' : 'change-negative';
+
                     chartControls.innerHTML += `
                         <label style="color: ${portfolioColors[name]}">
-                            <input type="checkbox" data-index="${i}" ${checked}>
-                            ${colorDot}${name}
+                            <span class="chart-control-left">
+                                <input type="checkbox" data-index="${i}" ${checked}>
+                                ${colorDot}${name}
+                            </span>
+                            <span class="chart-control-right">
+                                <span class="chart-control-value">${formatNOK(cbCurrentValue)}</span>
+                                <span class="chart-control-pct ${cbChangeClass}">${formatPercent(cbChangePct)}</span>
+                            </span>
                         </label>
                     `;
                 });
