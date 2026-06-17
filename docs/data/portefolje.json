@@ -15,13 +15,13 @@
     "id": 3,
     "porteføljenavn": "undervurdert år",
     "beskrivelse": "10 mest undervurderte selskap",
-    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap / a.estimert_mcap_aar AS overvurdering           FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap ar ON ar.organisasjonsnummer = a.regnskap_organisasjonsnummer WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL AND ar.til_dato = (SELECT MAX(ar2.til_dato) FROM aarsregnskap ar2 WHERE ar2.organisasjonsnummer = a.regnskap_organisasjonsnummer)  ORDER BY overvurdering ASC"
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap / a.estimert_mcap_aar AS overvurdering FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap ar ON ar.organisasjonsnummer = a.regnskap_organisasjonsnummer WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL AND ar.til_dato = (SELECT MAX(til_dato) FROM aarsregnskap WHERE organisasjonsnummer = a.regnskap_organisasjonsnummer) ORDER BY overvurdering ASC"
   },
   {
     "id": 4,
     "porteføljenavn": "overvurdert kvartal",
     "beskrivelse": "10 mest overvurderte selskap",
-    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_kvartal, k.mcap / a.estimert_mcap_kvartal AS overvurdering  FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_kvartal IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_kvartal > 0 AND NOT a.estimert_mcap_kvartal is NULL ORDER BY overvurdering DESC"
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_kvartal, (k.mcap / a.estimert_mcap_kvartal) AS overvurdering  FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_kvartal IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_kvartal > 0 AND NOT a.estimert_mcap_kvartal is NULL ORDER BY overvurdering DESC"
   },
   {
     "id": 5,
@@ -33,24 +33,24 @@
     "id": 6,
     "porteføljenavn": "overvurdertvurdert log år",
     "beskrivelse": "10 mest overvurderte justert størrelse",
-    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap/power(a.estimert_mcap_aar,3.0/2.0) AS overvurdering   FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap ar ON ar.organisasjonsnummer = a.regnskap_organisasjonsnummer  WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL AND ar.til_dato = (SELECT MAX(ar2.til_dato) FROM aarsregnskap ar2 WHERE ar2.organisasjonsnummer = a.regnskap_organisasjonsnummer) ORDER BY overvurdering DESC"
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap/power(a.estimert_mcap_aar,3.0/2.0) AS overvurdering   FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap ar ON ar.organisasjonsnummer=regnskap_organisasjonsnummer  WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL AND til_dato = (SELECT MAX(til_dato) FROM aarsregnskap WHERE a.regnskap_organisasjonsnummer = organisasjonsnummer) ORDER BY overvurdering deSC"
   },
   {
     "id": 7,
     "porteføljenavn": "undervurdertvurdert log år",
     "beskrivelse": "10 mest undervurderte justert størrelse",
-    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap/power(a.estimert_mcap_aar,3.0/2.0) AS overvurdering FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap ar ON ar.organisasjonsnummer = a.regnskap_organisasjonsnummer WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL AND ar.til_dato = (SELECT MAX(ar2.til_dato) FROM aarsregnskap ar2 WHERE ar2.organisasjonsnummer = a.regnskap_organisasjonsnummer) ORDER BY overvurdering ASC"
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap/power(a.estimert_mcap_aar,3.0/2.0) AS overvurdering FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap ar ON ar.organisasjonsnummer=regnskap_organisasjonsnummer WHERE  NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL AND til_dato = (SELECT MAX(til_dato) FROM aarsregnskap WHERE a.regnskap_organisasjonsnummer = organisasjonsnummer) ORDER BY overvurdering ASC"
   },
   {
     "id": 8,
     "porteføljenavn": "undervurdert år trygg",
     "beskrivelse": "10 mest undervurderte trygge selskap",
-    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap / a.estimert_mcap_aar AS overvurdering FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap ar ON ar.organisasjonsnummer = a.regnskap_organisasjonsnummer AND ar.sum_egenkapital > 0 AND ar.driftsresultat > 0 WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL AND ar.til_dato = (SELECT MAX(ar2.til_dato) FROM aarsregnskap ar2 WHERE ar2.organisasjonsnummer = a.regnskap_organisasjonsnummer)  ORDER BY overvurdering ASC"
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap / a.estimert_mcap_aar AS overvurdering FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap ar ON ar.organisasjonsnummer=regnskap_organisasjonsnummer AND ar.sum_egenkapital > 0  AND ar.aarsresultat > 0 WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL AND til_dato = (SELECT MAX(til_dato) FROM aarsregnskap WHERE a.regnskap_organisasjonsnummer = organisasjonsnummer)  ORDER BY overvurdering ASC"
   },
   {
     "id": 9,
     "porteføljenavn": "mcap/drift trygg",
     "beskrivelse": "10 høest på mcap/drift",
-    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap / ar.driftsresultat AS pris_over_drift                    FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap ar ON ar.organisasjonsnummer = a.regnskap_organisasjonsnummer AND ar.sum_egenkapital > 0 AND ar.driftsresultat > 0 WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL AND ar.til_dato = (SELECT MAX(ar2.til_dato) FROM aarsregnskap ar2 WHERE ar2.organisasjonsnummer = a.regnskap_organisasjonsnummer)  ORDER BY pris_over_drift ASC"
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap / ar.aarsresultat AS pris_over_resultat                    FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap ar ON ar.organisasjonsnummer=regnskap_organisasjonsnummer AND ar.sum_egenkapital > 0 AND ar.aarsresultat > 0 WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL AND til_dato = (SELECT MAX(til_dato) FROM aarsregnskap WHERE a.regnskap_organisasjonsnummer = organisasjonsnummer)  ORDER BY pris_over_resultat ASC"
   }
 ]
