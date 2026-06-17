@@ -259,6 +259,7 @@
         }
 
         function renderLenker(info) {
+            const navn = (info && info.navn) || tickerParam;
             const orgnr = info && info.organisasjonsnummer;
             const pdfUrl = info && info.siste_kvartalsrapport && info.siste_kvartalsrapport.rapport_pdf_url;
 
@@ -276,8 +277,10 @@
             }
 
             // Årsregnskap hos Brønnøysund
-            if (orgnr) {
-                items.push(`<li><a href="https://w2.brreg.no/regnskap/AarsregnskaperFraRegnskapsregisteret.jsp?orgnr=${orgnr}" target="_blank" rel="noopener">
+            const aarsregnskapAar = info && info.siste_aarsregnskap && info.siste_aarsregnskap.til_dato
+                ? info.siste_aarsregnskap.til_dato.substring(0, 4) : null;
+            if (orgnr && aarsregnskapAar) {
+                items.push(`<li><a href="https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/${orgnr}/${aarsregnskapAar}" target="_blank" rel="noopener">
                     Årsregnskap (Brønnøysund)
                     <span class="link-sub">Regnskapsregisteret</span>
                 </a></li>`);
@@ -307,7 +310,7 @@
             </a></li>`);
 
             // Euronext-side (handelsdata)
-            items.push(`<li><a href="https://live.euronext.com/en/search_instruments?text=${encodeURIComponent(tickerParam)}" target="_blank" rel="noopener">
+            items.push(`<li><a href="https://live.euronext.com/en/search_instruments/${encodeURIComponent(navn)}" target="_blank" rel="noopener">
                 Euronext / Oslo Børs
                 <span class="link-sub">Handelsdata</span>
             </a></li>`);
