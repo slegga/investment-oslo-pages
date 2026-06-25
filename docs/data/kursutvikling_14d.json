@@ -2,14 +2,6 @@
   {
     "ticker": "2020",
     "navn": "2020 Bulkers",
-    "dato": "2026-06-05",
-    "aksjeverdi": 3.96,
-    "mcap": 90806388.0,
-    "turnover": 1861442.754
-  },
-  {
-    "ticker": "2020",
-    "navn": "2020 Bulkers",
     "dato": "2026-06-08",
     "aksjeverdi": 4.17,
     "mcap": 95621878.0,
@@ -112,12 +104,12 @@
     "turnover": 784297.826
   },
   {
-    "ticker": "ABTEC",
-    "navn": "Aqua Bio Technology",
-    "dato": "2026-06-03",
-    "aksjeverdi": 4.93,
-    "mcap": 76987743.0,
-    "turnover": 32045.04
+    "ticker": "2020",
+    "navn": "2020 Bulkers",
+    "dato": "2026-06-25",
+    "aksjeverdi": 3.624,
+    "mcap": 83101603.0,
+    "turnover": 525406.972
   },
   {
     "ticker": "ABTEC",
@@ -224,12 +216,12 @@
     "turnover": 348.08
   },
   {
-    "ticker": "ACR",
-    "navn": "Axactor",
-    "dato": "2026-06-05",
-    "aksjeverdi": 4.8,
-    "mcap": 3687404606.0,
-    "turnover": 2874304.825
+    "ticker": "ABTEC",
+    "navn": "Aqua Bio Technology",
+    "dato": "2026-06-25",
+    "aksjeverdi": 4.93,
+    "mcap": 76987743.0,
+    "turnover": 5530.67
   },
   {
     "ticker": "ACR",
@@ -336,12 +328,12 @@
     "turnover": 5283273.905
   },
   {
-    "ticker": "AFK",
-    "navn": "Arendals Fossekompani",
-    "dato": "2026-06-05",
-    "aksjeverdi": 175.5,
-    "mcap": 9827166375.0,
-    "turnover": 682524.0
+    "ticker": "ACR",
+    "navn": "Axactor",
+    "dato": "2026-06-25",
+    "aksjeverdi": 4.75,
+    "mcap": 3826952934.0,
+    "turnover": 3601008.605
   },
   {
     "ticker": "AFK",
@@ -448,12 +440,12 @@
     "turnover": 1858759.0
   },
   {
-    "ticker": "AKRBP",
-    "navn": "Aker BP",
-    "dato": "2026-06-05",
-    "aksjeverdi": 348.5,
-    "mcap": 220259740185.0,
-    "turnover": 277878269.3
+    "ticker": "AFK",
+    "navn": "Arendals Fossekompani",
+    "dato": "2026-06-25",
+    "aksjeverdi": 179.5,
+    "mcap": 10051147375.0,
+    "turnover": 301836.5
   },
   {
     "ticker": "AKRBP",
@@ -560,12 +552,12 @@
     "turnover": 382056924.6
   },
   {
-    "ticker": "ALNG",
-    "navn": "Awilco LNG",
-    "dato": "2026-06-05",
-    "aksjeverdi": 3.36,
-    "mcap": 735687305.0,
-    "turnover": 806634.09
+    "ticker": "AKRBP",
+    "navn": "Aker BP",
+    "dato": "2026-06-25",
+    "aksjeverdi": 304.1,
+    "mcap": 192197954061.0,
+    "turnover": 384178948.25
   },
   {
     "ticker": "ALNG",
@@ -672,12 +664,12 @@
     "turnover": 461343.3
   },
   {
-    "ticker": "ARCH",
-    "navn": "Archer",
-    "dato": "2026-06-05",
-    "aksjeverdi": 24.7,
-    "mcap": 2457536331.0,
-    "turnover": 2244276.65
+    "ticker": "ALNG",
+    "navn": "ALNG",
+    "dato": "2026-06-25",
+    "aksjeverdi": 3.17,
+    "mcap": 694085939.0,
+    "turnover": 126418.33
   },
   {
     "ticker": "ARCH",
@@ -784,12 +776,12 @@
     "turnover": 3581845.45
   },
   {
-    "ticker": "ARR",
-    "navn": "Arribatec Group",
-    "dato": "2026-06-05",
-    "aksjeverdi": 5.62,
-    "mcap": 387660159.0,
-    "turnover": 2941893.78
+    "ticker": "ARCH",
+    "navn": "Archer",
+    "dato": "2026-06-25",
+    "aksjeverdi": 22.5,
+    "mcap": 2238646455.0,
+    "turnover": 2165505.2
   },
   {
     "ticker": "ARR",
@@ -896,12 +888,12 @@
     "turnover": 796995.72
   },
   {
-    "ticker": "ASA",
-    "navn": "Atlantic Sapphire",
-    "dato": "2026-06-05",
-    "aksjeverdi": 0.982,
-    "mcap": 35208672.0,
-    "turnover": 35789.647
+    "ticker": "ARR",
+    "navn": "Arribatec Group",
+    "dato": "2026-06-25",
+    "aksjeverdi": 5.32,
+    "mcap": 366966556.0,
+    "turnover": 389832.18
   },
   {
     "ticker": "ASA",
@@ -1008,12 +1000,12 @@
     "turnover": 52562.407
   },
   {
-    "ticker": "AZT",
-    "navn": "ArcticZymes Technologies",
-    "dato": "2026-06-05",
-    "aksjeverdi": 20.8,
-    "mcap": 1062284912.0,
-    "turnover": 598561.6
+    "ticker": "ASA",
+    "navn": "Atlantic Sapphire",
+    "dato": "2026-06-25",
+    "aksjeverdi": 0.987,
+    "mcap": 35387942.0,
+    "turnover": 35116.83
   },
   {
     "ticker": "AZT",
@@ -1120,12 +1112,124 @@
     "turnover": 231432.0
   },
   {
-    "ticker": "BWE",
-    "navn": "BW Energy Limited",
+    "ticker": "AZT",
+    "navn": "ArcticZymes Technologies",
+    "dato": "2026-06-25",
+    "aksjeverdi": 20.0,
+    "mcap": 1021427800.0,
+    "turnover": 331116.6
+  },
+  {
+    "ticker": "BSP",
+    "navn": "Black Sea Property",
+    "dato": "2026-06-03",
+    "aksjeverdi": 3.0,
+    "mcap": 13855128.0,
+    "turnover": 3755.0
+  },
+  {
+    "ticker": "BSP",
+    "navn": "Black Sea Property",
+    "dato": "2026-06-04",
+    "aksjeverdi": 3.24,
+    "mcap": 14963538.0,
+    "turnover": 9977.88
+  },
+  {
+    "ticker": "BSP",
+    "navn": "Black Sea Property",
     "dato": "2026-06-05",
-    "aksjeverdi": 60.1,
-    "mcap": 15521986372.0,
-    "turnover": 6457408.5
+    "aksjeverdi": 3.24,
+    "mcap": 14963538.0,
+    "turnover": 972.0
+  },
+  {
+    "ticker": "BSP",
+    "navn": "Black Sea Property",
+    "dato": "2026-06-08",
+    "aksjeverdi": 3.0,
+    "mcap": 13855128.0,
+    "turnover": 1947.0
+  },
+  {
+    "ticker": "BSP",
+    "navn": "Black Sea Property",
+    "dato": "2026-06-10",
+    "aksjeverdi": 2.7,
+    "mcap": 12469615.0,
+    "turnover": 9609.26
+  },
+  {
+    "ticker": "BSP",
+    "navn": "Black Sea Property",
+    "dato": "2026-06-11",
+    "aksjeverdi": 2.7,
+    "mcap": 12469615.0,
+    "turnover": 1116.4
+  },
+  {
+    "ticker": "BSP",
+    "navn": "Black Sea Property",
+    "dato": "2026-06-12",
+    "aksjeverdi": 2.7,
+    "mcap": 12469615.0,
+    "turnover": 5785.46
+  },
+  {
+    "ticker": "BSP",
+    "navn": "Black Sea Property",
+    "dato": "2026-06-15",
+    "aksjeverdi": 2.7,
+    "mcap": 12469615.0,
+    "turnover": 855.56
+  },
+  {
+    "ticker": "BSP",
+    "navn": "Black Sea Property",
+    "dato": "2026-06-16",
+    "aksjeverdi": 2.82,
+    "mcap": 13023820.0,
+    "turnover": 372.24
+  },
+  {
+    "ticker": "BSP",
+    "navn": "Black Sea Property",
+    "dato": "2026-06-17",
+    "aksjeverdi": 2.98,
+    "mcap": 13762760.0,
+    "turnover": 4395.2
+  },
+  {
+    "ticker": "BSP",
+    "navn": "Black Sea Property",
+    "dato": "2026-06-18",
+    "aksjeverdi": 2.54,
+    "mcap": 11730675.0,
+    "turnover": 10932.28
+  },
+  {
+    "ticker": "BSP",
+    "navn": "Black Sea Property",
+    "dato": "2026-06-19",
+    "aksjeverdi": 2.48,
+    "mcap": 11453572.0,
+    "turnover": 248.0
+  },
+  {
+    "ticker": "BSP",
+    "navn": "Black Sea Property",
+    "dato": "2026-06-23",
+    "aksjeverdi": 3.0,
+    "mcap": 13855128.0,
+    "turnover": 7162.6
+  },
+  {
+    "ticker": "BSP",
+    "navn": "Black Sea Property",
+    "dato": "2026-06-25",
+    "aksjeverdi": 3.54,
+    "mcap": 16349051.0,
+    "turnover": 71.0
   },
   {
     "ticker": "BWE",
@@ -1232,12 +1336,12 @@
     "turnover": 4939696.1
   },
   {
-    "ticker": "BWO",
-    "navn": "BW Offshore Limited",
-    "dato": "2026-06-05",
-    "aksjeverdi": 47.0,
-    "mcap": 8692947040.0,
-    "turnover": 3138530.5
+    "ticker": "BWE",
+    "navn": "BW Energy Limited",
+    "dato": "2026-06-25",
+    "aksjeverdi": 52.1,
+    "mcap": 13455831780.0,
+    "turnover": 3217877.15
   },
   {
     "ticker": "BWO",
@@ -1344,12 +1448,12 @@
     "turnover": 2971425.85
   },
   {
-    "ticker": "CADLR",
-    "navn": "Cadeler",
-    "dato": "2026-06-05",
-    "aksjeverdi": 57.2,
-    "mcap": 22227588191.0,
-    "turnover": 23745846.25
+    "ticker": "BWO",
+    "navn": "BW Offshore Limited",
+    "dato": "2026-06-25",
+    "aksjeverdi": 44.4,
+    "mcap": 8212060608.0,
+    "turnover": 3379774.38
   },
   {
     "ticker": "CADLR",
@@ -1456,12 +1560,12 @@
     "turnover": 26411693.68
   },
   {
-    "ticker": "CODE",
-    "navn": "CodeLab Capital",
-    "dato": "2026-06-05",
-    "aksjeverdi": 3.16,
-    "mcap": 62425560.0,
-    "turnover": 48309.64
+    "ticker": "CADLR",
+    "navn": "Cadeler",
+    "dato": "2026-06-25",
+    "aksjeverdi": 53.9,
+    "mcap": 20671887385.0,
+    "turnover": 12849279.9
   },
   {
     "ticker": "CODE",
@@ -1568,12 +1672,12 @@
     "turnover": 128790.77
   },
   {
-    "ticker": "DDRIL",
-    "navn": "Dolphin Drilling",
-    "dato": "2026-06-05",
-    "aksjeverdi": 2.7,
-    "mcap": 1098246446.0,
-    "turnover": 2226608.06
+    "ticker": "CODE",
+    "navn": "CodeLab Capital",
+    "dato": "2026-06-25",
+    "aksjeverdi": 3.21,
+    "mcap": 63413306.0,
+    "turnover": 47016.98
   },
   {
     "ticker": "DDRIL",
@@ -1680,12 +1784,12 @@
     "turnover": 1086798.31
   },
   {
-    "ticker": "DNB",
-    "navn": "DNB Bank",
-    "dato": "2026-06-05",
-    "aksjeverdi": 284.4,
-    "mcap": 420230857734.0,
-    "turnover": 424044538.15
+    "ticker": "DDRIL",
+    "navn": "Dolphin Drilling",
+    "dato": "2026-06-25",
+    "aksjeverdi": 2.49,
+    "mcap": 1012827278.0,
+    "turnover": 396931.66
   },
   {
     "ticker": "DNB",
@@ -1792,12 +1896,12 @@
     "turnover": 558839612.05
   },
   {
-    "ticker": "ELABS",
-    "navn": "Elliptic Laboratories",
-    "dato": "2026-06-05",
-    "aksjeverdi": 3.15,
-    "mcap": 397960810.0,
-    "turnover": 627854.185
+    "ticker": "DNB",
+    "navn": "DNB Bank",
+    "dato": "2026-06-25",
+    "aksjeverdi": 293.0,
+    "mcap": 422114805152.0,
+    "turnover": 491665707.8
   },
   {
     "ticker": "ELABS",
@@ -1904,12 +2008,12 @@
     "turnover": 246802.22
   },
   {
-    "ticker": "ELK",
-    "navn": "Elkem",
-    "dato": "2026-06-05",
-    "aksjeverdi": 33.3,
-    "mcap": 12246724616.0,
-    "turnover": 30168753.52
+    "ticker": "ELABS",
+    "navn": "Elliptic Laboratories",
+    "dato": "2026-06-25",
+    "aksjeverdi": 2.93,
+    "mcap": 370166721.0,
+    "turnover": 260249.655
   },
   {
     "ticker": "ELK",
@@ -2016,12 +2120,12 @@
     "turnover": 12341360.5
   },
   {
-    "ticker": "ELMRA",
-    "navn": "Elmera Group",
-    "dato": "2026-06-05",
-    "aksjeverdi": 29.0,
-    "mcap": 3316202200.0,
-    "turnover": 3433811.85
+    "ticker": "ELK",
+    "navn": "Elkem",
+    "dato": "2026-06-25",
+    "aksjeverdi": 32.2,
+    "mcap": 11842178158.0,
+    "turnover": 28341813.12
   },
   {
     "ticker": "ELMRA",
@@ -2128,12 +2232,12 @@
     "turnover": 1641884.55
   },
   {
-    "ticker": "ELO",
-    "navn": "Elopak",
-    "dato": "2026-06-05",
-    "aksjeverdi": 35.2,
-    "mcap": 9476509293.0,
-    "turnover": 58601433.55
+    "ticker": "ELMRA",
+    "navn": "Elmera Group",
+    "dato": "2026-06-25",
+    "aksjeverdi": 41.7,
+    "mcap": 4768470060.0,
+    "turnover": 122707916.75
   },
   {
     "ticker": "ELO",
@@ -2240,12 +2344,12 @@
     "turnover": 4659346.45
   },
   {
-    "ticker": "ENH",
-    "navn": "SED Energy Holdings",
-    "dato": "2026-06-05",
-    "aksjeverdi": 8.42,
-    "mcap": 6112789928.0,
-    "turnover": 30121049.73
+    "ticker": "ELO",
+    "navn": "Elopak",
+    "dato": "2026-06-25",
+    "aksjeverdi": 36.2,
+    "mcap": 9745728307.0,
+    "turnover": 11438836.82
   },
   {
     "ticker": "ENH",
@@ -2352,12 +2456,12 @@
     "turnover": 21385195.33
   },
   {
-    "ticker": "ENTRA",
-    "navn": "Entra",
-    "dato": "2026-06-05",
-    "aksjeverdi": 101.2,
-    "mcap": 18431763966.0,
-    "turnover": 3480216.8
+    "ticker": "ENH",
+    "navn": "SED Energy Holdings",
+    "dato": "2026-06-25",
+    "aksjeverdi": 7.95,
+    "mcap": 5771577188.0,
+    "turnover": 54148042.17
   },
   {
     "ticker": "ENTRA",
@@ -2464,12 +2568,12 @@
     "turnover": 5910782.6
   },
   {
-    "ticker": "EQNR",
-    "navn": "Equinor",
-    "dato": "2026-06-05",
-    "aksjeverdi": 354.0,
-    "mcap": 905109859248.0,
-    "turnover": 719035258.4
+    "ticker": "ENTRA",
+    "navn": "Entra",
+    "dato": "2026-06-25",
+    "aksjeverdi": 104.8,
+    "mcap": 19087439364.0,
+    "turnover": 5361046.8
   },
   {
     "ticker": "EQNR",
@@ -2576,124 +2680,12 @@
     "turnover": 812897901.2
   },
   {
-    "ticker": "EXTX",
-    "navn": "EXACT Therapeutics",
-    "dato": "2026-06-04",
-    "aksjeverdi": 0.75,
-    "mcap": 83658046.0,
-    "turnover": 365823.135
-  },
-  {
-    "ticker": "EXTX",
-    "navn": "EXACT Therapeutics",
-    "dato": "2026-06-05",
-    "aksjeverdi": 0.755,
-    "mcap": 84215766.0,
-    "turnover": 32403.53
-  },
-  {
-    "ticker": "EXTX",
-    "navn": "EXACT Therapeutics",
-    "dato": "2026-06-08",
-    "aksjeverdi": 0.84,
-    "mcap": 93697011.0,
-    "turnover": 28160.36
-  },
-  {
-    "ticker": "EXTX",
-    "navn": "EXACT Therapeutics",
-    "dato": "2026-06-09",
-    "aksjeverdi": 0.835,
-    "mcap": 93139291.0,
-    "turnover": 69192.25
-  },
-  {
-    "ticker": "EXTX",
-    "navn": "EXACT Therapeutics",
-    "dato": "2026-06-11",
-    "aksjeverdi": 0.71,
-    "mcap": 79196283.0,
-    "turnover": 16728.85
-  },
-  {
-    "ticker": "EXTX",
-    "navn": "EXACT Therapeutics",
-    "dato": "2026-06-12",
-    "aksjeverdi": 0.845,
-    "mcap": 94254732.0,
-    "turnover": 116857.79
-  },
-  {
-    "ticker": "EXTX",
-    "navn": "EXACT Therapeutics",
-    "dato": "2026-06-15",
-    "aksjeverdi": 0.78,
-    "mcap": 87004368.0,
-    "turnover": 91240.68
-  },
-  {
-    "ticker": "EXTX",
-    "navn": "EXACT Therapeutics",
-    "dato": "2026-06-16",
-    "aksjeverdi": 0.8,
-    "mcap": 89235249.0,
-    "turnover": 154257.765
-  },
-  {
-    "ticker": "EXTX",
-    "navn": "EXACT Therapeutics",
-    "dato": "2026-06-17",
-    "aksjeverdi": 0.75,
-    "mcap": 83658046.0,
-    "turnover": 34150.23
-  },
-  {
-    "ticker": "EXTX",
-    "navn": "EXACT Therapeutics",
-    "dato": "2026-06-18",
-    "aksjeverdi": 0.85,
-    "mcap": 94812452.0,
-    "turnover": 47465.115
-  },
-  {
-    "ticker": "EXTX",
-    "navn": "EXACT Therapeutics",
-    "dato": "2026-06-19",
-    "aksjeverdi": 0.77,
-    "mcap": 85888927.0,
-    "turnover": 62717.57
-  },
-  {
-    "ticker": "EXTX",
-    "navn": "EXACT Therapeutics",
-    "dato": "2026-06-22",
-    "aksjeverdi": 0.65,
-    "mcap": 72503640.0,
-    "turnover": 16920.32
-  },
-  {
-    "ticker": "EXTX",
-    "navn": "EXACT Therapeutics",
-    "dato": "2026-06-23",
-    "aksjeverdi": 0.715,
-    "mcap": 79754004.0,
-    "turnover": 34634.605
-  },
-  {
-    "ticker": "EXTX",
-    "navn": "EXACT Therapeutics",
-    "dato": "2026-06-24",
-    "aksjeverdi": 0.725,
-    "mcap": 80869444.0,
-    "turnover": 32524.83
-  },
-  {
-    "ticker": "GENT",
-    "navn": "Gentian Diagnostics",
-    "dato": "2026-06-05",
-    "aksjeverdi": 36.5,
-    "mcap": 564239776.0,
-    "turnover": 22699.2
+    "ticker": "EQNR",
+    "navn": "Equinor",
+    "dato": "2026-06-25",
+    "aksjeverdi": 308.8,
+    "mcap": 789542159706.0,
+    "turnover": 940544484.75
   },
   {
     "ticker": "GENT",
@@ -2800,12 +2792,12 @@
     "turnover": 21063.0
   },
   {
-    "ticker": "GJF",
-    "navn": "Gjensidige Forsikring",
-    "dato": "2026-06-05",
-    "aksjeverdi": 248.8,
-    "mcap": 124400000000.0,
-    "turnover": 72837110.2
+    "ticker": "GENT",
+    "navn": "Gentian Diagnostics",
+    "dato": "2026-06-25",
+    "aksjeverdi": 36.0,
+    "mcap": 556510464.0,
+    "turnover": 138890.7
   },
   {
     "ticker": "GJF",
@@ -2912,12 +2904,12 @@
     "turnover": 93640762.8
   },
   {
-    "ticker": "HPUR",
-    "navn": "Hexagon Purus",
-    "dato": "2026-06-05",
-    "aksjeverdi": 12.542,
-    "mcap": 537407279.0,
-    "turnover": 115894.06
+    "ticker": "GJF",
+    "navn": "Gjensidige Forsikring",
+    "dato": "2026-06-25",
+    "aksjeverdi": 268.4,
+    "mcap": 134200000000.0,
+    "turnover": 63065189.0
   },
   {
     "ticker": "HPUR",
@@ -3024,12 +3016,12 @@
     "turnover": 241259.374
   },
   {
-    "ticker": "HYPRO",
-    "navn": "HydrogenPro",
-    "dato": "2026-06-05",
-    "aksjeverdi": 2.72,
-    "mcap": 259827698.0,
-    "turnover": 858056.37
+    "ticker": "HPUR",
+    "navn": "Hexagon Purus",
+    "dato": "2026-06-25",
+    "aksjeverdi": 12.124,
+    "mcap": 519496560.0,
+    "turnover": 585939.252
   },
   {
     "ticker": "HYPRO",
@@ -3136,12 +3128,124 @@
     "turnover": 653913.376
   },
   {
-    "ticker": "IOX",
-    "navn": "Interoil Exploration and Production",
+    "ticker": "HYPRO",
+    "navn": "HydrogenPro",
+    "dato": "2026-06-25",
+    "aksjeverdi": 0.73,
+    "mcap": 91633169.0,
+    "turnover": 1432442.422
+  },
+  {
+    "ticker": "ININ",
+    "navn": "Inin Group",
+    "dato": "2026-06-02",
+    "aksjeverdi": 3.1,
+    "mcap": 417696790.0,
+    "turnover": 2638.36
+  },
+  {
+    "ticker": "ININ",
+    "navn": "Inin Group",
+    "dato": "2026-06-03",
+    "aksjeverdi": 3.08,
+    "mcap": 415001972.0,
+    "turnover": 77.0
+  },
+  {
+    "ticker": "ININ",
+    "navn": "Inin Group",
     "dato": "2026-06-05",
-    "aksjeverdi": 2.55,
-    "mcap": 51342791.0,
-    "turnover": 114666.95
+    "aksjeverdi": 3.06,
+    "mcap": 412307154.0,
+    "turnover": 122.4
+  },
+  {
+    "ticker": "ININ",
+    "navn": "Inin Group",
+    "dato": "2026-06-08",
+    "aksjeverdi": 2.8,
+    "mcap": 377274520.0,
+    "turnover": 15514.74
+  },
+  {
+    "ticker": "ININ",
+    "navn": "Inin Group",
+    "dato": "2026-06-09",
+    "aksjeverdi": 3.0,
+    "mcap": 404222700.0,
+    "turnover": 53238.54
+  },
+  {
+    "ticker": "ININ",
+    "navn": "Inin Group",
+    "dato": "2026-06-11",
+    "aksjeverdi": 2.96,
+    "mcap": 398833064.0,
+    "turnover": 515.04
+  },
+  {
+    "ticker": "ININ",
+    "navn": "Inin Group",
+    "dato": "2026-06-12",
+    "aksjeverdi": 2.98,
+    "mcap": 401527882.0,
+    "turnover": 11920.0
+  },
+  {
+    "ticker": "ININ",
+    "navn": "Inin Group",
+    "dato": "2026-06-15",
+    "aksjeverdi": 2.98,
+    "mcap": 401527882.0,
+    "turnover": 2827.08
+  },
+  {
+    "ticker": "ININ",
+    "navn": "Inin Group",
+    "dato": "2026-06-17",
+    "aksjeverdi": 2.98,
+    "mcap": 401527882.0,
+    "turnover": 894.0
+  },
+  {
+    "ticker": "ININ",
+    "navn": "Inin Group",
+    "dato": "2026-06-18",
+    "aksjeverdi": 2.88,
+    "mcap": 388053792.0,
+    "turnover": 236.16
+  },
+  {
+    "ticker": "ININ",
+    "navn": "Inin Group",
+    "dato": "2026-06-19",
+    "aksjeverdi": 2.86,
+    "mcap": 385358974.0,
+    "turnover": 59045.24
+  },
+  {
+    "ticker": "ININ",
+    "navn": "Inin Group",
+    "dato": "2026-06-22",
+    "aksjeverdi": 2.86,
+    "mcap": 385358974.0,
+    "turnover": 31440.46
+  },
+  {
+    "ticker": "ININ",
+    "navn": "Inin Group",
+    "dato": "2026-06-23",
+    "aksjeverdi": 2.86,
+    "mcap": 385358974.0,
+    "turnover": 5176.8
+  },
+  {
+    "ticker": "ININ",
+    "navn": "Inin Group",
+    "dato": "2026-06-25",
+    "aksjeverdi": 2.74,
+    "mcap": 369190066.0,
+    "turnover": 34057.08
   },
   {
     "ticker": "IOX",
@@ -3248,12 +3352,12 @@
     "turnover": 51141.115
   },
   {
-    "ticker": "ITERA",
-    "navn": "Itera",
-    "dato": "2026-06-05",
-    "aksjeverdi": 6.3,
-    "mcap": 517775731.0,
-    "turnover": 9623.7
+    "ticker": "IOX",
+    "navn": "Interoil Exploration and Production",
+    "dato": "2026-06-25",
+    "aksjeverdi": 2.0,
+    "mcap": 40268856.0,
+    "turnover": 130487.43
   },
   {
     "ticker": "ITERA",
@@ -3360,12 +3464,12 @@
     "turnover": 92268.08
   },
   {
-    "ticker": "KING",
-    "navn": "The Kingfish Company",
-    "dato": "2026-06-05",
-    "aksjeverdi": 0.89,
-    "mcap": 126997703.0,
-    "turnover": 3816.53
+    "ticker": "ITERA",
+    "navn": "Itera",
+    "dato": "2026-06-25",
+    "aksjeverdi": 6.1,
+    "mcap": 501338406.0,
+    "turnover": 7000.0
   },
   {
     "ticker": "KING",
@@ -3472,12 +3576,124 @@
     "turnover": 3263.805
   },
   {
-    "ticker": "KOG",
-    "navn": "Kongsberg Gruppen",
-    "dato": "2026-06-05",
-    "aksjeverdi": 312.0,
-    "mcap": 274438084440.0,
-    "turnover": 278144773.95
+    "ticker": "KING",
+    "navn": "The Kingfish Company",
+    "dato": "2026-06-25",
+    "aksjeverdi": 0.83,
+    "mcap": 118436060.0,
+    "turnover": 507.96
+  },
+  {
+    "ticker": "KIT",
+    "navn": "Kitron",
+    "dato": "2026-06-08",
+    "aksjeverdi": 113.1,
+    "mcap": 24735249470.0,
+    "turnover": 35517305.0
+  },
+  {
+    "ticker": "KIT",
+    "navn": "Kitron",
+    "dato": "2026-06-09",
+    "aksjeverdi": 113.4,
+    "mcap": 24800860211.0,
+    "turnover": 49780636.12
+  },
+  {
+    "ticker": "KIT",
+    "navn": "Kitron",
+    "dato": "2026-06-10",
+    "aksjeverdi": 109.4,
+    "mcap": 23926050327.0,
+    "turnover": 76448443.3
+  },
+  {
+    "ticker": "KIT",
+    "navn": "Kitron",
+    "dato": "2026-06-11",
+    "aksjeverdi": 108.1,
+    "mcap": 23641737115.0,
+    "turnover": 26844141.11
+  },
+  {
+    "ticker": "KIT",
+    "navn": "Kitron",
+    "dato": "2026-06-12",
+    "aksjeverdi": 108.6,
+    "mcap": 23751088351.0,
+    "turnover": 24580737.8
+  },
+  {
+    "ticker": "KIT",
+    "navn": "Kitron",
+    "dato": "2026-06-15",
+    "aksjeverdi": 109.3,
+    "mcap": 23904180080.0,
+    "turnover": 27584858.9
+  },
+  {
+    "ticker": "KIT",
+    "navn": "Kitron",
+    "dato": "2026-06-16",
+    "aksjeverdi": 109.3,
+    "mcap": 23904180080.0,
+    "turnover": 23440574.27
+  },
+  {
+    "ticker": "KIT",
+    "navn": "Kitron",
+    "dato": "2026-06-17",
+    "aksjeverdi": 109.2,
+    "mcap": 23882309833.0,
+    "turnover": 39395750.7
+  },
+  {
+    "ticker": "KIT",
+    "navn": "Kitron",
+    "dato": "2026-06-18",
+    "aksjeverdi": 108.7,
+    "mcap": 23772958598.0,
+    "turnover": 27268521.15
+  },
+  {
+    "ticker": "KIT",
+    "navn": "Kitron",
+    "dato": "2026-06-19",
+    "aksjeverdi": 110.8,
+    "mcap": 24232233787.0,
+    "turnover": 32007332.8
+  },
+  {
+    "ticker": "KIT",
+    "navn": "Kitron",
+    "dato": "2026-06-22",
+    "aksjeverdi": 109.2,
+    "mcap": 23882309833.0,
+    "turnover": 28708598.2
+  },
+  {
+    "ticker": "KIT",
+    "navn": "Kitron",
+    "dato": "2026-06-23",
+    "aksjeverdi": 106.5,
+    "mcap": 23291813162.0,
+    "turnover": 41520517.2
+  },
+  {
+    "ticker": "KIT",
+    "navn": "Kitron",
+    "dato": "2026-06-24",
+    "aksjeverdi": 105.8,
+    "mcap": 23138721432.0,
+    "turnover": 35266612.8
+  },
+  {
+    "ticker": "KIT",
+    "navn": "Kitron",
+    "dato": "2026-06-25",
+    "aksjeverdi": 104.4,
+    "mcap": 22832537972.0,
+    "turnover": 20398701.23
   },
   {
     "ticker": "KOG",
@@ -3584,12 +3800,12 @@
     "turnover": 742024469.35
   },
   {
-    "ticker": "KOMPL",
-    "navn": "Komplett",
-    "dato": "2026-06-05",
-    "aksjeverdi": 6.86,
-    "mcap": 1202840364.0,
-    "turnover": 386840.92
+    "ticker": "KOG",
+    "navn": "Kongsberg Gruppen",
+    "dato": "2026-06-25",
+    "aksjeverdi": 285.5,
+    "mcap": 251128439448.0,
+    "turnover": 510705106.3
   },
   {
     "ticker": "KOMPL",
@@ -3696,12 +3912,12 @@
     "turnover": 595965.82
   },
   {
-    "ticker": "LSG",
-    "navn": "Lerøy Seafood Group",
-    "dato": "2026-06-05",
-    "aksjeverdi": 40.8,
-    "mcap": 24307566144.0,
-    "turnover": 35197671.66
+    "ticker": "KOMPL",
+    "navn": "Komplett",
+    "dato": "2026-06-25",
+    "aksjeverdi": 6.18,
+    "mcap": 1083608375.0,
+    "turnover": 279171.26
   },
   {
     "ticker": "LSG",
@@ -3808,12 +4024,12 @@
     "turnover": 29345509.28
   },
   {
-    "ticker": "MGN",
-    "navn": "Magnora",
-    "dato": "2026-06-05",
-    "aksjeverdi": 30.2,
-    "mcap": 2185272211.0,
-    "turnover": 52472200.1
+    "ticker": "LSG",
+    "navn": "Lerøy Seafood Group",
+    "dato": "2026-06-25",
+    "aksjeverdi": 41.04,
+    "mcap": 24450551827.0,
+    "turnover": 15721072.82
   },
   {
     "ticker": "MGN",
@@ -3920,12 +4136,12 @@
     "turnover": 7252896.35
   },
   {
-    "ticker": "MOWI",
-    "navn": "Mowi",
-    "dato": "2026-06-05",
-    "aksjeverdi": 190.9,
-    "mcap": 100659774776.0,
-    "turnover": 267885987.3
+    "ticker": "MGN",
+    "navn": "Magnora",
+    "dato": "2026-06-25",
+    "aksjeverdi": 23.95,
+    "mcap": 1733022168.0,
+    "turnover": 14458671.0
   },
   {
     "ticker": "MOWI",
@@ -4032,12 +4248,12 @@
     "turnover": 229288702.3
   },
   {
-    "ticker": "NAS",
-    "navn": "Norwegian Air Shuttle",
-    "dato": "2026-06-05",
-    "aksjeverdi": 14.74,
-    "mcap": 15554221666.0,
-    "turnover": 116195000.95
+    "ticker": "MOWI",
+    "navn": "Mowi",
+    "dato": "2026-06-25",
+    "aksjeverdi": 195.8,
+    "mcap": 103243498697.0,
+    "turnover": 136946858.75
   },
   {
     "ticker": "NAS",
@@ -4144,12 +4360,12 @@
     "turnover": 237228450.93
   },
   {
-    "ticker": "NEXT",
-    "navn": "NEXT Biometrics Group",
-    "dato": "2026-06-05",
-    "aksjeverdi": 1.13,
-    "mcap": 70044227.0,
-    "turnover": 354409.385
+    "ticker": "NAS",
+    "navn": "Norwegian Air Shuttle",
+    "dato": "2026-06-25",
+    "aksjeverdi": 16.14,
+    "mcap": 17031556153.0,
+    "turnover": 198994605.73
   },
   {
     "ticker": "NEXT",
@@ -4256,12 +4472,12 @@
     "turnover": 666876.46
   },
   {
-    "ticker": "NHY",
-    "navn": "Norsk Hydro",
-    "dato": "2026-06-05",
-    "aksjeverdi": 116.05,
-    "mcap": 229603664233.0,
-    "turnover": 387315255.32
+    "ticker": "NEXT",
+    "navn": "NEXT Biometrics Group",
+    "dato": "2026-06-25",
+    "aksjeverdi": 0.658,
+    "mcap": 40786816.0,
+    "turnover": 746481.476
   },
   {
     "ticker": "NHY",
@@ -4368,12 +4584,12 @@
     "turnover": 516257164.7
   },
   {
-    "ticker": "NORBT",
-    "navn": "NORBIT",
-    "dato": "2026-06-05",
-    "aksjeverdi": 174.8,
-    "mcap": 11178231886.0,
-    "turnover": 29379300.25
+    "ticker": "NHY",
+    "navn": "Norsk Hydro",
+    "dato": "2026-06-25",
+    "aksjeverdi": 90.24,
+    "mcap": 178538859633.0,
+    "turnover": 477691714.9
   },
   {
     "ticker": "NORBT",
@@ -4480,12 +4696,12 @@
     "turnover": 25376619.4
   },
   {
-    "ticker": "NORDH",
-    "navn": "Nordhealth A",
-    "dato": "2026-06-04",
-    "aksjeverdi": 25.4,
-    "mcap": 2036870348.0,
-    "turnover": 80817.4
+    "ticker": "NORBT",
+    "navn": "NORBIT",
+    "dato": "2026-06-25",
+    "aksjeverdi": 166.2,
+    "mcap": 10653031424.0,
+    "turnover": 15063498.15
   },
   {
     "ticker": "NORDH",
@@ -4592,12 +4808,12 @@
     "turnover": 39578.6
   },
   {
-    "ticker": "NORSE",
-    "navn": "Norse Atlantic",
-    "dato": "2026-06-05",
-    "aksjeverdi": 0.61,
-    "mcap": 1343370461.0,
-    "turnover": 2402280.013
+    "ticker": "NORDH",
+    "navn": "Nordhealth A",
+    "dato": "2026-06-25",
+    "aksjeverdi": 24.8,
+    "mcap": 1988755301.0,
+    "turnover": 38661.8
   },
   {
     "ticker": "NORSE",
@@ -4704,12 +4920,12 @@
     "turnover": 1811663.23
   },
   {
-    "ticker": "NORTH",
-    "navn": "North Energy",
-    "dato": "2026-06-05",
-    "aksjeverdi": 2.4,
-    "mcap": 281403823.0,
-    "turnover": 136688.56
+    "ticker": "NORSE",
+    "navn": "Norse Atlantic",
+    "dato": "2026-06-25",
+    "aksjeverdi": 0.655,
+    "mcap": 1442471561.0,
+    "turnover": 5257521.928
   },
   {
     "ticker": "NORTH",
@@ -4816,12 +5032,12 @@
     "turnover": 55921.6
   },
   {
-    "ticker": "NYKD",
-    "navn": "Nykode Therapeutics",
-    "dato": "2026-06-05",
-    "aksjeverdi": 3.25,
-    "mcap": 1061275943.0,
-    "turnover": 1610276.275
+    "ticker": "NORTH",
+    "navn": "North Energy",
+    "dato": "2026-06-25",
+    "aksjeverdi": 2.33,
+    "mcap": 273196212.0,
+    "turnover": 30916.13
   },
   {
     "ticker": "NYKD",
@@ -4928,12 +5144,12 @@
     "turnover": 1355768.02
   },
   {
-    "ticker": "OBSRV",
-    "navn": "Observe Medical",
-    "dato": "2026-06-05",
-    "aksjeverdi": 1.125,
-    "mcap": 153166964.0,
-    "turnover": 954039.475
+    "ticker": "NYKD",
+    "navn": "Nykode Therapeutics",
+    "dato": "2026-06-25",
+    "aksjeverdi": 3.22,
+    "mcap": 1051479550.0,
+    "turnover": 401765.0
   },
   {
     "ticker": "OBSRV",
@@ -5040,12 +5256,12 @@
     "turnover": 142851.63
   },
   {
-    "ticker": "ODFB",
-    "navn": "Odfjell B",
-    "dato": "2026-06-05",
-    "aksjeverdi": 110.0,
-    "mcap": 8902203033.0,
-    "turnover": 549455.4
+    "ticker": "OBSRV",
+    "navn": "Observe Medical",
+    "dato": "2026-06-25",
+    "aksjeverdi": 1.185,
+    "mcap": 161335868.0,
+    "turnover": 469066.1
   },
   {
     "ticker": "ODFB",
@@ -5152,12 +5368,12 @@
     "turnover": 894826.2
   },
   {
-    "ticker": "OET",
-    "navn": "Okeanis Eco Tankers",
-    "dato": "2026-06-05",
-    "aksjeverdi": 454.0,
-    "mcap": 18042208338.0,
-    "turnover": 46549099.0
+    "ticker": "ODFB",
+    "navn": "Odfjell B",
+    "dato": "2026-06-25",
+    "aksjeverdi": 108.4,
+    "mcap": 8835114903.0,
+    "turnover": 1686289.0
   },
   {
     "ticker": "OET",
@@ -5264,12 +5480,124 @@
     "turnover": 51312261.0
   },
   {
-    "ticker": "PLSV",
-    "navn": "Paratus Energy Services",
-    "dato": "2026-06-05",
-    "aksjeverdi": 47.05,
-    "mcap": 7723259805.0,
-    "turnover": 8834045.8
+    "ticker": "OET",
+    "navn": "Okeanis Eco Tankers",
+    "dato": "2026-06-25",
+    "aksjeverdi": 533.0,
+    "mcap": 21181711551.0,
+    "turnover": 49531958.0
+  },
+  {
+    "ticker": "ORK",
+    "navn": "Orkla",
+    "dato": "2026-06-08",
+    "aksjeverdi": 97.95,
+    "mcap": 98090163512.0,
+    "turnover": 210835210.45
+  },
+  {
+    "ticker": "ORK",
+    "navn": "Orkla",
+    "dato": "2026-06-09",
+    "aksjeverdi": 99.2,
+    "mcap": 99341952224.0,
+    "turnover": 155805842.72
+  },
+  {
+    "ticker": "ORK",
+    "navn": "Orkla",
+    "dato": "2026-06-10",
+    "aksjeverdi": 99.5,
+    "mcap": 99642381515.0,
+    "turnover": 125667355.6
+  },
+  {
+    "ticker": "ORK",
+    "navn": "Orkla",
+    "dato": "2026-06-11",
+    "aksjeverdi": 99.25,
+    "mcap": 99392023772.0,
+    "turnover": 182676346.2
+  },
+  {
+    "ticker": "ORK",
+    "navn": "Orkla",
+    "dato": "2026-06-12",
+    "aksjeverdi": 99.75,
+    "mcap": 99892739258.0,
+    "turnover": 201989196.25
+  },
+  {
+    "ticker": "ORK",
+    "navn": "Orkla",
+    "dato": "2026-06-15",
+    "aksjeverdi": 99.9,
+    "mcap": 100042953903.0,
+    "turnover": 248235038.65
+  },
+  {
+    "ticker": "ORK",
+    "navn": "Orkla",
+    "dato": "2026-06-16",
+    "aksjeverdi": 100.1,
+    "mcap": 98641537394.0,
+    "turnover": 201937694.55
+  },
+  {
+    "ticker": "ORK",
+    "navn": "Orkla",
+    "dato": "2026-06-17",
+    "aksjeverdi": 100.4,
+    "mcap": 98937166378.0,
+    "turnover": 274190106.1
+  },
+  {
+    "ticker": "ORK",
+    "navn": "Orkla",
+    "dato": "2026-06-18",
+    "aksjeverdi": 99.95,
+    "mcap": 98493722903.0,
+    "turnover": 228753795.3
+  },
+  {
+    "ticker": "ORK",
+    "navn": "Orkla",
+    "dato": "2026-06-19",
+    "aksjeverdi": 99.65,
+    "mcap": 98198093920.0,
+    "turnover": 322024937.07
+  },
+  {
+    "ticker": "ORK",
+    "navn": "Orkla",
+    "dato": "2026-06-22",
+    "aksjeverdi": 100.4,
+    "mcap": 98937166378.0,
+    "turnover": 260527589.1
+  },
+  {
+    "ticker": "ORK",
+    "navn": "Orkla",
+    "dato": "2026-06-23",
+    "aksjeverdi": 101.7,
+    "mcap": 100218225305.0,
+    "turnover": 263201096.6
+  },
+  {
+    "ticker": "ORK",
+    "navn": "Orkla",
+    "dato": "2026-06-24",
+    "aksjeverdi": 103.8,
+    "mcap": 102287628187.0,
+    "turnover": 257350625.0
+  },
+  {
+    "ticker": "ORK",
+    "navn": "Orkla",
+    "dato": "2026-06-25",
+    "aksjeverdi": 105.5,
+    "mcap": 103962859092.0,
+    "turnover": 211211658.7
   },
   {
     "ticker": "PLSV",
@@ -5376,12 +5704,12 @@
     "turnover": 17059442.0
   },
   {
-    "ticker": "POL",
-    "navn": "Polaris Media",
-    "dato": "2026-06-02",
-    "aksjeverdi": 58.0,
-    "mcap": 2842563354.0,
-    "turnover": 19740.2
+    "ticker": "PLSV",
+    "navn": "Paratus Energy Services",
+    "dato": "2026-06-25",
+    "aksjeverdi": 46.05,
+    "mcap": 7559109756.0,
+    "turnover": 52131659.25
   },
   {
     "ticker": "POL",
@@ -5488,12 +5816,12 @@
     "turnover": 3497.4
   },
   {
-    "ticker": "PUBLI",
-    "navn": "Public Property Invest",
-    "dato": "2026-06-05",
-    "aksjeverdi": 19.24,
-    "mcap": 18521233866.0,
-    "turnover": 4039824.935
+    "ticker": "POL",
+    "navn": "Polaris Media",
+    "dato": "2026-06-25",
+    "aksjeverdi": 58.8,
+    "mcap": 2881771124.0,
+    "turnover": 12193.8
   },
   {
     "ticker": "PUBLI",
@@ -5600,124 +5928,12 @@
     "turnover": 13365677.726
   },
   {
-    "ticker": "REFL",
-    "navn": "ReFuels N.V.",
-    "dato": "2026-06-04",
-    "aksjeverdi": 15.9,
-    "mcap": 967771006.0,
-    "turnover": 162888.1
-  },
-  {
-    "ticker": "REFL",
-    "navn": "ReFuels N.V.",
-    "dato": "2026-06-05",
-    "aksjeverdi": 15.9,
-    "mcap": 967771006.0,
-    "turnover": 2735.9
-  },
-  {
-    "ticker": "REFL",
-    "navn": "ReFuels N.V.",
-    "dato": "2026-06-08",
-    "aksjeverdi": 16.0,
-    "mcap": 973857616.0,
-    "turnover": 21200.0
-  },
-  {
-    "ticker": "REFL",
-    "navn": "ReFuels N.V.",
-    "dato": "2026-06-09",
-    "aksjeverdi": 16.2,
-    "mcap": 986030836.0,
-    "turnover": 16200.0
-  },
-  {
-    "ticker": "REFL",
-    "navn": "ReFuels N.V.",
-    "dato": "2026-06-10",
-    "aksjeverdi": 15.9,
-    "mcap": 967771006.0,
-    "turnover": 6416.5
-  },
-  {
-    "ticker": "REFL",
-    "navn": "ReFuels N.V.",
-    "dato": "2026-06-11",
-    "aksjeverdi": 16.0,
-    "mcap": 973857616.0,
-    "turnover": 1696.0
-  },
-  {
-    "ticker": "REFL",
-    "navn": "ReFuels N.V.",
-    "dato": "2026-06-12",
-    "aksjeverdi": 16.2,
-    "mcap": 986030836.0,
-    "turnover": 134038.8
-  },
-  {
-    "ticker": "REFL",
-    "navn": "ReFuels N.V.",
-    "dato": "2026-06-15",
-    "aksjeverdi": 16.2,
-    "mcap": 986030836.0,
-    "turnover": 1215.0
-  },
-  {
-    "ticker": "REFL",
-    "navn": "ReFuels N.V.",
-    "dato": "2026-06-16",
-    "aksjeverdi": 16.2,
-    "mcap": 986030836.0,
-    "turnover": 1620.0
-  },
-  {
-    "ticker": "REFL",
-    "navn": "ReFuels N.V.",
-    "dato": "2026-06-17",
-    "aksjeverdi": 16.5,
-    "mcap": 1004290666.0,
-    "turnover": 11562.0
-  },
-  {
-    "ticker": "REFL",
-    "navn": "ReFuels N.V.",
-    "dato": "2026-06-18",
-    "aksjeverdi": 16.9,
-    "mcap": 1028637107.0,
-    "turnover": 8450.0
-  },
-  {
-    "ticker": "REFL",
-    "navn": "ReFuels N.V.",
-    "dato": "2026-06-19",
-    "aksjeverdi": 16.9,
-    "mcap": 1028637107.0,
-    "turnover": 154839.1
-  },
-  {
-    "ticker": "REFL",
-    "navn": "ReFuels N.V.",
-    "dato": "2026-06-23",
-    "aksjeverdi": 16.5,
-    "mcap": 1004290666.0,
-    "turnover": 14536.5
-  },
-  {
-    "ticker": "REFL",
-    "navn": "ReFuels N.V.",
-    "dato": "2026-06-24",
-    "aksjeverdi": 15.7,
-    "mcap": 955597786.0,
-    "turnover": 213251.0
-  },
-  {
-    "ticker": "SAGA",
-    "navn": "Saga Pure",
-    "dato": "2026-06-05",
-    "aksjeverdi": 1.45,
-    "mcap": 978573713.0,
-    "turnover": 81367.535
+    "ticker": "PUBLI",
+    "navn": "Public Property Invest",
+    "dato": "2026-06-25",
+    "aksjeverdi": 19.362,
+    "mcap": 18217650544.0,
+    "turnover": 1043320.28
   },
   {
     "ticker": "SAGA",
@@ -5824,12 +6040,12 @@
     "turnover": 1112636.705
   },
   {
-    "ticker": "SEA1",
-    "navn": "Sea1 Offshore",
-    "dato": "2026-06-05",
-    "aksjeverdi": 27.3,
-    "mcap": 4191743938.0,
-    "turnover": 3659541.95
+    "ticker": "SAGA",
+    "navn": "Saga Pure",
+    "dato": "2026-06-25",
+    "aksjeverdi": 1.595,
+    "mcap": 1076431085.0,
+    "turnover": 517768.47
   },
   {
     "ticker": "SEA1",
@@ -5936,12 +6152,12 @@
     "turnover": 6654303.75
   },
   {
-    "ticker": "SMOP",
-    "navn": "Smartoptics Group",
-    "dato": "2026-06-05",
-    "aksjeverdi": 60.0,
-    "mcap": 5882731080.0,
-    "turnover": 13812937.0
+    "ticker": "SEA1",
+    "navn": "Sea1 Offshore",
+    "dato": "2026-06-25",
+    "aksjeverdi": 24.9,
+    "mcap": 3823238977.0,
+    "turnover": 3052646.3
   },
   {
     "ticker": "SMOP",
@@ -6048,12 +6264,12 @@
     "turnover": 6896772.6
   },
   {
-    "ticker": "SWON",
-    "navn": "SoftwareOne Holding",
-    "dato": "2026-06-05",
-    "aksjeverdi": 102.2,
-    "mcap": 22518145598.0,
-    "turnover": 5628581.8
+    "ticker": "SMOP",
+    "navn": "Smartoptics Group",
+    "dato": "2026-06-25",
+    "aksjeverdi": 50.0,
+    "mcap": 4902275900.0,
+    "turnover": 7795103.6
   },
   {
     "ticker": "SWON",
@@ -6160,12 +6376,12 @@
     "turnover": 1999500.0
   },
   {
-    "ticker": "TEKNA",
-    "navn": "Tekna Holding",
-    "dato": "2026-06-05",
-    "aksjeverdi": 4.0,
-    "mcap": 909848932.0,
-    "turnover": 96458.13
+    "ticker": "SWON",
+    "navn": "SoftwareOne Holding",
+    "dato": "2026-06-25",
+    "aksjeverdi": 94.9,
+    "mcap": 20891634410.0,
+    "turnover": 1489829.1
   },
   {
     "ticker": "TEKNA",
@@ -6272,12 +6488,12 @@
     "turnover": 88208.14
   },
   {
-    "ticker": "TEL",
-    "navn": "Telenor",
-    "dato": "2026-06-05",
-    "aksjeverdi": 148.8,
-    "mcap": 203610478363.0,
-    "turnover": 206985839.9
+    "ticker": "TEKNA",
+    "navn": "Tekna Holding",
+    "dato": "2026-06-25",
+    "aksjeverdi": 3.95,
+    "mcap": 898475820.0,
+    "turnover": 101047.25
   },
   {
     "ticker": "TEL",
@@ -6384,124 +6600,12 @@
     "turnover": 194371441.3
   },
   {
-    "ticker": "VAR",
-    "navn": "Vår Energi",
-    "dato": "2026-06-05",
-    "aksjeverdi": 47.98,
-    "mcap": 119777571683.0,
-    "turnover": 351159263.93
-  },
-  {
-    "ticker": "VAR",
-    "navn": "Vår Energi",
-    "dato": "2026-06-08",
-    "aksjeverdi": 47.86,
-    "mcap": 119478002934.0,
-    "turnover": 306917357.72
-  },
-  {
-    "ticker": "VAR",
-    "navn": "Vår Energi",
-    "dato": "2026-06-09",
-    "aksjeverdi": 47.45,
-    "mcap": 118454476373.0,
-    "turnover": 268816704.47
-  },
-  {
-    "ticker": "VAR",
-    "navn": "Vår Energi",
-    "dato": "2026-06-10",
-    "aksjeverdi": 48.52,
-    "mcap": 121125631056.0,
-    "turnover": 319584482.01
-  },
-  {
-    "ticker": "VAR",
-    "navn": "Vår Energi",
-    "dato": "2026-06-11",
-    "aksjeverdi": 49.73,
-    "mcap": 124146282614.0,
-    "turnover": 305347138.76
-  },
-  {
-    "ticker": "VAR",
-    "navn": "Vår Energi",
-    "dato": "2026-06-12",
-    "aksjeverdi": 47.02,
-    "mcap": 117381021687.0,
-    "turnover": 376062882.07
-  },
-  {
-    "ticker": "VAR",
-    "navn": "Vår Energi",
-    "dato": "2026-06-15",
-    "aksjeverdi": 44.0,
-    "mcap": 109841874824.0,
-    "turnover": 410565214.23
-  },
-  {
-    "ticker": "VAR",
-    "navn": "Vår Energi",
-    "dato": "2026-06-16",
-    "aksjeverdi": 43.08,
-    "mcap": 107545181078.0,
-    "turnover": 376054995.1
-  },
-  {
-    "ticker": "VAR",
-    "navn": "Vår Energi",
-    "dato": "2026-06-17",
-    "aksjeverdi": 43.31,
-    "mcap": 108119354514.0,
-    "turnover": 232811147.32
-  },
-  {
-    "ticker": "VAR",
-    "navn": "Vår Energi",
-    "dato": "2026-06-18",
-    "aksjeverdi": 42.05,
-    "mcap": 104973882644.0,
-    "turnover": 198630960.09
-  },
-  {
-    "ticker": "VAR",
-    "navn": "Vår Energi",
-    "dato": "2026-06-19",
-    "aksjeverdi": 43.09,
-    "mcap": 107570145140.0,
-    "turnover": 284363039.17
-  },
-  {
-    "ticker": "VAR",
-    "navn": "Vår Energi",
-    "dato": "2026-06-22",
-    "aksjeverdi": 43.09,
-    "mcap": 107570145140.0,
-    "turnover": 160892876.11
-  },
-  {
-    "ticker": "VAR",
-    "navn": "Vår Energi",
-    "dato": "2026-06-23",
-    "aksjeverdi": 42.63,
-    "mcap": 106421798267.0,
-    "turnover": 207490535.91
-  },
-  {
-    "ticker": "VAR",
-    "navn": "Vår Energi",
-    "dato": "2026-06-24",
-    "aksjeverdi": 41.19,
-    "mcap": 102826973273.0,
-    "turnover": 265612865.67
-  },
-  {
-    "ticker": "WSTEP",
-    "navn": "Webstep",
-    "dato": "2026-06-05",
-    "aksjeverdi": 14.95,
-    "mcap": 421405637.0,
-    "turnover": 9975.6
+    "ticker": "TEL",
+    "navn": "Telenor",
+    "dato": "2026-06-25",
+    "aksjeverdi": 143.9,
+    "mcap": 196905563417.0,
+    "turnover": 183506492.4
   },
   {
     "ticker": "WSTEP",
@@ -6608,12 +6712,12 @@
     "turnover": 245475.25
   },
   {
-    "ticker": "YAR",
-    "navn": "Yara International",
-    "dato": "2026-06-05",
-    "aksjeverdi": 493.7,
-    "mcap": 125758042050.0,
-    "turnover": 293312393.6
+    "ticker": "WSTEP",
+    "navn": "Webstep",
+    "dato": "2026-06-25",
+    "aksjeverdi": 13.5,
+    "mcap": 380533518.0,
+    "turnover": 239733.1
   },
   {
     "ticker": "YAR",
@@ -6718,5 +6822,13 @@
     "aksjeverdi": 441.0,
     "mcap": 112334001507.0,
     "turnover": 260927664.3
+  },
+  {
+    "ticker": "YAR",
+    "navn": "Yara International",
+    "dato": "2026-06-25",
+    "aksjeverdi": 430.0,
+    "mcap": 109532019610.0,
+    "turnover": 244767333.51
   }
 ]
