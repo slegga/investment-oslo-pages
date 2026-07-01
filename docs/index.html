@@ -538,6 +538,7 @@
                     performanceChart.update();
                 });
 
+                Chart.getChart(ctx.canvas)?.destroy();
                 performanceChart = new Chart(ctx, {
                     type: 'line',
                     data: {
@@ -729,6 +730,11 @@
                         // spenn rundt sin egen startverdi, men beholder reelle kr-verdier i tooltip.
                         const yMin = base * (1 + bandMin / 100);
                         const yMax = base * (1 + bandMax / 100);
+
+                        // Ødelegg et eventuelt eksisterende Chart på dette canvaset
+                        // før vi tegner et nytt, ellers kaster Chart.js
+                        // "Canvas is already in use" ved re-render.
+                        Chart.getChart(canvas)?.destroy();
 
                         new Chart(canvas.getContext('2d'), {
                             type: 'line',
