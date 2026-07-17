@@ -580,36 +580,6 @@
     }
   },
   {
-    "ticker": "EAM",
-    "navn": "EAM Solar",
-    "regnskap_navn": "EAM SOLAR AS",
-    "organisasjonsnummer": "996411265",
-    "oslobors_issuer_id": 11296,
-    "naeringskode": "35.123",
-    "naeringskode_beskrivelse": "Produksjon av elektrisitet fra solenergi",
-    "totalt_antall_i_markedet": null,
-    "selskapstype": "vanlig",
-    "estimert_mcap_aar": 70138506.23841403,
-    "estimert_mcap_kvartal": null,
-    "prosent_dager_omsetning": 100,
-    "siste_kvartalsrapport": null,
-    "siste_aarsregnskap": {
-      "fra_dato": "2024-01-01",
-      "til_dato": "2024-12-31",
-      "valuta": "EUR",
-      "aarsresultat": -1316320.0,
-      "totalresultat": -1858271.0,
-      "sum_driftsinntekter": 1506918.0,
-      "driftsresultat": -1758560.0,
-      "sum_egenkapital": 1092629.0,
-      "sum_eiendeler": 12151946.0,
-      "sum_gjeld": 11059318.0,
-      "antall_ansatte": 0,
-      "regnskapstype": "KONSERN",
-      "regnskapsregler": "IFRS"
-    }
-  },
-  {
     "ticker": "ELABS",
     "navn": "Elliptic Laboratories",
     "regnskap_navn": "ELLIPTIC LABORATORIES ASA",
@@ -2165,6 +2135,36 @@
       "sum_gjeld": 238634000.0,
       "antall_ansatte": 66,
       "regnskapstype": "SELSKAP",
+      "regnskapsregler": "regnskapslovenAlminneligRegler"
+    }
+  },
+  {
+    "ticker": "SKAND",
+    "navn": "Skandia GreenPower",
+    "regnskap_navn": "SKANDIA GREENPOWER AS",
+    "organisasjonsnummer": "815836782",
+    "oslobors_issuer_id": 12856,
+    "naeringskode": "35.121",
+    "naeringskode_beskrivelse": "Produksjon av elektrisitet fra vannkraft",
+    "totalt_antall_i_markedet": null,
+    "selskapstype": "vanlig",
+    "estimert_mcap_aar": 100331175.73457655,
+    "estimert_mcap_kvartal": null,
+    "prosent_dager_omsetning": 100,
+    "siste_kvartalsrapport": null,
+    "siste_aarsregnskap": {
+      "fra_dato": "2025-01-01",
+      "til_dato": "2025-12-31",
+      "valuta": "NOK",
+      "aarsresultat": 10164560.0,
+      "totalresultat": null,
+      "sum_driftsinntekter": 538762295.0,
+      "driftsresultat": 12503248.0,
+      "sum_egenkapital": 97461197.0,
+      "sum_eiendeler": 287271388.0,
+      "sum_gjeld": 189810190.0,
+      "antall_ansatte": 9,
+      "regnskapstype": "KONSERN",
       "regnskapsregler": "regnskapslovenAlminneligRegler"
     }
   },
