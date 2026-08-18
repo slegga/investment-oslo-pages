@@ -33,13 +33,13 @@
     "id": 6,
     "porteføljenavn": "overvurdertvurdert log år",
     "beskrivelse": "10 mest overvurderte justert størrelse",
-    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap/power(a.estimert_mcap_aar,2.8/2.0) AS overvurdering   FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap_siste ar ON ar.organisasjonsnummer = a.regnskap_organisasjonsnummer WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL ORDER BY overvurdering deSC"
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap/power(a.estimert_mcap_aar,1.3) AS overvurdering   FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap_siste ar ON ar.organisasjonsnummer = a.regnskap_organisasjonsnummer WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL ORDER BY overvurdering deSC"
   },
   {
     "id": 7,
     "porteføljenavn": "undervurdertvurdert log år",
     "beskrivelse": "10 mest undervurderte justert størrelse",
-    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap/power(a.estimert_mcap_aar,2.8/2.0) AS overvurdering FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap_siste ar ON ar.organisasjonsnummer = a.regnskap_organisasjonsnummer WHERE  NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL ORDER BY overvurdering ASC"
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap/power(a.estimert_mcap_aar,1.3) AS overvurdering FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap_siste ar ON ar.organisasjonsnummer = a.regnskap_organisasjonsnummer WHERE  NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL ORDER BY overvurdering ASC"
   },
   {
     "id": 8,
