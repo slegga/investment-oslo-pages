@@ -470,36 +470,6 @@
     }
   },
   {
-    "ticker": "BSP",
-    "navn": "Black Sea Property",
-    "regnskap_navn": "BLACK SEA PROPERTY AS",
-    "organisasjonsnummer": "914892902",
-    "oslobors_issuer_id": 12461,
-    "naeringskode": "68.320",
-    "naeringskode_beskrivelse": "Eiendomsforvaltning på oppdrag",
-    "totalt_antall_i_markedet": null,
-    "selskapstype": "vanlig",
-    "estimert_mcap_aar": 40980972.4443655,
-    "estimert_mcap_kvartal": null,
-    "prosent_dager_omsetning": 81,
-    "siste_kvartalsrapport": null,
-    "siste_aarsregnskap": {
-      "fra_dato": "2025-01-01",
-      "til_dato": "2025-12-31",
-      "valuta": "NOK",
-      "aarsresultat": -104268000.0,
-      "totalresultat": null,
-      "sum_driftsinntekter": 349000.0,
-      "driftsresultat": -2262000.0,
-      "sum_egenkapital": 126218000.0,
-      "sum_eiendeler": 174084000.0,
-      "sum_gjeld": 47866000.0,
-      "antall_ansatte": 0,
-      "regnskapstype": "SELSKAP",
-      "regnskapsregler": "regnskapslovenAlminneligRegler"
-    }
-  },
-  {
     "ticker": "CAMBI",
     "navn": "Cambi",
     "regnskap_navn": "CAMBI ASA",
@@ -1867,6 +1837,36 @@
       "antall_ansatte": 0,
       "regnskapstype": "SELSKAP",
       "regnskapsregler": "IFRS"
+    }
+  },
+  {
+    "ticker": "NOSN",
+    "navn": "NOS Nova",
+    "regnskap_navn": "NOS NOVA AS",
+    "organisasjonsnummer": "923377476",
+    "oslobors_issuer_id": 12845,
+    "naeringskode": "35.210",
+    "naeringskode_beskrivelse": "Produksjon av gass",
+    "totalt_antall_i_markedet": null,
+    "selskapstype": "vanlig",
+    "estimert_mcap_aar": 145196232.5389128,
+    "estimert_mcap_kvartal": null,
+    "prosent_dager_omsetning": 100,
+    "siste_kvartalsrapport": null,
+    "siste_aarsregnskap": {
+      "fra_dato": "2024-01-01",
+      "til_dato": "2024-12-31",
+      "valuta": "NOK",
+      "aarsresultat": -109842126.0,
+      "totalresultat": -109842126.0,
+      "sum_driftsinntekter": 3951725.0,
+      "driftsresultat": -115426903.0,
+      "sum_egenkapital": 81888589.0,
+      "sum_eiendeler": 106267733.0,
+      "sum_gjeld": 24379144.0,
+      "antall_ansatte": 0,
+      "regnskapstype": "KONSERN",
+      "regnskapsregler": "forenkletAnvendelseIFRS"
     }
   },
   {
