@@ -6342,5 +6342,77 @@
     "kjopsdato": "2026-09-22",
     "kjopssum": 99463.31000000001,
     "kommentar": null
+  },
+  {
+    "id": 839,
+    "portefolje_id": 1,
+    "porteføljenavn": "Størst",
+    "kjopsdato": "2026-09-23",
+    "kjopssum": 95374.43000000001,
+    "kommentar": null
+  },
+  {
+    "id": 840,
+    "portefolje_id": 2,
+    "porteføljenavn": "overvurdert år",
+    "kjopsdato": "2026-09-23",
+    "kjopssum": 98107.49499999998,
+    "kommentar": null
+  },
+  {
+    "id": 841,
+    "portefolje_id": 3,
+    "porteføljenavn": "undervurdert år",
+    "kjopsdato": "2026-09-23",
+    "kjopssum": 83999.6095,
+    "kommentar": null
+  },
+  {
+    "id": 842,
+    "portefolje_id": 4,
+    "porteføljenavn": "overvurdert kvartal",
+    "kjopsdato": "2026-09-23",
+    "kjopssum": 95794.81500000002,
+    "kommentar": null
+  },
+  {
+    "id": 843,
+    "portefolje_id": 5,
+    "porteføljenavn": "undervurdert kvartal",
+    "kjopsdato": "2026-09-23",
+    "kjopssum": 72606.90999999999,
+    "kommentar": null
+  },
+  {
+    "id": 844,
+    "portefolje_id": 6,
+    "porteføljenavn": "overvurdertvurdert log år",
+    "kjopsdato": "2026-09-23",
+    "kjopssum": 85688.65799999998,
+    "kommentar": null
+  },
+  {
+    "id": 845,
+    "portefolje_id": 7,
+    "porteføljenavn": "undervurdertvurdert log år",
+    "kjopsdato": "2026-09-23",
+    "kjopssum": 96352.28199999999,
+    "kommentar": null
+  },
+  {
+    "id": 846,
+    "portefolje_id": 8,
+    "porteføljenavn": "undervurdert år trygg",
+    "kjopsdato": "2026-09-23",
+    "kjopssum": 100061.63999999998,
+    "kommentar": null
+  },
+  {
+    "id": 847,
+    "portefolje_id": 9,
+    "porteføljenavn": "mcap/drift trygg",
+    "kjopsdato": "2026-09-23",
+    "kjopssum": 97353.238,
+    "kommentar": null
   }
 ]
