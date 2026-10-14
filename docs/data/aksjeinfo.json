@@ -2273,19 +2273,19 @@
       "kontantstroem_drift": 5677000000.0
     },
     "siste_aarsregnskap": {
-      "fra_dato": "2024-01-01",
-      "til_dato": "2024-12-31",
+      "fra_dato": "2025-01-01",
+      "til_dato": "2025-12-31",
       "valuta": "NOK",
-      "aarsresultat": 20717000000.0,
-      "totalresultat": 20717000000.0,
-      "sum_driftsinntekter": 81413000000.0,
-      "driftsresultat": 18623000000.0,
-      "sum_egenkapital": 81772000000.0,
-      "sum_eiendeler": 228038000000.0,
-      "sum_gjeld": 147098000000.0,
-      "antall_ansatte": 298,
+      "aarsresultat": 8365000000.0,
+      "totalresultat": 7853000000.0,
+      "sum_driftsinntekter": 77292000000.0,
+      "driftsresultat": 17979000000.0,
+      "sum_egenkapital": 75629000000.0,
+      "sum_eiendeler": 221650000000.0,
+      "sum_gjeld": 146022000000.0,
+      "antall_ansatte": 370,
       "regnskapstype": "KONSERN",
-      "regnskapsregler": "regnskapslovenAlminneligRegler"
+      "regnskapsregler": "IFRS"
     }
   },
   {
