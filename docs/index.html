@@ -370,6 +370,10 @@
                 const pNames = portefoljer
                     .map(p => p.porteføljenavn)
                     .filter(name => utviklingByPortefolje[name] && utviklingByPortefolje[name].length > 0);
+
+                // Default synlig: 'Størst' + alle ' bytt4'. Gamle enkel-porteføljer
+                // beholdes valgbare via checkboxene under.
+                const isDefaultVisible = (name) => name === 'Størst' || name.endsWith(' bytt4');
                 
                 // Generate colors for each portfolio
                 const portfolioColors = pNames.reduce((acc, name, i) => {
@@ -406,6 +410,7 @@
                     return {
                         label: name,
                         data: filledData,
+                        hidden: !isDefaultVisible(name),
                         borderColor: portfolioColors[name],
                         backgroundColor: portfolioColors[name],
                         borderWidth: 2,
@@ -419,7 +424,7 @@
                 // Opprett checkboxes for å kontrollere visning av hver portefølje i grafen
                 const chartControls = document.getElementById('chart-controls');
                 pNames.forEach((name, i) => {
-                    const checked = i < 5 ? 'checked' : '';
+                    const checked = isDefaultVisible(name) ? 'checked' : '';
                     const colorDot = `<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background-color:${portfolioColors[name]};margin-right:4px;"></span>`;
                     
                     const cbData = utviklingByPortefolje[name].slice().sort((a, b) => a.kjopsdato.localeCompare(b.kjopsdato));
