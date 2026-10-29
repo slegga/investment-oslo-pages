@@ -7854,5 +7854,21 @@
     "kjopsdato": "2026-10-28",
     "kjopssum": 92414.47253333333,
     "kommentar": null
+  },
+  {
+    "id": 1028,
+    "portefolje_id": 1,
+    "porteføljenavn": "Størst",
+    "kjopsdato": "2026-10-29",
+    "kjopssum": 97345.92999999998,
+    "kommentar": null
+  },
+  {
+    "id": 1029,
+    "portefolje_id": 12,
+    "porteføljenavn": "overvurdert kvartal bytt4",
+    "kjopsdato": "2026-10-29",
+    "kjopssum": 92764.2,
+    "kommentar": null
   }
 ]
