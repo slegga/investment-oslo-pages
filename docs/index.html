@@ -461,19 +461,13 @@
                 let isNormalized = false;
                 let originalChartState = null;
 
-                // Finner startdatoen til den nyeste porteføljen (første dato hvor alle porteføljer er aktive)
-                let latestPortfolioStart = null;
-                for (const date of sortedDates) {
-                    const allHaveData = pNames.every(name => {
-                        const pData = utviklingByPortefolje[name] || [];
-                        return pData.some(d => d.kjopsdato === date);
-                    });
-                    if (allHaveData) {
-                        latestPortfolioStart = date;
-                        break; // Stopp ved første treff
-                    }
-                }
-                latestPortfolioStart = latestPortfolioStart || sortedDates[0]; // Fallback til første dato
+                // Startdatoen til den nyeste porteføljen. Alle grafer skaleres slik at
+                // verdien på denne datoen blir 100000.
+                const latestPortfolioStart = pNames.reduce((max, name) => {
+                    const first = utviklingByPortefolje[name]
+                        .reduce((min, d) => d.kjopsdato < min ? d.kjopsdato : min, '9999-12-31');
+                    return first > max ? first : max;
+                }, sortedDates[0]);
 
                 // Lagre original state en gang først
                 function saveOriginalState() {
@@ -496,28 +490,23 @@
                         // Lagre original state første gang
                         saveOriginalState();
 
-                        // Finn indeks der fellesperioden starter
-                        const startIdx = performanceChart.data.labels.findIndex(d => d >= latestPortfolioStart);
+                        const refIdx = originalChartState.labels.findIndex(d => d >= latestPortfolioStart);
 
-                        // Filtrer labels til kun å vise fra nyeste portefølje startet
-                        performanceChart.data.labels = performanceChart.data.labels.slice(startIdx);
-
-                        // Normaliser data og filtrer til fellesperioden
+                        // Skaler hele historikken slik at alle har verdi 100000 på referansedatoen
                         performanceChart.data.datasets.forEach((ds, idx) => {
                             const fullData = originalChartState.datasets[idx].data;
-                            // Finn første ikke-null verdi fra startIdx og ut
-                            let firstValid = null;
-                            for (let i = startIdx; i < fullData.length; i++) {
+                            // Bruk siste kjente verdi på eller før referansedatoen
+                            let refValue = null;
+                            for (let i = refIdx; i >= 0; i--) {
                                 if (fullData[i] !== null) {
-                                    firstValid = fullData[i];
+                                    refValue = fullData[i];
                                     break;
                                 }
                             }
-                            const slicedData = fullData.slice(startIdx);
-                            if (firstValid && firstValid > 0) {
-                                ds.data = slicedData.map(val => val !== null ? (val / firstValid) * 100000 : null);
+                            if (refValue && refValue > 0) {
+                                ds.data = fullData.map(val => val !== null ? (val / refValue) * 100000 : null);
                             } else {
-                                ds.data = slicedData;
+                                ds.data = [...fullData];
                             }
                         });
 
