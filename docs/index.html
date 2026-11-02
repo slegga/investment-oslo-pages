@@ -492,7 +492,10 @@
 
                         const refIdx = originalChartState.labels.findIndex(d => d >= latestPortfolioStart);
 
-                        // Skaler hele historikken slik at alle har verdi 100000 på referansedatoen
+                        // Vis kun data fra og med felles startpunkt
+                        performanceChart.data.labels = originalChartState.labels.slice(refIdx);
+
+                        // Skaler historikken fra felles startpunkt slik at alle har verdi 100000 der
                         performanceChart.data.datasets.forEach((ds, idx) => {
                             const fullData = originalChartState.datasets[idx].data;
                             // Bruk siste kjente verdi på eller før referansedatoen
@@ -504,9 +507,9 @@
                                 }
                             }
                             if (refValue && refValue > 0) {
-                                ds.data = fullData.map(val => val !== null ? (val / refValue) * 100000 : null);
+                                ds.data = fullData.slice(refIdx).map(val => val !== null ? (val / refValue) * 100000 : null);
                             } else {
-                                ds.data = [...fullData];
+                                ds.data = fullData.slice(refIdx);
                             }
                         });
 
