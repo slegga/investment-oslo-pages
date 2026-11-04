@@ -52,5 +52,53 @@
     "porteføljenavn": "mcap/drift trygg",
     "beskrivelse": "10 høest på mcap/drift",
     "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap / ar.aarsresultat AS pris_over_resultat                    FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap_siste ar ON ar.organisasjonsnummer = a.regnskap_organisasjonsnummer WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL AND ar.sum_egenkapital > 0 AND ar.aarsresultat > 0 ORDER BY pris_over_resultat ASC"
+  },
+  {
+    "id": 10,
+    "porteføljenavn": "overvurdert år bytt4",
+    "beskrivelse": "10 mest overvurderte selskap",
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap / a.estimert_mcap_aar AS overvurdering           FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL ORDER BY overvurdering DESC"
+  },
+  {
+    "id": 11,
+    "porteføljenavn": "undervurdert år bytt4",
+    "beskrivelse": "10 mest undervurderte selskap",
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap / a.estimert_mcap_aar AS overvurdering FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap_siste ar ON ar.organisasjonsnummer = a.regnskap_organisasjonsnummer WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL ORDER BY overvurdering ASC"
+  },
+  {
+    "id": 12,
+    "porteføljenavn": "overvurdert kvartal bytt4",
+    "beskrivelse": "10 mest overvurderte selskap",
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_kvartal, (k.mcap / a.estimert_mcap_kvartal) AS overvurdering  FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_kvartal IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_kvartal > 0 AND NOT a.estimert_mcap_kvartal is NULL ORDER BY overvurdering DESC"
+  },
+  {
+    "id": 13,
+    "porteføljenavn": "undervurdert kvartal bytt4",
+    "beskrivelse": "10 mest undervurderte selskap",
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_kvartal, k.mcap / a.estimert_mcap_kvartal AS overvurdering FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_kvartal IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_kvartal > 0 AND NOT a.estimert_mcap_kvartal is NULL ORDER BY overvurdering ASC"
+  },
+  {
+    "id": 14,
+    "porteføljenavn": "overvurdertvurdert log år bytt4",
+    "beskrivelse": "10 mest overvurderte justert størrelse",
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap/power(a.estimert_mcap_aar,1.3) AS overvurdering   FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap_siste ar ON ar.organisasjonsnummer = a.regnskap_organisasjonsnummer WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL ORDER BY overvurdering deSC"
+  },
+  {
+    "id": 15,
+    "porteføljenavn": "undervurdertvurdert log år bytt4",
+    "beskrivelse": "10 mest undervurderte justert størrelse",
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap/power(a.estimert_mcap_aar,1.3) AS overvurdering FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap_siste ar ON ar.organisasjonsnummer = a.regnskap_organisasjonsnummer WHERE  NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL ORDER BY overvurdering ASC"
+  },
+  {
+    "id": 16,
+    "porteføljenavn": "undervurdert år trygg bytt4",
+    "beskrivelse": "10 mest undervurderte trygge selskap",
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap / a.estimert_mcap_aar AS overvurdering FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap_siste ar ON ar.organisasjonsnummer = a.regnskap_organisasjonsnummer WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL AND ar.sum_egenkapital > 0 AND ar.aarsresultat > 0 ORDER BY overvurdering ASC"
+  },
+  {
+    "id": 17,
+    "porteføljenavn": "mcap/drift trygg bytt4",
+    "beskrivelse": "10 høest på mcap/drift",
+    "regler_sql": "SELECT a.navn, a.ticker, 1 AS andel, k.mcap, a.estimert_mcap_aar, k.mcap / ar.aarsresultat AS pris_over_resultat                    FROM aksjer a JOIN aksjekurs k ON a.ticker = k.ticker JOIN aarsregnskap_siste ar ON ar.organisasjonsnummer = a.regnskap_organisasjonsnummer WHERE NOT a.regnskap_organisasjonsnummer is null AND k.dato = (SELECT MAX(dato) FROM aksjekurs) AND a.estimert_mcap_aar IS NOT NULL AND k.mcap IS NOT NULL AND a.prosent_dager_omsetning > 50 AND a.estimert_mcap_aar > 0 AND NOT a.estimert_mcap_aar is NULL AND ar.sum_egenkapital > 0 AND ar.aarsresultat > 0 ORDER BY pris_over_resultat ASC"
   }
 ]
