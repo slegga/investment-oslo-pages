@@ -449,11 +449,26 @@
                 });
 
                 // Håndter checkbox-endringer for portefølje-visning
+                // (styrer både graf og detaljkort/aksje-listing nedenfor)
+                const syncPortfolioCards = () => {
+                    const boxes = chartControls.querySelectorAll('input[type="checkbox"][data-index]');
+                    boxes.forEach((box) => {
+                        const idx = parseInt(box.dataset.index, 10);
+                        const card = document.getElementById(`portfolio-card-${idx}`);
+                        if (card) {
+                            card.style.display = box.checked ? '' : 'none';
+                        }
+                    });
+                };
                 chartControls.addEventListener('change', (e) => {
                     if (e.target.tagName === 'INPUT' && e.target.type === 'checkbox') {
                         const idx = parseInt(e.target.dataset.index, 10);
                         performanceChart.data.datasets[idx].hidden = !e.target.checked;
                         performanceChart.update();
+                        const card = document.getElementById(`portfolio-card-${idx}`);
+                        if (card) {
+                            card.style.display = e.target.checked ? '' : 'none';
+                        }
                     }
                 });
 
@@ -617,7 +632,7 @@
 
                 const portfoliosContainer = document.getElementById('portfolios-container');
                 
-                pNames.forEach(name => {
+                pNames.forEach((name, pIdx) => {
                     const positions = posByPortefolje[name] || [];
                     if (positions.length === 0) return;
                     
@@ -629,7 +644,7 @@
                     const info = portefoljeMap.get(name) || { beskrivelse: '' };
                     
                     let tableHTML = `
-                        <div class="portfolio-card">
+                        <div class="portfolio-card" id="portfolio-card-${pIdx}" data-portfolio="${name}" style="${isDefaultVisible(name) ? '' : 'display:none;'}">
                             <div class="portfolio-header">
                                 <h2 class="portfolio-title" style="color: ${portfolioColors[name]}">${name}</h2>
                                 <p class="portfolio-desc">${info.beskrivelse}</p>
@@ -674,6 +689,10 @@
                     
                     portfoliosContainer.innerHTML += tableHTML;
                 });
+
+                // Sørg for at detaljkortene matcher checkboxene ved første visning
+                // (kun kryssede porteføljer skal vise aksje-listing).
+                syncPortfolioCards();
 
                 // Tegn sparkline for hver posisjon etter at DOM er oppdatert.
                 // Grafene innen samme portefølje deler samme prosent-skala (relativ til
