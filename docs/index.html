@@ -618,12 +618,18 @@
                     }
                 });
 
-                // Grupper og vis posisjoner for nyeste dato
-                const latestPosDate = posisjoner.reduce((max, p) => p.kjopsdato > max ? p.kjopsdato : max, '1970-01-01');
-                const currentPositions = posisjoner.filter(p => p.kjopsdato === latestPosDate);
-                
+                // Grupper og vis posisjoner for nyeste dato per portefølje
+                // (porteføljer rebalanseres på ulike dager, så global siste dato
+                // ville skjult alle med eldre rebalansering).
+                const latestByPortefolje = {};
+                posisjoner.forEach(p => {
+                    if (!latestByPortefolje[p.porteføljenavn] || p.kjopsdato > latestByPortefolje[p.porteføljenavn]) {
+                        latestByPortefolje[p.porteføljenavn] = p.kjopsdato;
+                    }
+                });
+
                 const posByPortefolje = {};
-                currentPositions.forEach(p => {
+                posisjoner.filter(p => p.kjopsdato === latestByPortefolje[p.porteføljenavn]).forEach(p => {
                     if (!posByPortefolje[p.porteføljenavn]) {
                         posByPortefolje[p.porteføljenavn] = [];
                     }
