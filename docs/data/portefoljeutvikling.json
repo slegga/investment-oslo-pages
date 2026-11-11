@@ -10267,5 +10267,158 @@
     "kjopssum": 93652.98,
     "kommentar": null,
     "kilde": "verdi"
+  },
+  {
+    "id": 1107,
+    "portefolje_id": 1,
+    "porteføljenavn": "Størst",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 93915.73000000001,
+    "kommentar": null,
+    "kilde": "rebalansering"
+  },
+  {
+    "id": 1108,
+    "portefolje_id": 2,
+    "porteføljenavn": "overvurdert år",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 91303.66300000002,
+    "kommentar": null,
+    "kilde": "rebalansering"
+  },
+  {
+    "id": 1109,
+    "portefolje_id": 3,
+    "porteføljenavn": "undervurdert år",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 90911.7058,
+    "kommentar": null,
+    "kilde": "rebalansering"
+  },
+  {
+    "id": 1110,
+    "portefolje_id": 4,
+    "porteføljenavn": "overvurdert kvartal",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 97769.681,
+    "kommentar": null,
+    "kilde": "rebalansering"
+  },
+  {
+    "id": 1111,
+    "portefolje_id": 5,
+    "porteføljenavn": "undervurdert kvartal",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 71695.0,
+    "kommentar": null,
+    "kilde": "rebalansering"
+  },
+  {
+    "id": 1112,
+    "portefolje_id": 6,
+    "porteføljenavn": "overvurdertvurdert log år",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 81880.617,
+    "kommentar": null,
+    "kilde": "rebalansering"
+  },
+  {
+    "id": 1113,
+    "portefolje_id": 7,
+    "porteføljenavn": "undervurdertvurdert log år",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 100509.23599999999,
+    "kommentar": null,
+    "kilde": "rebalansering"
+  },
+  {
+    "id": 1114,
+    "portefolje_id": 8,
+    "porteføljenavn": "undervurdert år trygg",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 96692.55999999998,
+    "kommentar": null,
+    "kilde": "rebalansering"
+  },
+  {
+    "id": 1115,
+    "portefolje_id": 9,
+    "porteføljenavn": "mcap/drift trygg",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 99290.60799999998,
+    "kommentar": null,
+    "kilde": "rebalansering"
+  },
+  {
+    "id": null,
+    "portefolje_id": 10,
+    "porteføljenavn": "overvurdert år bytt4",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 83874.44,
+    "kommentar": null,
+    "kilde": "verdi"
+  },
+  {
+    "id": null,
+    "portefolje_id": 11,
+    "porteføljenavn": "undervurdert år bytt4",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 95612.01,
+    "kommentar": null,
+    "kilde": "verdi"
+  },
+  {
+    "id": null,
+    "portefolje_id": 12,
+    "porteføljenavn": "overvurdert kvartal bytt4",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 90216.99,
+    "kommentar": null,
+    "kilde": "verdi"
+  },
+  {
+    "id": null,
+    "portefolje_id": 13,
+    "porteføljenavn": "undervurdert kvartal bytt4",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 89326.66,
+    "kommentar": null,
+    "kilde": "verdi"
+  },
+  {
+    "id": null,
+    "portefolje_id": 14,
+    "porteføljenavn": "overvurdertvurdert log år bytt4",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 85779.02,
+    "kommentar": null,
+    "kilde": "verdi"
+  },
+  {
+    "id": null,
+    "portefolje_id": 15,
+    "porteføljenavn": "undervurdertvurdert log år bytt4",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 98881.78,
+    "kommentar": null,
+    "kilde": "verdi"
+  },
+  {
+    "id": null,
+    "portefolje_id": 16,
+    "porteføljenavn": "undervurdert år trygg bytt4",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 90354.26,
+    "kommentar": null,
+    "kilde": "verdi"
+  },
+  {
+    "id": null,
+    "portefolje_id": 17,
+    "porteføljenavn": "mcap/drift trygg bytt4",
+    "kjopsdato": "2026-11-11",
+    "kjopssum": 94685.35,
+    "kommentar": null,
+    "kilde": "verdi"
   }
 ]
