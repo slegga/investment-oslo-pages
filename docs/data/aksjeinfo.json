@@ -329,6 +329,36 @@
     }
   },
   {
+    "ticker": "CODE",
+    "navn": "CodeLab Capital",
+    "regnskap_navn": "CODELAB CAPITAL AS",
+    "organisasjonsnummer": "919763930",
+    "oslobors_issuer_id": 12816,
+    "naeringskode": "68.200",
+    "naeringskode_beskrivelse": "Utleie av egen eller leid fast eiendom",
+    "totalt_antall_i_markedet": null,
+    "selskapstype": "vanlig",
+    "estimert_mcap_aar": 33853774.540003225,
+    "estimert_mcap_kvartal": null,
+    "prosent_dager_omsetning": 100,
+    "siste_kvartalsrapport": null,
+    "siste_aarsregnskap": {
+      "fra_dato": "2025-01-01",
+      "til_dato": "2025-12-31",
+      "valuta": "NOK",
+      "aarsresultat": -14817378.0,
+      "totalresultat": null,
+      "sum_driftsinntekter": 10834962.0,
+      "driftsresultat": -15902845.0,
+      "sum_egenkapital": 29356313.0,
+      "sum_eiendeler": 58816483.0,
+      "sum_gjeld": 29460170.0,
+      "antall_ansatte": 0,
+      "regnskapstype": "KONSERN",
+      "regnskapsregler": "regnskapslovenAlminneligRegler"
+    }
+  },
+  {
     "ticker": "CRNA",
     "navn": "Circio Holding",
     "regnskap_navn": "CIRCIO HOLDING ASA",
@@ -1002,6 +1032,36 @@
     }
   },
   {
+    "ticker": "LUMI",
+    "navn": "Lumi Gruppen",
+    "regnskap_navn": "LUMI GRUPPEN AS",
+    "organisasjonsnummer": "919871237",
+    "oslobors_issuer_id": 12852,
+    "naeringskode": "68.110",
+    "naeringskode_beskrivelse": "Kjøp og salg av egen fast eiendom",
+    "totalt_antall_i_markedet": null,
+    "selskapstype": "holding",
+    "estimert_mcap_aar": 131465012.46487056,
+    "estimert_mcap_kvartal": null,
+    "prosent_dager_omsetning": 62,
+    "siste_kvartalsrapport": null,
+    "siste_aarsregnskap": {
+      "fra_dato": "2025-01-01",
+      "til_dato": "2025-12-31",
+      "valuta": "NOK",
+      "aarsresultat": 28744000.0,
+      "totalresultat": 28744000.0,
+      "sum_driftsinntekter": 507742000.0,
+      "driftsresultat": 71378000.0,
+      "sum_egenkapital": 520449000.0,
+      "sum_eiendeler": 1048297000.0,
+      "sum_gjeld": 527846000.0,
+      "antall_ansatte": 0,
+      "regnskapstype": "KONSERN",
+      "regnskapsregler": "IFRS"
+    }
+  },
+  {
     "ticker": "MGN",
     "navn": "Magnora",
     "regnskap_navn": "MAGNORA ASA",
@@ -1468,36 +1528,6 @@
     }
   },
   {
-    "ticker": "NORDH",
-    "navn": "Nordhealth A",
-    "regnskap_navn": "NORDHEALTH AS",
-    "organisasjonsnummer": "926978209",
-    "oslobors_issuer_id": 12901,
-    "naeringskode": "62.100",
-    "naeringskode_beskrivelse": "Dataprogrammeringstjenester",
-    "totalt_antall_i_markedet": null,
-    "selskapstype": "vanlig",
-    "estimert_mcap_aar": 325919439.9187444,
-    "estimert_mcap_kvartal": null,
-    "prosent_dager_omsetning": 88,
-    "siste_kvartalsrapport": null,
-    "siste_aarsregnskap": {
-      "fra_dato": "2025-01-01",
-      "til_dato": "2025-12-31",
-      "valuta": "EUR",
-      "aarsresultat": -12681000.0,
-      "totalresultat": null,
-      "sum_driftsinntekter": 51085000.0,
-      "driftsresultat": -12469000.0,
-      "sum_egenkapital": 61558000.0,
-      "sum_eiendeler": 71528000.0,
-      "sum_gjeld": 9970000.0,
-      "antall_ansatte": 0,
-      "regnskapstype": "KONSERN",
-      "regnskapsregler": "regnskapslovenAlminneligRegler"
-    }
-  },
-  {
     "ticker": "NORSE",
     "navn": "Norse Atlantic",
     "regnskap_navn": "NORSE ATLANTIC ASA",
@@ -1730,36 +1760,6 @@
       "antall_ansatte": 72,
       "regnskapstype": "KONSERN",
       "regnskapsregler": "IFRS"
-    }
-  },
-  {
-    "ticker": "OSUN",
-    "navn": "Ocean Sun",
-    "regnskap_navn": "OCEAN SUN AS",
-    "organisasjonsnummer": "917619751",
-    "oslobors_issuer_id": 12817,
-    "naeringskode": "71.129",
-    "naeringskode_beskrivelse": "Annen teknisk konsulentvirksomhet",
-    "totalt_antall_i_markedet": null,
-    "selskapstype": "vanlig",
-    "estimert_mcap_aar": 16448789.194131756,
-    "estimert_mcap_kvartal": null,
-    "prosent_dager_omsetning": 96,
-    "siste_kvartalsrapport": null,
-    "siste_aarsregnskap": {
-      "fra_dato": "2025-01-01",
-      "til_dato": "2025-12-31",
-      "valuta": "NOK",
-      "aarsresultat": -20593000.0,
-      "totalresultat": null,
-      "sum_driftsinntekter": 11211000.0,
-      "driftsresultat": -21195000.0,
-      "sum_egenkapital": 17174000.0,
-      "sum_eiendeler": 24826000.0,
-      "sum_gjeld": 7651000.0,
-      "antall_ansatte": 12,
-      "regnskapstype": "KONSERN",
-      "regnskapsregler": "regnskapslovenAlminneligRegler"
     }
   },
   {
