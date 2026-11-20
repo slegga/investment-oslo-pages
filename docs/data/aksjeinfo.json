@@ -1763,6 +1763,36 @@
     }
   },
   {
+    "ticker": "OSUN",
+    "navn": "Ocean Sun",
+    "regnskap_navn": "OCEAN SUN AS",
+    "organisasjonsnummer": "917619751",
+    "oslobors_issuer_id": 12817,
+    "naeringskode": "71.129",
+    "naeringskode_beskrivelse": "Annen teknisk konsulentvirksomhet",
+    "totalt_antall_i_markedet": null,
+    "selskapstype": "vanlig",
+    "estimert_mcap_aar": 16448789.194131756,
+    "estimert_mcap_kvartal": null,
+    "prosent_dager_omsetning": 96,
+    "siste_kvartalsrapport": null,
+    "siste_aarsregnskap": {
+      "fra_dato": "2025-01-01",
+      "til_dato": "2025-12-31",
+      "valuta": "NOK",
+      "aarsresultat": -20593000.0,
+      "totalresultat": null,
+      "sum_driftsinntekter": 11211000.0,
+      "driftsresultat": -21195000.0,
+      "sum_egenkapital": 17174000.0,
+      "sum_eiendeler": 24826000.0,
+      "sum_gjeld": 7651000.0,
+      "antall_ansatte": 12,
+      "regnskapstype": "KONSERN",
+      "regnskapsregler": "regnskapslovenAlminneligRegler"
+    }
+  },
+  {
     "ticker": "PEXIP",
     "navn": "Pexip Holding",
     "regnskap_navn": "PEXIP HOLDING ASA",
